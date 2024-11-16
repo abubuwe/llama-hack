@@ -1,20 +1,32 @@
 MEAL_PLAN_SHOPPING_SYSTEM_PROMPT = """
-Create a healthy, sustainable meal plan following these guidelines:
-
-Nutrition and Sustainability Guidelines:
-* Use whole, unprocessed ingredients
-* Include fiber-rich foods like vegetables, fruits, legumes, or whole grains
-* Add healthy fats from sources like olive oil, nuts, seeds, or avocados
-* Feature a variety of plant-based ingredients for flavor and nutrient diversity
+Health Guidelines: 
+* prefer whole, unprocessed ingredients
+* prefer Include fiber-rich foods like vegetables, fruits, legumes, or whole grains
+* prefer healthy fats from sources like olive oil, nuts, seeds, avocados and fatty fish
+* prefer a variety of plant-based ingredients for flavor and nutrient diversity
 * Avoid ultra-processed foods or artificial additives
-* Opt for complex carbohydrates such as quinoa, brown rice, or oats
-* Include high-quality protein sources, preferring plant-based or sustainable options
-* Season with herbs and spices for flavor instead of relying on added salt
+* prefer complex carbohydrates or whole grain such as quinoa, brown rice, or oats
+* prefer high fibre foods like lentils and pulses 
+* prefer high-quality protein sources, preferring plant-based or sustainable options
 * Prioritize ingredients with a low carbon footprint, such as locally grown and seasonal produce
+* Make sure it's tasty
+
+Task: 
+- Identify the ingredients in the list that follow the above Health Guidelines
+- Preferably but not exclusively use ingredients identified above to healthy meals that follow Health Guidelines
+- Avoid products if the consumption is associated with all cause mortality, like red meat, UPF, refined carbs etc.
+- Return a list of products with their id from the list you used in the meal plan 
 
 Return JSON with this structure:
 
 {
+  "identified_healthy_ingredients": [
+    "Quinoa",
+    "Chickpeas", 
+    "Sweet Potatoes",
+    "Lentils",
+    "Olive Oil"
+  ],
   "meal_plan": {
     "days": [
       {
@@ -25,29 +37,12 @@ Return JSON with this structure:
             "recipe_name": "Quinoa Breakfast Bowl"
           },
           {
-            "type": "Lunch",
+            "type": "Lunch", 
             "recipe_name": "Mediterranean Chickpea Salad"
           },
           {
             "type": "Dinner",
             "recipe_name": "Lentil and Sweet Potato Curry"
-          }
-        ]
-      },
-      {
-        "day": 2,
-        "meals": [
-          {
-            "type": "Breakfast",
-            "recipe_name": "Overnight Oats"
-          },
-          {
-            "type": "Lunch",
-            "recipe_name": "Greek Salad"
-          },
-          {
-            "type": "Dinner",
-            "recipe_name": "Vegetable Stir Fry"
           }
         ]
       }
@@ -65,24 +60,38 @@ Return JSON with this structure:
           }
         },
         {
+          "name": "Almond Milk",
+          "amount": {
+            "quantity": 240,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Banana",
+          "amount": {
+            "quantity": 1,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Honey",
+          "amount": {
+            "quantity": 15,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Cinnamon",
+          "amount": {
+            "quantity": 2,
+            "unit": "g"
+          }
+        },
+        {
           "name": "Mixed Berries",
           "amount": {
-            "quantity": 150,
+            "quantity": 100,
             "unit": "g"
-          }
-        },
-        {
-          "name": "Almonds",
-          "amount": {
-            "quantity": 30,
-            "unit": "g"
-          }
-        },
-        {
-          "name": "Plant-based Milk",
-          "amount": {
-            "quantity": 250,
-            "unit": "ml"
           }
         }
       ]
@@ -93,46 +102,145 @@ Return JSON with this structure:
         {
           "name": "Chickpeas",
           "amount": {
-            "quantity": 240,
+            "quantity": 400,
             "unit": "g"
           }
         },
         {
           "name": "Cucumber",
           "amount": {
-            "quantity": 200,
-            "unit": "g"
+            "quantity": 1,
+            "unit": "whole"
           }
         },
         {
           "name": "Cherry Tomatoes",
           "amount": {
-            "quantity": 150,
+            "quantity": 200,
             "unit": "g"
           }
         },
         {
-          "name": "Extra Virgin Olive Oil",
+          "name": "Red Onion",
+          "amount": {
+            "quantity": 1,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Feta Cheese",
+          "amount": {
+            "quantity": 100,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Olive Oil",
           "amount": {
             "quantity": 30,
             "unit": "ml"
           }
         },
         {
-          "name": "Fresh Basil",
+          "name": "Lemon Juice",
           "amount": {
-            "quantity": 10,
+            "quantity": 30,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Fresh Parsley",
+          "amount": {
+            "quantity": 30,
+            "unit": "g"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Lentil and Sweet Potato Curry",
+      "ingredients": [
+        {
+          "name": "Lentils",
+          "amount": {
+            "quantity": 200,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Sweet Potatoes",
+          "amount": {
+            "quantity": 400,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Coconut Milk",
+          "amount": {
+            "quantity": 400,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Onion",
+          "amount": {
+            "quantity": 1,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Garlic",
+          "amount": {
+            "quantity": 4,
+            "unit": "cloves"
+          }
+        },
+        {
+          "name": "Ginger",
+          "amount": {
+            "quantity": 30,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Curry Powder",
+          "amount": {
+            "quantity": 15,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Vegetable Stock",
+          "amount": {
+            "quantity": 500,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Spinach",
+          "amount": {
+            "quantity": 200,
             "unit": "g"
           }
         }
       ]
     }
+  ],
+  "used_healthy_ingredients": [
+    {
+      "id": 1,
+      "name": "Quinoa"
+    },
+    {
+      "id": 2,
+      "name": "Chickpeas"
+    },
+    {
+      "id": 3,
+      "name": "Sweet Potatoes"
+    }
   ]
 }
-
-Required fields:
-- Recipe names
-- Ingredient lists with quantities in metric units (g for weight, ml for volume)
 """
 
 RECIPE_DETAILS_PROMPT = """
@@ -141,21 +249,95 @@ Given a recipe name and list of ingredients, provide detailed preparation instru
 {
   "recipe_details": [{
     "name": "Mediterranean Chickpea Salad",
-    "prep_time": "15 minutes",
+    "prep_time": "20 minutes",
     "cook_time": "0 minutes",
-    "ingredients": [{
-      "name": "Chickpeas",
-      "amount": {
-        "quantity": 240,
-        "unit": "g"
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "amount": {
+          "quantity": 240,
+          "unit": "g"
+        }
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "amount": {
+          "quantity": 200,
+          "unit": "g"
+        }
+      },
+      {
+        "name": "Persian Cucumbers",
+        "amount": {
+          "quantity": 200,
+          "unit": "g"
+        }
+      },
+      {
+        "name": "Red Onion",
+        "amount": {
+          "quantity": 100,
+          "unit": "g"
+        }
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "amount": {
+          "quantity": 45,
+          "unit": "ml"
+        }
+      },
+      {
+        "name": "Fresh Parsley",
+        "amount": {
+          "quantity": 30,
+          "unit": "g"
+        }
+      },
+      {
+        "name": "Fresh Mint",
+        "amount": {
+          "quantity": 15,
+          "unit": "g"
+        }
+      },
+      {
+        "name": "Lemon",
+        "amount": {
+          "quantity": 1,
+          "unit": "whole"
+        }
+      },
+      {
+        "name": "Hemp Seeds",
+        "amount": {
+          "quantity": 40,
+          "unit": "g"
+        }
+      },
+      {
+        "name": "Kalamata Olives",
+        "amount": {
+          "quantity": 50,
+          "unit": "g"
+        }
       }
-    }],
+    ],
     "steps": [
-      "Drain and rinse chickpeas",
-      "Dice cucumber and tomatoes",
-      "Combine all ingredients in a large bowl",
-      "Drizzle with olive oil and toss gently",
-      "Season with salt and pepper to taste"
+      "Begin by thoroughly draining and rinsing the chickpeas in a colander. Allow them to drain completely for 5 minutes to remove excess moisture",
+      "While the chickpeas are draining, wash all produce thoroughly under cool running water",
+      "Halve the cherry tomatoes, ensuring uniform size for even distribution in the salad",
+      "Dice the Persian cucumbers into 1cm cubes, maintaining consistency in size",
+      "Finely dice the red onion. For milder onion flavor, soak the diced onions in cold water for 5 minutes, then drain and pat dry",
+      "Finely chop both the fresh parsley and mint leaves, keeping them separate",
+      "Zest the entire lemon first, then extract its juice, keeping both separate",
+      "In a large mixing bowl, combine the drained chickpeas with the prepared tomatoes, cucumbers, and onion",
+      "Add the chopped parsley and mint to the bowl",
+      "Pour in the olive oil, then add the lemon juice and zest",
+      "Season with salt and freshly ground black pepper to taste",
+      "Gently toss all ingredients together until evenly combined",
+      "Top the salad with hemp seeds and halved kalamata olives just before serving",
+      "Give one final gentle toss and serve immediately for best texture and freshness"
     ]
   }]
 }

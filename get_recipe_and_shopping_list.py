@@ -6,6 +6,7 @@ import instructor
 from dotenv import load_dotenv
 import json
 from pathlib import Path
+import pandas as pd
 
 # Load the Groq API key from .env file
 load_dotenv()
@@ -62,95 +63,93 @@ class CostAnalysis(BaseModel):
     cost_per_meal: float
     cost_per_serving: float
 
-class MealPlanResponse(BaseModel):
+class UsedHealthyIngredient(BaseModel):
+    id: int
+    name: str
+
+class HealthyMealPlanResponse(BaseModel):
+    identified_healthy_ingredients: List[str]
     meal_plan: MealPlan
     recipes: List[Recipe]
-
-    class Config:
-        json_schema_extra = {
-            "required": ["meal_plan", "recipes"]
-        }
+    used_healthy_ingredients: List[UsedHealthyIngredient]
 
 class RecipeDetailsResponse(BaseModel):
     recipe_details: List[Recipe]
 
 
-def generate_meal_plan_groq(products: List[Product], num_days: int) -> Optional[MealPlanResponse]:
-    # Patch Groq client with instructor
+def generate_meal_plan_groq(products: List[Product], num_days: int) -> Optional[HealthyMealPlanResponse]:
     client = instructor.from_groq(Groq(), mode=instructor.Mode.JSON)
     
     try:
         products_text = "\n".join([
-            f"- {p.name}: Original price ${p.price}, Discounted ${p.discounted_price}"
+            f"- [{p.id}] {p.name}"
             for p in products
         ])
 
-        # Call Groq API with instructor
+        user_message = f"Available products:\n{products_text}\nCreate a {num_days}-day healthy meal plan"
+         
+        print("\n=== User Message to Groq API ===")
+        print(user_message)
+        print("=============================\n")
+
         meal_plan = client.chat.completions.create(
-            model="llama-3.2-90b-vision-preview",
-            response_model=MealPlanResponse,
+            model="llama-3.1-70b-versatile",
+            response_model=HealthyMealPlanResponse,
             messages=[
                 {"role": "system", "content": MEAL_PLAN_SHOPPING_SYSTEM_PROMPT},
-                {"role": "user", "content": f"Available products:\n{products_text}\nCreate a {num_days}-day meal plan using these products. Ensure all recipes include ingredients with prices and detailed steps."}
+                {"role": "user", "content": user_message}
             ],
             temperature=0.7,
         )
-        
-        # Print raw response for debugging
-        print("\n=== Raw Groq Response ===")
-        print(meal_plan)
-        print("=====================\n")
-        
+                
         return meal_plan
 
     except Exception as e:
         print(f"Error generating meal plan with Groq: {e}")
         return None
 
-def load_products_from_json(json_path: str) -> List[Product]:
-    """Load products from a JSON file and convert to Product objects."""
+def load_products_from_csv(csv_path: str) -> List[Product]:
+    """Load products from a CSV file and convert to Product objects."""
     try:
-        json_path = Path(json_path)
-        with open(json_path) as f:
-            data = json.load(f)
+        # Read CSV
+        df = pd.read_csv(csv_path)
         
-        if not isinstance(data, list) or not data or "products" not in data[0]:
-            raise KeyError("JSON must have a list with one object containing a 'products' key")
-            
+        # Convert numeric columns
+        df['price'] = pd.to_numeric(df['price'], errors='coerce')
+        df['clubcard_price'] = pd.to_numeric(df['clubcard_price'], errors='coerce')
+        df['quantity'] = pd.to_numeric(df['quantity'], errors='coerce')
+        df['id'] = pd.to_numeric(df['id'], errors='coerce')
+        
         products = []
-        for idx, item in enumerate(data[0]["products"], 1):
+        for _, row in df.iterrows():
             try:
-                # Updated required fields
-                required_fields = ["id", "name", "price", "discounted_price", "quantity", "unit"]
-                missing_fields = [f for f in required_fields if f not in item]
-                if missing_fields:
-                    print(f"Product {idx} missing fields: {missing_fields}")
-                    continue
-                
                 product = Product(
-                    id=item["id"],
-                    name=item["name"],
-                    price=item["price"],
-                    discounted_price=item["discounted_price"],
-                    quantity=item["quantity"],
-                    unit=item["unit"]
+                    id=int(row['id']),  # Use ID from CSV
+                    name=row['simple_name'],
+                    price=float(row['price']),
+                    discounted_price=float(row['clubcard_price']),
+                    quantity=float(row['quantity']),
+                    unit=str(row['quantity_unit'])
                 )
                 products.append(product)
-                
-            except KeyError as e:
-                print(f"Invalid product at index {idx}: {e}")
+            except (ValueError, KeyError) as e:
+                print(f"Skipping invalid product {row['product_name']}: {e}")
                 continue
                 
+        print(f"Loaded {len(products)} products from CSV")
         return products
 
     except FileNotFoundError:
-        print(f"Error: Could not find file {json_path}")
+        print(f"Error: Could not find file {csv_path}")
         return []
-    except json.JSONDecodeError as e:
-        print(f"Error: Invalid JSON in {json_path}: {e}")
+    except pd.errors.EmptyDataError:
+        print(f"Error: CSV file {csv_path} is empty")
+        return []
+    except Exception as e:
+        print(f"Error loading products from CSV: {e}")
         return []
 
-def extract_meal_details(meal_plan_response: MealPlanResponse) -> dict:
+def extract_meal_details(meal_plan_response: HealthyMealPlanResponse) -> dict:
     """
     Extract meal details including recipes, types and ingredients from a MealPlanResponse.
     Returns formatted JSON structure without day information.
@@ -189,27 +188,73 @@ def get_recipe_details(meal_details: dict, client: instructor.Instructor) -> Lis
         recipes_text = json.dumps({"recipes": meal_details["meals"]}, indent=2)
         
         response = client.chat.completions.create(
-            model="llama-3.2-90b-vision-preview",
-            response_model=RecipeDetailsResponse,
+            model="llama-3.1-70b-versatile",
+            response_model=RecipeDetailsResponse, 
             messages=[
                 {"role": "system", "content": RECIPE_DETAILS_PROMPT},
                 {"role": "user", "content": f"Get detailed instructions for these recipes:\n{recipes_text}"}
             ],
             temperature=0.7,
         )
+
+        # Print response for debugging
+        print("\n=== Recipe Details Response ===")
+        print(json.dumps(response.model_dump(), indent=2))
+        print("==============================\n")
+
         return response.recipe_details
     except Exception as e:
         print(f"Error getting recipe details: {e}")
         return []
 
+def analyze_healthy_ingredient_savings(meal_plan_response: HealthyMealPlanResponse) -> pd.DataFrame:
+    """
+    Analyze price savings for healthy ingredients used in meal plan.
+    Returns DataFrame with savings analysis.
+    """
+    # Create DataFrame from used healthy ingredients
+    healthy_ingredients_df = pd.DataFrame([
+        {'id': ingredient.id, 'name': ingredient.name}
+        for ingredient in meal_plan_response.used_healthy_ingredients
+    ])
+    
+    # Read Tesco products
+    tesco_df = pd.read_csv('data/tesco_products_final.csv')
+    
+    # Join dataframes on id
+    merged_df = pd.merge(
+        healthy_ingredients_df,
+        tesco_df,
+        on='id',
+        how='left'
+    )
+    
+    # Calculate savings
+    savings_df = merged_df[[
+        'id',
+        'product_name',
+        'price',
+        'clubcard_price',
+        'discount',
+        'percent_discount'
+    ]].copy()
+    
+    # Sort by percent discount
+    savings_df = savings_df.sort_values('percent_discount', ascending=False)
+    
+    print(f"\nAnalyzed {len(savings_df)} healthy ingredients:")
+    print(f"Total potential savings: £{savings_df['discount'].sum():.2f}")
+    
+    return savings_df
+
 # Usage
 def main():
-    products = load_products_from_json("products.json")
+    products = load_products_from_csv("data/tesco_products_final.csv")
     if products:
         # Get Groq client
         client = instructor.from_groq(Groq(), mode=instructor.Mode.JSON)
         
-        meal_plan_response = generate_meal_plan_groq(products, num_days=2)
+        meal_plan_response = generate_meal_plan_groq(products, num_days=7)
         if meal_plan_response:
             # Extract meal details
             meal_details = extract_meal_details(meal_plan_response)
@@ -228,6 +273,11 @@ def main():
             # Print updated meal plan
             print("\n=== Meal Plan Details with Recipe Instructions ===")
             print(json.dumps(meal_plan_response.model_dump(), indent=2))
+            
+            # Analyze healthy ingredient savings
+            savings_analysis = analyze_healthy_ingredient_savings(meal_plan_response)
+            print("\nHealthy Ingredient Savings Analysis:")
+            print(savings_analysis)
         else:
             print("Failed to generate meal plan.")
 

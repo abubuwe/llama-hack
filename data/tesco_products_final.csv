@@ -1,0 +1,511 @@
+id,product_name,quantity,quantity_unit,price,clubcard_price,cleaned_category,discount,percent_discount,simple_name
+1,Tesco Finest Free Range Bronze Turkey Crown Large 3kg-3.99kg) (Serves 15-18),33.99,kg,71.82,16.0,Meat and Poultry,55.81999999999999,77.72208298524089,free range turkey crown
+2,Tesco Finest Free Range Bronze Turkey Crown Small,11.99,kg,35.82,16.0,Meat and Poultry,19.82,55.3322166387493,free range turkey crown
+3,Pizza Express Dough Balls 200G,200.0,g,3.8,1.75,Breads and Bakery,2.05,53.94736842105263,dough balls
+4,Pizza Express Slsc Sloppy Giuseppe,292.0,g,5.5,2.75,Meat and Poultry,2.75,50.0,slippery joe
+5,Pizza Express BBQ Chicken & Red Onion Pizza,272.0,g,5.5,2.75,Meat and Poultry,2.75,50.0,bbq chicken pizza
+6,Pizza Express American Pizza 250G,250.0,g,5.5,2.75,Meat and Poultry,2.75,50.0,american pizza
+7,Pizza Express Garlic & Mozzarella Flatbread,290.0,g,3.5,1.75,Breads and Bakery,1.75,50.0,garlic flatbread
+8,Bonne Maman Raspberry Yoghurt,4115.0,g,2.8,1.5,Dairy Products,1.2999999999999998,46.42857142857142,raspberry yoghurt
+9,Bonne Maman Rhubarb Yoghurt,4115.0,g,2.8,1.5,Dairy Products,1.2999999999999998,46.42857142857142,rhubarb yoghurt
+10,Richmond 12 Thick Pork Sausages,615.0,g,3.6,2.0,Meat and Poultry,1.6,44.44444444444445,pork sausages
+11,Philadelphia Sweet Chilli Soft Cream Cheese,165.0,g,2.25,1.25,Cheese and Cheese Products,1.0,44.44444444444444,soft cream cheese
+12,Arla Skyr Strawberry Icelandic Style Yogurt,450.0,g,2.25,1.25,Dairy Products,1.0,44.44444444444444,yogurt
+13,Arla Skyr Natural Icelandic Style Yogurt,450.0,g,2.25,1.25,Dairy Products,1.0,44.44444444444444,yogurt
+14,Philadelphia Chives Soft Cream Cheese 165G,165.0,g,2.25,1.25,Cheese and Cheese Products,1.0,44.44444444444444,soft cream cheese
+15,Philadelphia Light Low Fat Soft Cream Cheese,165.0,g,2.25,1.25,Cheese and Cheese Products,1.0,44.44444444444444,soft cream cheese
+16,Arla Skyr Natural Icelandic Style Yogurt,450.0,g,2.25,1.25,Dairy Products,1.0,44.44444444444444,yogurt
+17,Philadelphia Garlic & Herbs Soft Cream Cheese,165.0,g,2.25,1.25,Cheese and Cheese Products,1.0,44.44444444444444,soft cream cheese
+18,Philadelphia Salmon Soft Cream Cheese,165.0,g,2.25,1.25,Cheese and Cheese Products,1.0,44.44444444444444,soft cream cheese
+19,Philadelphia Lightest Low Fat Soft Cream Cheese,165.0,g,2.25,1.25,Cheese and Cheese Products,1.0,44.44444444444444,soft cream cheese
+20,Philadelphia Original Soft Cream Cheese 165G,165.0,g,2.25,1.25,Cheese and Cheese Products,1.0,44.44444444444444,soft cream cheese
+21,Arla Skyr Strawberry Icelandic Style Yogurt,450.0,g,2.25,1.25,Dairy Products,1.0,44.44444444444444,yogurt
+22,Bio&Me Mango Kefir Yoghurt,350.0,g,2.1,1.25,Dairy Products,0.8500000000000001,40.47619047619048,yogurt
+23,Bio&Me Kefir Yoghurt Vanilla,350.0,g,2.1,1.25,Dairy Products,0.8500000000000001,40.47619047619048,vanilla yoghurt
+24,Bio&Me Original Kefir Yoghurt,350.0,g,2.1,1.25,Dairy Products,0.8500000000000001,40.47619047619048,kefir yoghurt
+25,Light & Free Cherry Greek Style Fat Free Yoghurt,4115.0,g,2.5,1.5,Dairy Products,1.0,40.0,fat-free yogurt
+26,Yeo Valley Organic Kefir Passion Fruit & Mango,4100.0,g,2.5,1.5,Dairy Products,1.0,40.0,kefir
+27,Light & Free Peach Greek Style Fat Free Yoghurt,4115.0,g,2.5,1.5,Dairy Products,1.0,40.0,fat-free yogurt
+28,Light & Free Strawberry Greek Style Fat Free Yoghurt 4x115g,460.0,g,2.5,1.5,Dairy Products,1.0,40.0,greek yogurt
+29,Light & Free Sticky Toffee Greek Style Fat Free Yoghurt 4x115g,4115.0,g,2.5,1.5,Dairy Products,1.0,40.0,sticky toffee yoghurt
+30,Yeo Valley Organic Gut Health Kefir Strawberry,4100.0,g,2.5,1.5,Dairy Products,1.0,40.0,kefir
+31,"innocent Kids Super Smoothies Mangoes, Peaches, Apricots & Apples",4150.0,,4.1,2.5,Fruits,1.5999999999999996,39.02439024390244,"mango, peach, apricot, and apple smoothie"
+32,"innocent Kids Super Smoothies Strawberries, Kiwis & Apples",4.0,x150ml,4.1,2.5,Fruits,1.5999999999999996,39.02439024390244,strawberries kiwis apples smoothies
+33,Tesco Minced Lamb Hotpot,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,minced lamb
+34,Tesco Chicken Casserole & Dumplings,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,casseroled chicken with dumplings
+35,Tesco Cumberland Pie 400G,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,cumberland pie
+36,Tesco Beef Casserole & Dumplings,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,beef casserole
+37,Tesco Braised Beef & Mash,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,beef and mash
+38,Tesco Toad In The Hole,340.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,toad in the hole
+39,Tesco Fruity Chicken Curry & Rice,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,chicken curry
+40,Tesco Shepherd's Pie,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,shepherd's pie
+41,Tesco Sweet Bbq Pulled Pork With Cheesy Mash,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,pulled pork
+42,"Tesco Liver, Bacon & Mash",400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,mash
+43,Tesco Bangers & Mash 400G,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,bangers
+44,Tesco Mushroom Stroganoff & Rice,400.0,g,3.25,2.0,"Pasta, Rice, and Grains",1.25,38.46153846153847,mushroom rice
+45,Tesco Cumberland Pie 400G,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,cumberland pie
+46,Tesco Fish Pie 400G,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,fish pie
+47,Tesco Lemon and Herb Chicken With Baby Roast Potatoes,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,chicken with baby potatoes
+48,Tesco Cottage Pie,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,cottage pie
+49,Tesco Ham Hock In Mustard Sauce,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,ham hock
+50,Tesco Hunters Chicken with Potato Wedges,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,chicken with potato wedges
+51,Tesco Fruity Chicken Curry & Rice,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,chicken curry
+52,Tesco Spicy Beef Chilli & Rice 400G,400.0,g,3.25,2.0,Meat and Poultry,1.25,38.46153846153847,beef chilli
+53,Dairylea Lunchers Ham & Cheese Snacks,74.0,g,1.6,1.0,Cheese and Cheese Products,0.6000000000000001,37.50000000000001,ham and cheese snacks
+54,Dairylea Lunchers Chicken & Cheese Snacks,68.0,g,1.6,1.0,Meat and Poultry,0.6000000000000001,37.50000000000001,chicken and cheese snacks
+55,Heck Chicken 10 Italia Sausages,10.0,sausages,3.2,2.0,Meat and Poultry,1.2000000000000002,37.50000000000001,chicken sausages
+56,Activia Kefir Strawberry Gut Health Yoghurt Drink,280.0,ml,1.6,1.0,Dairy Products,0.6000000000000001,37.50000000000001,strawberry yogurt drink
+57,Activia Kefir Natural Gut Health Yoghurt Drink,280.0,ml,1.6,1.0,Dairy Products,0.6000000000000001,37.50000000000001,yogurt drink
+58,Munch Bunch Double Up Strawberry Banana Fromage Frais 4X85g,4.0,x85g,2.0,1.25,Dairy Products,0.75,37.5,strawberry banana fromage frais
+59,Muller Light Fat Free Mango Psn/Fruit Peach Yogurt,840.0,g,4.0,2.5,Dairy Products,1.5,37.5,yogurt
+60,Munch Bunch Double Up Fromage Frais Strawberry Vanilla 4 x 85g (340g),340.0,g,2.0,1.25,Cheese and Cheese Products,0.75,37.5,strawberry yogurt
+61,Muller Light Cheesecake Yogurt,6140.0,g,4.0,2.5,Dairy Products,1.5,37.5,cheesecake yogurt
+62,Munch Bunch Double Up Strawberry Raspberry Kids Yoghurt Pots,4.0,x85g,2.0,1.25,Dairy Products,0.75,37.5,strawberry raspberry yoghurt
+63,Arla Protein Chocolate Milk Shake,500.0,g,2.0,1.25,Dairy Products,0.75,37.5,chocolate milk shake
+64,Muller Light Red Fruit Assorted Fat Free Yogurt,6.0,x140g,4.0,2.5,Dairy Products,1.5,37.5,fat free yogurt
+65,Petits Filous Strawberry Lunchbox Kids Yoghurt Drink,4.0,x100g,2.4,1.5,Dairy Products,0.8999999999999999,37.5,strawberry yoghurt drink
+66,Yeo Valley No Added Sugar Kids Yogurts Selection,642.0,g,2.0,1.25,Dairy Products,0.75,37.5,kids' yogurt
+67,Muller Light 0% Fat Vanilla Orange & Caramel Yogurt,6.0,x140g,4.0,2.5,Dairy Products,1.5,37.5,vanilla yogurt
+68,Philadelphia Light Low Fat Soft Cream Cheese Snacks,126.0,g,2.0,1.25,Dairy Products,0.75,37.5,soft cream cheese snacks
+69,Muller Corner Strawberry Peach & Apricot Yogurts,6.0,pack,4.0,2.5,Dairy Products,1.5,37.5,yogurt
+70,Muller Corner Vanilla & Banana Yogurts with Chocolate Balls & Flakes,6.0,x 124g,4.0,2.5,Dairy Products,1.5,37.5,yogurts with chocolate
+71,Tesco Chicken & Black Bean Meal For One,500.0,g,4.3,2.75,Meat and Poultry,1.5499999999999998,36.04651162790697,chicken and black bean meal
+72,Ginsters Cheddar & Onion Slice,170.0,g,1.95,1.25,Cheese and Cheese Products,0.7,35.8974358974359,cheddar and onion slice
+73,Ginsters Creamy Garlic Mushroom Slice,170.0,g,1.95,1.25,Meat and Poultry,0.7,35.8974358974359,cream-filled mushroom pastry slice
+74,Ginsters Chicken Tikka Slice,170.0,g,1.95,1.25,Meat and Poultry,0.7,35.8974358974359,chicken tikka slice
+75,Ginsters Festive Chicken & Stuffing Slice,170.0,g,1.95,1.25,Meat and Poultry,0.7,35.8974358974359,chicken and stuffing slice
+76,GINSTERS BBQ HUNTERS CHICKEN SLICE,170.0,g,1.95,1.25,Meat and Poultry,0.7,35.8974358974359,bbq chicken slice
+77,GINSTERS BBQ PULLED PORK SLICE,170.0,g,1.95,1.25,Meat and Poultry,0.7,35.8974358974359,pulled pork slice
+78,Tesco 6 Duck Spring Rolls,216.0,g,3.9,2.5,Meat and Poultry,1.4,35.8974358974359,duck spring rolls
+79,Ginsters Chicken & Mushroom Slice 170G,1.0,170g,1.95,1.25,Meat and Poultry,0.7,35.8974358974359,chicken and mushroom slice
+80,Ginsters Peppered Steak Slice,170.0,g,1.95,1.25,Meat and Poultry,0.7,35.8974358974359,peppered steak
+81,Vivera Plant Chicken Breast,180.0,g,3.1,2.0,Meat and Poultry,1.1,35.483870967741936,plant chicken breast
+82,Flora Buttery Spread with Natural Ingredients 1KG,1.0,kg,4.6,3.0,"Dips, Spreads, and Condiments",1.5999999999999996,34.782608695652165,buttery spread
+83,Flora Lighter Spread With Natural Ingredients 1KG,1.0,1kg,4.6,3.0,Meat and Poultry,1.5999999999999996,34.782608695652165,lighter spread
+84,Mockingbird Raw Shield Virgin Juice,750.0,ml,4.2,2.75,Meat and Poultry,1.4500000000000002,34.523809523809526,virgin juice
+85,Mockingbird Raw Lift Virgin Juice,750.0,ml,4.2,2.75,Meat and Poultry,1.4500000000000002,34.523809523809526,raw juice
+86,Mockingbird Raw Activate Virgin Juice,750.0,ml,4.2,2.75,Meat and Poultry,1.4500000000000002,34.523809523809526,raw juice
+87,Walls 4 Hearty Sausage Rolls,220.0,g,1.9,1.25,Meat and Poultry,0.6499999999999999,34.210526315789465,sausage rolls
+88,Smarties Split Pot Vanilla Flavour Yogurt,4107.0,g,2.65,1.75,Dairy Products,0.8999999999999999,33.9622641509434,vanilla yogurt
+89,The Collective Dairy Free Peach & Vanilla Yoghurt Alternative,115.0,g,1.5,1.0,Dairy Products,0.5,33.33333333333333,peach yoghurt
+90,Frubes Strawberry Kids Yoghurt Tubes Multipack,9.0,,2.25,1.5,Dairy Products,0.75,33.33333333333333,strawberry yoghurt tubes
+91,Yeo Valley Raspberry Yogurt,450.0,g,2.25,1.5,Dairy Products,0.75,33.33333333333333,raspberry yogurt
+92,Frubes Kids Strawberry Red Berry & Peach Kids Yoghurt Tubes Multipack 9x37g,333.0,g,2.25,1.5,Dairy Products,0.75,33.33333333333333,strawberry yoghurt
+93,Yeo Valley Organic Whole Milk Lemon Curd Yogurt,450.0,g,2.25,1.5,Dairy Products,0.75,33.33333333333333,whole milk yogurt
+94,Yeo Valley 0% Fat Vanilla Yogurt,450.0,g,2.25,1.5,Dairy Products,0.75,33.33333333333333,vanilla yogurt
+95,Tesco Pomegranates,,,1.5,1.0,Fruits,0.5,33.33333333333333,pomegranates
+96,Yazoo Thick and Creamy Strawberry Milkshake,300.0,ml,1.5,1.0,Dairy Products,0.5,33.33333333333333,strawberry milkshake
+97,The Collective Crunchin' Strawb Mixers Strawberry Yoghurt 100g,1.0,100g,1.5,1.0,Dairy Products,0.5,33.33333333333333,strawberry yoghurt
+98,Actimel Strawberry Blueberry Immunity Live Yoghurt Drink Multipack,12.0,x100g,4.5,3.0,Dairy Products,1.5,33.33333333333333,yoghurt drink
+99,Muller Frijj Chocolate Milkshake,330.0,ml,1.5,1.0,Dairy Products,0.5,33.33333333333333,chocolate milkshake
+100,Pieminister Chicken Tikka Handy Pie,170.0,g,3.0,2.0,Meat and Poultry,1.0,33.33333333333333,chicken pie
+101,Actimel Original Fat Free Immunity Live Yoghurt Drink Multipack,12.0,x100g,4.5,3.0,Dairy Products,1.5,33.33333333333333,fat-free yogurt drink
+102,Flora Plant Butter Spreadable,400.0,g,3.0,2.0,"Dips, Spreads, and Condiments",1.0,33.33333333333333,plant butter
+103,Pieminister Steak & Peppercorn Handy Pie,170.0,g,3.0,2.0,Meat and Poultry,1.0,33.33333333333333,handy pie
+104,The Collective Poppin Choco Mixers Yoghurt 100g,1.0,100g,1.5,1.0,Dairy Products,0.5,33.33333333333333,chocolate yogurt
+105,Rachel's Organic Divine Rice,2150.0,g,2.25,1.5,"Pasta, Rice, and Grains",0.75,33.33333333333333,organic rice
+106,Gu Cheesecake Key Lime Pie,278.0,g,3.75,2.5,Dairy Products,1.25,33.33333333333333,key lime pie
+107,Ember Air Dried and Sliced Original Biltong,50.0,g,3.5,2.35,Meat and Poultry,1.15,32.857142857142854,biltong
+108,Tesco 4 Prawn Toasts,120.0,g,2.6,1.75,Meat and Poultry,0.8500000000000001,32.69230769230769,prawn toasts
+109,The Collective Gourmet Mango Greek Style Yogurt 425G,1.0,yogurt,2.95,2.0,Dairy Products,0.9500000000000002,32.20338983050848,mango yogurt
+110,The Collective Gourmet Fudge Greek Style Yoghurt 425g,1.0,yogurt,2.95,2.0,Dairy Products,0.9500000000000002,32.20338983050848,fudge yogurt
+111,The Collective Dairy Gourmet Morello Cherry Greek Style Yoghurt 425g,1.0,yogurt,2.95,2.0,Dairy Products,0.9500000000000002,32.20338983050848,greek yoghurt
+112,The Collective Gourmet Raspberry Greek Style Yogurt 425G,1.0,yogurt,2.95,2.0,Dairy Products,0.9500000000000002,32.20338983050848,raspberry yogurt
+113,BOL Butternut Squash & Chilli Power Soup,600.0,g,3.25,2.25,Soups and Sauces,1.0,30.76923076923077,butternut squash and chilli soup
+114,BOL Garden Pea & Spinach Power Soup,600.0,g,3.25,2.25,Soups and Sauces,1.0,30.76923076923077,pea and spinach soup
+115,BOL Gut Loving Minestrone Power Soup,600.0,g,3.25,2.25,Soups and Sauces,1.0,30.76923076923077,minestrone soup
+116,Tesco Lightly Dusted Haddock Fillets,255.0,g,3.95,2.75,Meat and Poultry,1.2000000000000002,30.37974683544304,haddock fillets
+117,FAGE FRUITS STRAWBERRY GREEK STRAINED YOGHURT,380.0,g,2.5,1.75,Dairy Products,0.75,30.0,strawberry yogurt
+118,Activia Cherry No Added Sugar Fat Free Gut Health Yoghurt Multipack,4.0,x115g,2.5,1.75,Dairy Products,0.75,30.0,cherry yoghurt
+119,Activia Peach No Added Sugar Fat Free Gut Health Yoghurt Multipack 4x115g,4115.0,g,2.5,1.75,Dairy Products,0.75,30.0,peach yogurt multipack
+120,Tesco 10% Pork Mince,750.0,g,5.0,3.5,Meat and Poultry,1.5,30.0,pork mince
+121,Activia Strawberry Gut Health Yoghurt Multipack 4x115g,460.0,g,2.5,1.75,Dairy Products,0.75,30.0,strawberry yoghurt
+122,FAGE FRUITS MANGO & PASSION FRUIT GREEK STRAINED YOGHURT,380.0,g,2.5,1.75,Dairy Products,0.75,30.0,mango and passion fruit yoghurt
+123,Bertolli Light,450.0,g,2.85,2.0,Meat and Poultry,0.8500000000000001,29.82456140350877,light oil
+124,Bertolli Original Spread,450.0,g,2.85,2.0,"Dips, Spreads, and Condiments",0.8500000000000001,29.82456140350877,spread
+125,Tesco Pepperoni Pasta Bake 750G,750.0,g,4.25,3.0,Meat and Poultry,1.25,29.411764705882355,pasta
+126,Tesco Chicken Korma & Tikka Masala Meal For Two,1.197,kg,8.5,6.0,Meat and Poultry,2.5,29.411764705882355,chicken curry meal
+127,Tesco Chicken Tikka Masala & Chicken Jalfrezi Meal For Two,1.197,kg,8.5,6.0,Meat and Poultry,2.5,29.411764705882355,chicken tikka masala and chicken jalfrezi meal for two
+128,Tesco Chicken Jalfrezi & Chicken Korma Meal For Two,1.197,kg,8.5,6.0,Meat and Poultry,2.5,29.411764705882355,chicken meal
+129,Tesco British Chicken Drumsticks,1.0,kg,3.4,2.4,Meat and Poultry,1.0,29.411764705882355,chicken drumsticks
+130,Tesco Tomato & Mozzarella Pasta Bake,750.0,g,4.25,3.0,"Pasta, Rice, and Grains",1.25,29.411764705882355,pasta bake
+131,The Coconut Collaborative Plain Cultured Coconut Yogurt,350.0,g,2.75,1.95,Dairy Products,0.8,29.090909090909093,coconut yogurt
+132,Alpro Strawberry Dairy Free Soya Yoghurt Alternative 500g,500.0,g,2.1,1.5,Dairy Products,0.6000000000000001,28.571428571428577,strawberry soya yoghurt
+133,Clover Light Spread,500.0,g,2.45,1.75,Meat and Poultry,0.7000000000000002,28.571428571428577,light spread
+134,Alpro Cherry Dairy Free Soya Yoghurt Alternative,500.0,g,2.1,1.5,Dairy Products,0.6000000000000001,28.571428571428577,dairy free soya yoghurt
+135,Actimel Plus 100% Vitamin D Strawberry & Pomegranate Live Yoghurt Drink Multipack,8100.0,g,3.85,2.75,Dairy Products,1.1,28.571428571428577,yoghurt drink
+136,Alpro Blueberry Dairy Free Soya Yoghurt Alternative,500.0,g,2.1,1.5,Dairy Products,0.6000000000000001,28.571428571428577,soya yoghurt
+137,Alpro Greek Style Plain Dairy Free Yoghurt Alternative,400.0,g,2.1,1.5,Dairy Products,0.6000000000000001,28.571428571428577,dairy free yoghurt
+138,Alpro Plain No Sugars Dairy Free Soya Yoghurt Alternative 500g,500.0,g,2.1,1.5,Dairy Products,0.6000000000000001,28.571428571428577,soya yoghurt
+139,Tesco Egg Fried Rice,400.0,g,2.45,1.75,"Pasta, Rice, and Grains",0.7000000000000002,28.571428571428577,egg fried rice
+140,Actimel Plus 100% Vitamin D Cherry & Elderberry Live Yoghurt Drink Multipack,8100.0,g,3.85,2.75,Dairy Products,1.1,28.571428571428577,cherry yoghurt drink
+141,Alpro Vanilla Dairy Free Soya Yoghurt Alternative,500.0,g,2.1,1.5,Dairy Products,0.6000000000000001,28.571428571428577,dairy free yogurt
+142,Clover Original Spread 500G,500.0,g,2.45,1.75,Meat and Poultry,0.7000000000000002,28.571428571428577,spread
+143,The Jolly Hog Outdoor Bred Roasted Ham 100G,1.0,pack,3.5,2.5,Meat and Poultry,1.0,28.57142857142857,roasted ham
+144,Tesco Finest Christmas Hamper,,,35.0,25.0,Meat and Poultry,10.0,28.57142857142857,christmas hamper
+145,Tesco Finest Shiitake Mushrooms,125.0,g,1.75,1.25,Vegetables,0.5,28.57142857142857,shiitake mushrooms
+146,Yollies Strawberry Yogurt 4 X25g,4.0,25g,1.75,1.25,Dairy Products,0.5,28.57142857142857,strawberry yogurt
+147,Dairylea Cheese Spread Triangles,815.6,g,1.75,1.25,Cheese and Cheese Products,0.5,28.57142857142857,cheese spread triangles
+148,Président Crispy Bakes with Brie Cheese,150.0,g,3.0,2.15,Cheese and Cheese Products,0.8500000000000001,28.33333333333334,brie cheese crisps
+149,Tesco 2 Skinless & Boneless Basa Fillets,250.0,g,2.7,1.95,Meat and Poultry,0.7500000000000002,27.777777777777786,basa fillets
+150,Tesco Finest Mature English Cheddar Cheese,350.0,g,4.0,2.9,Cheese and Cheese Products,1.1,27.500000000000004,mature cheddar cheese
+151,Tesco Finest Vintage Cheddar Cheese,300.0,g,4.0,2.9,Cheese and Cheese Products,1.1,27.500000000000004,cheddar cheese
+152,Tesco Finest Extra Mature English Cheddar Cheese 350G,1.0,350g,4.0,2.9,Cheese and Cheese Products,1.1,27.500000000000004,english cheddar cheese
+153,Richmond Extra Tasty 6 Caramelised Red Onion Pork Sausages,400.0,g,2.75,2.0,Meat and Poultry,0.75,27.27272727272727,pork sausages
+154,Richmond Extra Tasty 6 Signature Pork Sausages,400.0,g,2.75,2.0,Meat and Poultry,0.75,27.27272727272727,pork sausages
+155,Herta 2x Ham & Cheese Toasties,240.0,g,2.75,2.0,Breads and Bakery,0.75,27.27272727272727,ham and cheese toasties
+156,Tesco Finest Slow Cooked Thor’s Hammer with Beef Dripping & Roasted Garlic Gravy,3.715,kg,55.0,40.0,Meat and Poultry,15.0,27.27272727272727,beef gravy
+157,Gu Chocolate Melting Middles,2.0,100g,3.75,2.75,Dairy Products,1.0,26.666666666666668,chocolate mints
+158,Higgidy Porcini Mushroom & Spinach Vegan Rolls,160.0,g,3.4,2.5,Breads and Bakery,0.8999999999999999,26.47058823529412,mushroom and spinach rolls
+159,Tesco Cheese & Garlic Flatbread,230.0,,1.9,1.4,Breads and Bakery,0.5,26.31578947368421,flatbread
+160,Tesco Garlic & Rosemary Flatbread 220G,220.0,g,1.9,1.4,Breads and Bakery,0.5,26.31578947368421,flatbread
+161,Tesco Sunblush Tomato & Garlic Flatbread,235.0,,1.9,1.4,Breads and Bakery,0.5,26.31578947368421,tomato and garlic flatbread
+162,Benecol Strawberry Yogurt 4x115g,4.0,115g,4.0,2.95,Dairy Products,1.0499999999999998,26.25,strawberry yogurt
+163,Chocomel,750.0,ml,2.7,2.0,Meat and Poultry,0.7000000000000002,25.92592592592593,chocolate
+164,The Coconut Collab White Chocolate Pots,445.0,g,2.95,2.2,Dairy Products,0.75,25.42372881355932,white chocolate pots
+165,Trewithen Dairy Cornish Barista Milk,1.0,l,1.6,1.2,Dairy Products,0.4000000000000001,25.000000000000007,barista milk
+166,Squeaky Bean Ready To Eat Sweet Smokey Bbq Chicken Style Pieces,130.0,g,3.0,2.25,Meat and Poultry,0.75,25.0,bbq chicken style chicken pieces
+167,Richmond Meat Free Vegan 6 Honey Roasted Style Slices,90.0,g,2.0,1.5,Meat and Poultry,0.5,25.0,meat-free slices
+168,Richmond Meat Free Vegan Roast Chicken Style Slices,90.0,g,2.0,1.5,Meat and Poultry,0.5,25.0,meat-free slices
+169,Pukka All Steak Pie,,,2.0,1.5,Meat and Poultry,0.5,25.0,steak pie
+170,Ufit High Protein Milkshake White Chocolate Flavoured,330.0,ml,2.0,1.5,Dairy Products,0.5,25.0,white chocolate milkshake
+171,Quorn Mini Fillets Fajita,138.0,g,3.0,2.25,Meat and Poultry,0.75,25.0,fajita
+172,Quorn Sweet Chilli Fillets,138.0,g,3.0,2.25,Meat and Poultry,0.75,25.0,sweet chilli fillets
+173,Yop Raspberry Flavour Yogurt Drink,825.0,g,2.0,1.5,Dairy Products,0.5,25.0,yogurt drink
+174,Tesco Pork Shoulder Steaks,1.4,kg,12.0,9.0,Meat and Poultry,3.0,25.0,pork shoulder steaks
+175,Quorn Roast Mini Fillets,138.0,g,3.0,2.25,Meat and Poultry,0.75,25.0,roast fillets
+176,Yazoo Banana Milkshake,1.0,l,2.0,1.5,Dairy Products,0.5,25.0,milkshake
+177,Tesco Finest Mac & Cheese with Black Summer Truffle,350.0,g,4.0,3.0,"Pasta, Rice, and Grains",1.0,25.0,mac and cheese
+178,Tesco Finest Beef Dripping Triple Cook Chips with Aged Parmiggiano Reggiano,400.0,g,4.0,3.0,Meat and Poultry,1.0,25.0,beef dripping chips
+179,Lurpak Slightly Salted Spreadable Blend of Butter and Rapeseed Oil 400g,400.0,g,4.0,3.0,Dairy Products,1.0,25.0,butter spread
+180,Pukka Chicken & Mushroom Pie,1.0,each,2.0,1.5,Meat and Poultry,0.5,25.0,chicken and mushroom pie
+181,Pukka Festive Dinner Pie,1.0,,2.0,1.5,Meat and Poultry,0.5,25.0,dinner pie
+182,Yazoo Strawberry Milkshake,1.0,litre bottle,2.0,1.5,Dairy Products,0.5,25.0,strawberry milkshake
+183,"Pukka Veggie Cheese, Leek & Potato Pie",1.0,,2.0,1.5,Dairy Products,0.5,25.0,veggie pie
+184,Pukka Minced Beef & Onion Pie,1.0,,2.0,1.5,Meat and Poultry,0.5,25.0,minced beef pie
+185,Plenish Mango Sunshine Shot,60.0,ml,2.0,1.5,Fruits,0.5,25.0,mango juice shot
+186,Plenish Beet Balance Shot,60.0,ml,2.0,1.5,Meat and Poultry,0.5,25.0,beet shot
+187,Tesco Finest Rarebit Dauphinoise Potatoes,400.0,g,4.0,3.0,Meat and Poultry,1.0,25.0,dauphinoise potatoes
+188,Plenish Spirulina Detox,60.0,ml,2.0,1.5,Meat and Poultry,0.5,25.0,spirulinaquares
+189,Gressingham Aromatic Half Duck,570.0,g,8.0,6.0,Meat and Poultry,2.0,25.0,half duck
+190,Tesco Cranberries 250G,1.0,250g,2.0,1.5,Meat and Poultry,0.5,25.0,cranberries
+191,Pure Dairy Free Buttery Spread,500.0,g,2.0,1.5,"Dips, Spreads, and Condiments",0.5,25.0,buttery spread
+192,Mattessons Smoked Pork Sausage Original,260.0,g,3.0,2.25,Meat and Poultry,0.75,25.0,smoked pork sausage
+193,Pukka Chip Shop Chicken Curry Pie,,,2.0,1.5,Meat and Poultry,0.5,25.0,chicken curry pie
+194,Pukka Peri Peri Chicken Pie,,,2.0,1.5,Meat and Poultry,0.5,25.0,chicken pie
+195,Tesco Figs,,,2.0,1.5,Meat and Poultry,0.5,25.0,figs
+196,Pukka Steak and Bourbon Pie,1.0,,2.0,1.5,Meat and Poultry,0.5,25.0,steak pie
+197,Pukka Chicken Ham and Leek Pie,1.0,,2.0,1.5,Meat and Poultry,0.5,25.0,chicken pie
+198,Beretta Pork Protein Sticks,52.0,g,2.0,1.5,Meat and Poultry,0.5,25.0,pork sticks
+199,Pukka The Big One Chicken and Mushroom Pie,,,4.0,3.0,Meat and Poultry,1.0,25.0,chicken and mushroom pie
+200,Lurpak Plant Based Spread,400.0,g,4.0,3.0,"Dips, Spreads, and Condiments",1.0,25.0,plant-based spread
+201,Lurpak Lighter Spreadable Butter Rapeseed Oil 400G,400.0,g,4.0,3.0,"Dips, Spreads, and Condiments",1.0,25.0,rapeseed oil butter
+202,Lurpak Unsalted Spreadable Blend of Butter and Rapeseed Oil 400g,400.0,g,4.0,3.0,Dairy Products,1.0,25.0,unsalted butter blend
+203,Fresh & Naked Sweet Crispy Mix,125.0,g,1.2,0.9,Meat and Poultry,0.2999999999999999,24.999999999999996,sweet crispy mix
+204,Bol Thai Massaman Curry Pot,450.0,g,3.25,2.45,Meat and Poultry,0.7999999999999998,24.61538461538461,massaman curry
+205,Bol Creamy Coconut Turmeric Daal Power Pot,450.0,g,3.25,2.45,"Pasta, Rice, and Grains",0.7999999999999998,24.61538461538461,coconut daal
+206,Bol Spanish Smoky Butter Bean Stew Power Pot,450.0,g,3.25,2.45,Meat and Poultry,0.7999999999999998,24.61538461538461,smoky bean stew
+207,BOL Texan Smoky BBQ Beans One Pot Meal,450.0,g,3.25,2.45,Meat and Poultry,0.7999999999999998,24.61538461538461,smoky bbq beans
+208,Bol Middle Eastern Harissa Stew Pot,450.0,g,3.25,2.45,Meat and Poultry,0.7999999999999998,24.61538461538461,harissa stew
+209,Vitalite Dairy Free Spread 500G,500.0,g,2.25,1.7,"Dips, Spreads, and Condiments",0.55,24.444444444444446,dairy free spread
+210,Dairylea Dunkers Ritz Cheese Snacks,643.0,g,3.3,2.5,Cheese and Cheese Products,0.7999999999999998,24.24242424242424,cheese snacks
+211,Dairylea Dunkers Jumbo Tubes Cheese Snacks,6.0,pack,3.3,2.5,Cheese and Cheese Products,0.7999999999999998,24.24242424242424,cheese snacks
+212,Tesco Beef Lasagne,1.5,kg,7.9,6.0,Meat and Poultry,1.9000000000000004,24.05063291139241,beef lasagna
+213,Tesco Tray Bake Beef Hotpot,1.3,kg,7.9,6.0,Meat and Poultry,1.9000000000000004,24.05063291139241,beef hotpot
+214,Higgidy Smoky Chorizo & Roasted Red Pepper Quiche,400.0,g,4.6,3.5,Dairy Products,1.0999999999999996,23.913043478260864,quiche
+215,Higgidy Spinach Feta Red Pepper Quiche,400.0,g,4.6,3.5,Cheese and Cheese Products,1.0999999999999996,23.913043478260864,quiche
+216,Tesco British Large Whole Chicken 1.5Kg - 1.9Kg,,kg,5.25,4.0,Meat and Poultry,1.25,23.809523809523807,whole chicken
+217,The Laughing Cow Light Cheese Spread Triangles 16Pk 267G,16.0,267g,2.95,2.25,Dairy Products,0.7000000000000002,23.72881355932204,cheese spread
+218,The Laughing Cow Original Cheese Spread Triangles,16.0,pk,2.95,2.25,Cheese and Cheese Products,0.7000000000000002,23.72881355932204,cheese spread triangles
+219,Tesco Finest Aged Yorkshire Wensleydale Cheese,300.0,g,3.8,2.9,Dairy Products,0.8999999999999999,23.684210526315788,wensleydale cheese
+220,Petits Filous Kids Strawberry & Raspberry Yoghurt Big Pots,4.0,x85g,1.95,1.5,Dairy Products,0.4499999999999999,23.07692307692308,strawberry and raspberry yoghurt
+221,Petits Filous Strawberry & Apricot Kids Yoghurt Big Pots 4x85g,4.0,units,1.95,1.5,Dairy Products,0.4499999999999999,23.07692307692308,strawberry and apricot yogurt
+222,Coconut Collab Yog with Granola Clusters,135.0,g,1.95,1.5,Dairy Products,0.4499999999999999,23.07692307692308,yogurt with granola
+223,Petits Filous Strawberry & Banana No Added Sugar Kids Yoghurt Pots,282.0,g,1.95,1.5,Dairy Products,0.4499999999999999,23.07692307692308,strawberry and banana yoghurt pots
+224,Dairylea Cheese Spread,145.0,g,1.95,1.5,Dairy Products,0.4499999999999999,23.07692307692308,cheese spread
+225,Pilgrims Choice Mature Cheddar Cheese 550 G,550.0,g,5.2,4.0,Dairy Products,1.2000000000000002,23.07692307692308,mature cheddar cheese
+226,Petits Filous Kids Strawberry & Raspberry Yoghurt Small Pots,6.0,x 47g,1.95,1.5,Dairy Products,0.4499999999999999,23.07692307692308,strawberry and raspberry yogurt
+227,Wall's Jumbo Sausages Roll 130G,1.0,unit,1.1,0.85,Meat and Poultry,0.2500000000000001,22.727272727272737,sausages
+228,Arla Lactofree Semi Skimmed Milk Drink,2.0,l,2.9,2.25,Dairy Products,0.6499999999999999,22.41379310344828,semi-skimmed milk drink
+229,Rustlers Quarter Pounder Cheese Burger,190.0,g,2.25,1.75,Meat and Poultry,0.5,22.22222222222222,cheese burger
+230,Benecol Buttery Spread,500.0,g,4.5,3.5,"Dips, Spreads, and Condiments",1.0,22.22222222222222,buttery spread
+231,Vadasz Raw Kimchi,400.0,g,4.5,3.5,Meat and Poultry,1.0,22.22222222222222,raw kimchi
+232,Rustlers Bbq Pork Rib Sandwich,157.0,g,2.25,1.75,Meat and Poultry,0.5,22.22222222222222,bbq pork sandwich
+233,Rustlers Southern Fried Chicken Sandwich,158.0,g,2.25,1.75,Meat and Poultry,0.5,22.22222222222222,chicken sandwich
+234,ProActiv Buttery Taste Spread 450G,450.0,g,4.5,3.5,"Dips, Spreads, and Condiments",1.0,22.22222222222222,butter spread
+235,Tesco Finest Italian Hamper,,,45.0,35.0,Meat and Poultry,10.0,22.22222222222222,italian hamper
+236,Vadasz Raw Garlic & Dill Sauerkraut,400.0,g,4.5,3.5,"Dips, Spreads, and Condiments",1.0,22.22222222222222,sauerkraut
+237,Benecol Light Spread 500G,1.0,500g,4.5,3.5,"Dips, Spreads, and Condiments",1.0,22.22222222222222,light spread
+238,ProActiv Light Spread,450.0,g,4.5,3.5,Meat and Poultry,1.0,22.22222222222222,light spread
+239,Higgidy Feta & Red Pepper Mini Rolls,160.0,g,3.2,2.5,Breads and Bakery,0.7000000000000002,21.875000000000007,feta and red pepper rolls
+240,Shaken Udder Chocolush Milkshake 330Ml,1.0,unit,1.6,1.25,Dairy Products,0.3500000000000001,21.875000000000007,chocolush milkshake
+241,Higgidy Cheddar & Onion Veggie Rolls,160.0,g,3.2,2.5,Cheese and Cheese Products,0.7000000000000002,21.875000000000007,cheddar and onion rolls
+242,Richmond 8 Meat Free Sage & Onion Flavour Sausages,304.0,g,2.3,1.8,Meat and Poultry,0.4999999999999998,21.7391304347826,meat sausages
+243,THE JOLLY HOG 10 PROPER PORKER CHUNKIES 240G,1.0,240g,3.5,2.75,Meat and Poultry,0.75,21.428571428571427,porker chunkies
+244,THE JOLLY HOG 10 CARAMELISED ONION CHUNKIES 240G,1.0,240g,3.5,2.75,Meat and Poultry,0.75,21.428571428571427,caramelised onion chunks
+245,Tesco Basted Pork Loin Joint,800.0,g,7.0,5.5,Meat and Poultry,1.5,21.428571428571427,pork loin joint
+246,Tesco Chinese Leaf Each,1.0,each,1.4,1.1,Meat and Poultry,0.2999999999999998,21.428571428571416,chinese leaf
+247,Quorn Veggie Turkey & Stuffing,100.0,g,1.9,1.5,Meat and Poultry,0.3999999999999999,21.052631578947363,veggie turkey
+248,Quorn Veggie Ham,100.0,g,1.9,1.5,Meat and Poultry,0.3999999999999999,21.052631578947363,veggie ham
+249,Mighty Pea M.Lk Unsweetened Milk Alternative,1.0,litre,1.9,1.5,Dairy Products,0.3999999999999999,21.052631578947363,unsweetened milk alternative
+250,Tesco Finest 2 Yellow Fin Tuna Steaks,240.0,g,8.2,6.5,Meat and Poultry,1.6999999999999993,20.73170731707316,tuna steaks
+251,The Vegetarian Butcher What the Cluck Vegan Chicken Chunks,160.0,g,3.15,2.5,Meat and Poultry,0.6499999999999999,20.634920634920636,vegan chicken chunks
+252,Le Rustique Pasteurised Camembert,250.0,g,3.0,2.4,Cheese and Cheese Products,0.6000000000000001,20.000000000000004,camembert
+253,Simon Howie Black Pudding,240.0,g,1.5,1.2,Meat and Poultry,0.3,20.000000000000004,black pudding
+254,92. Tesco Indian-Style Party Food Selection 740g (Serves 10),1.0,selection,10.0,8.0,Meat and Poultry,2.0,20.0,party food selection
+255,Tesco Chinese-Style Party Food Selection,652.0,g,10.0,8.0,Meat and Poultry,2.0,20.0,party food
+256,Tesco Hot & Spicy Chicken Tenders,305.0,g,3.75,3.0,Meat and Poultry,0.75,20.0,chicken tenders
+257,Tesco Panko Chicken Tenders,305.0,g,3.75,3.0,Meat and Poultry,0.75,20.0,chicken tenders
+258,Mowi 4 Scottish Salmon Fillets,460.0,g,10.0,8.0,Meat and Poultry,2.0,20.0,salmon fillets
+259,Jaffa Orange,,,2.0,1.6,Meat and Poultry,0.3999999999999999,20.0,orange
+260,Cathedral City Smoked Cheddar Block,300.0,g,3.75,3.0,Dairy Products,0.75,20.0,smoked cheddar
+261,Tesco Prawn Cocktail,170.0,g,2.5,2.0,Meat and Poultry,0.5,20.0,prawn cocktail
+262,94. Tesco Finest Sliced Scottish Smoked Salmon Side,750.0,g,25.0,20.0,Meat and Poultry,5.0,20.0,smoked salmon
+263,Charlie Bigham's Tandoori Chicken Wings,375.0,g,5.0,4.0,Meat and Poultry,1.0,20.0,tandoori chicken wings
+264,Ginsters Large Sausage Roll,1.0,roll,1.25,1.0,Meat and Poultry,0.25,20.0,sausage roll
+265,Charlie Bighams Aloo Gobi,400.0,g,5.0,4.0,Meat and Poultry,1.0,20.0,gobi
+266,Tesco Korean BBQ Inspired Pork Belly Slices 400g,1.0,400g,5.0,4.0,Meat and Poultry,1.0,20.0,pork belly slices
+267,Charlie Bigham's Pilau rice,350.0,g,2.5,2.0,"Pasta, Rice, and Grains",0.5,20.0,pilau rice
+268,Charlie Bigham's Vegetable Tikka Masala,460.0,g,7.5,6.0,Meat and Poultry,1.5,20.0,vegetable tikka masala
+269,Charlie Bigham's Beef Madras,460.0,g,7.5,6.0,Meat and Poultry,1.5,20.0,beef curry
+270,Tesco 2 Buttermilk Chicken Burgers,200.0,,3.75,3.0,Meat and Poultry,0.75,20.0,chicken burgers
+271,Tesco Finest 10 Traditional Pork Sausages 667G,667.0,g,5.0,4.0,Meat and Poultry,1.0,20.0,pork sausages
+272,Fridge Raiders Slow Roasted Chicken Bites,522.5,g,2.25,1.8,Meat and Poultry,0.4499999999999999,20.0,chicken bites
+273,ProActiv Buttery Taste Spread 250G,250.0,g,2.5,2.0,"Dips, Spreads, and Condiments",0.5,20.0,buttery spread
+274,Tesco Finest 18 Mini Sausage Roll Selection Pack,630.0,g,10.0,8.0,Meat and Poultry,2.0,20.0,sausage rolls
+275,Fridge Raiders Southern Style Chicken Bites 5 X 22.5G,5.0,x 22.5g,2.25,1.8,Meat and Poultry,0.4499999999999999,20.0,chicken bites
+276,Tesco Finest Blueberries 150G,150.0,g,2.5,2.0,Fruits,0.5,20.0,blueberries
+277,Charlie Bigham's Jalfrezi Chicken,496.0,g,7.5,6.0,Meat and Poultry,1.5,20.0,jalfrezi chicken
+278,Kirsty's Takeaway Chicken Ginger Onion & White Rice,450.0,g,3.75,3.0,Meat and Poultry,0.75,20.0,chicken and rice
+279,"Tesco Gloucester Chive, Onion Truckle",100.0,g,1.25,1.0,Meat and Poultry,0.25,20.0,onion butter
+280,Charlie Bigham's Chicken Korma,461.0,g,7.5,6.0,Meat and Poultry,1.5,20.0,chicken korma
+281,Charlie Bigham's Butter Chicken Curry,456.0,g,7.5,6.0,Meat and Poultry,1.5,20.0,butter chicken curry
+282,Jolly Hog Porky Black Sausages,400.0,g,3.75,3.0,Meat and Poultry,0.75,20.0,black sausages
+283,Charlie Bigham's Chicken Tikka Masala,456.0,g,7.5,6.0,Meat and Poultry,1.5,20.0,chicken tikka masala
+284,Tesco 6 Vegetable Spring Rolls,216.0,g,2.5,2.0,Meat and Poultry,0.5,20.0,spring rolls
+285,Kirsty's Gluten Free Sweet & Sour Chicken & Rice,450.0,g,3.75,3.0,"Pasta, Rice, and Grains",0.75,20.0,sweet & sour chicken & rice
+286,Tesco Finest 12 Beef & Herb Meatballs,12.0,meatballs,3.7,3.0,Meat and Poultry,0.7000000000000002,18.918918918918923,meatballs
+287,Itsu Brilliant' Broth Chicken Ramen,500.0,ml,2.65,2.15,Meat and Poultry,0.5,18.867924528301888,chicken ramen
+288,itsu brilliant broth miso ramen,500.0,ml,2.65,2.15,"Pasta, Rice, and Grains",0.5,18.867924528301888,miso ramen
+289,itsu brilliant broth classic ramen,500.0,ml,2.65,2.15,"Pasta, Rice, and Grains",0.5,18.867924528301888,ramen
+290,Tesco Finest Spiced Fruit Lamb Tagine,530.0,g,8.0,6.5,Meat and Poultry,1.5,18.75,lamb tagine
+291,"La Famiglia Rana Prawn, Burrata & Lemon Zest Girasoli",250.0,g,4.0,3.25,Meat and Poultry,0.75,18.75,prawn and cheese balls
+292,Tesco Finest Beef Stroganoff,550.0,g,8.0,6.5,Meat and Poultry,1.5,18.75,beef stroganoff
+293,La Famiglia Rana Braised Beef with Red Wine Ravioli,250.0,g,4.0,3.25,"Pasta, Rice, and Grains",0.75,18.75,braised beef ravioli
+294,Happy Egg Free Range Eggs Medium,6.0,pack,2.15,1.75,Meat and Poultry,0.3999999999999999,18.60465116279069,free range eggs
+295,Tesco Boneless Half Salmon Side,500.0,g,9.2,7.5,Meat and Poultry,1.6999999999999993,18.47826086956521,salmon
+296,Fage Total 5% Fat Greek Recipe Yogurt,950.0,g,5.5,4.5,Dairy Products,1.0,18.181818181818183,greek yogurt
+297,Cauldron Hoisin Tofu Pieces,160.0,g,2.75,2.25,Meat and Poultry,0.5,18.181818181818183,hoisin tofu pieces
+298,Tesco Finest 2 Bhaji Style Crispy Chicken Breasts with Tikka Sauce,360.0,,5.5,4.5,Meat and Poultry,1.0,18.181818181818183,crispy chicken breasts with tikka sauce
+299,Cauldron Foods Tofu Pieces,160.0,g,2.75,2.25,Meat and Poultry,0.5,18.181818181818183,tofu pieces
+300,Rodda's Clotted Cream,227.0,g,2.75,2.25,Dairy Products,0.5,18.181818181818183,clotted cream
+301,Peperami Pizza Buns Original,440.0,g,2.75,2.25,Breads and Bakery,0.5,18.181818181818183,pizza buns
+302,Fage Total 0%Fat Greek Recipe Yogurt,950.0,g,5.5,4.5,Dairy Products,1.0,18.181818181818183,greek yogurt
+303,Simon Howie Original Haggis,454.0,g,2.75,2.25,Meat and Poultry,0.5,18.181818181818183,haggis
+304,Tesco 5 Cheese Selection 450G,450.0,g,5.5,4.5,Meat and Poultry,1.0,18.181818181818183,cheese
+305,Peperami & Cheese Snack Box,50.0,g,1.65,1.35,Meat and Poultry,0.2999999999999998,18.181818181818173,cheese snack
+306,Tesco Roast In The Bag Rotisserie Style Whole Chicken,1.5,kg,6.1,5.0,Meat and Poultry,1.0999999999999996,18.032786885245898,whole chicken
+307,Tesco Smoked Salmon,100.0,g,3.65,3.0,Meat and Poultry,0.6499999999999999,17.80821917808219,smoked salmon
+308,Tesco Braeburn Apple 5 Pack,5.0,each,1.7,1.4,Fruits,0.3,17.647058823529417,apples
+309,Tesco Sweet And Sour Chicken,400.0,g,4.25,3.5,Meat and Poultry,0.75,17.647058823529413,chicken
+310,Tesco Finest 5% Pork Mince,500.0,g,4.25,3.5,Meat and Poultry,0.75,17.647058823529413,pork mince
+311,Tesco Thai Green Chicken Curry,400.0,g,4.25,3.5,Meat and Poultry,0.75,17.647058823529413,chicken curry
+312,Tesco Finest Quarter Pounders,454.0,g,4.25,3.5,Meat and Poultry,0.75,17.647058823529413,quarter pounders
+313,Tesco Chinese Style Chicken Curry,400.0,g,4.25,3.5,Meat and Poultry,0.75,17.647058823529413,chicken curry
+314,Squeaky Bean Ready To Eat Deli Pastrami Sandwich Slice 90G,90.0,g,2.85,2.35,Meat and Poultry,0.5,17.543859649122805,pastrami sandwich slice
+315,Squeaky Bean Ready To Eat Deli Pastrami Sandwich Slice,90.0,g,2.85,2.35,Meat and Poultry,0.5,17.543859649122805,pastrami sandwich slice
+316,Tesco Fish Pie Mix 340G,1.0,340g,4.65,3.85,Meat and Poultry,0.8000000000000003,17.20430107526882,fish pie mix
+317,Tesco 2 Chocolate Choux Buns,2.0,each,1.75,1.45,Breads and Bakery,0.3,17.142857142857146,choux buns
+318,Tesco Family Pack Chestnut Vitamin D Mushrooms,485.0,g,2.1,1.75,Vegetables,0.3500000000000001,16.66666666666667,mushrooms
+319,Tesco Finest Rump Steak,255.0,g,5.4,4.5,Meat and Poultry,0.9000000000000004,16.66666666666667,steak
+320,Cathedral City Minis Mature Lighter Cheddar Cheese 6x20G,120.0,g,2.1,1.75,Cheese and Cheese Products,0.3500000000000001,16.66666666666667,mature cheddar cheese
+321,Cathedral City Minis Extra Mature Cheddar Cheese,620.0,g,2.1,1.75,Cheese and Cheese Products,0.3500000000000001,16.66666666666667,extra mature cheddar cheese
+322,Cathedral City Minis Mature Cheddar Cheese,6.0,x 20g,2.1,1.75,Cheese and Cheese Products,0.3500000000000001,16.66666666666667,mature cheddar cheese
+323,Tesco Finest Pate Kilner Selection,3125.0,g,12.0,10.0,Meat and Poultry,2.0,16.666666666666664,pâté
+324,Old El Paso Paprika Chicken Burrito Bowl,400.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,chicken burrito bowl
+325,Pinch Pan Poppin’ Chicken Pasanda & Nutty Pilau Rice,400.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,chicken pasanda and pilau rice
+326,Old El Paso Rice Bowl BBQ Pulled Pork,400.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,pulled pork
+327,Tesco Finest Pitted Medjool Dates,200.0,g,3.0,2.5,Fruits,0.5,16.666666666666664,dates
+328,Pinch Sensational Saag Paneer & Coconut Basmati Rice,400.0,g,4.5,3.75,"Pasta, Rice, and Grains",0.75,16.666666666666664,saag paneer and coconut rice
+329,Pinch Tangy Tastin’ Overloaded Lamb Keema Naan,255.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,lamb naan
+330,Pinch Bangin’ Butter Chicken & Nutty Pilau Rice,400.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,"butter chicken, pilau rice"
+331,Old El Paso Burrito Bowl Chilli Beef,400.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,chilli beef
+332,Old El Paso Burrito Chilli Beef,400.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,beef burrito chilli
+333,Tesco Baby Corn 130G,130.0,g,1.2,1.0,Meat and Poultry,0.1999999999999999,16.666666666666664,baby corn
+334,Tesco Tenderstem Broccoli Spears,330.0,,2.4,2.0,Vegetables,0.3999999999999999,16.666666666666664,broccoli
+335,Pinch Sensational Saag Paneer & Coconut Basmati Rice,400.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,"saag paneer, basmati rice"
+336,Pinch Tangy Tastin’ Overloaded Lamb Keema Naan,255.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,lamb naan
+337,Pinch Flavour Flamin’ Overloaded Chicken Tikka Naan,305.0,g,4.5,3.75,Breads and Bakery,0.75,16.666666666666664,chicken naan
+338,Pinch Proper Prawn Curry & Coconut Basmati Rice,400.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,prawn curry and basmati rice
+339,Pinch Rich Railway Lamb Curry & Coconut Basmati Rice,400.0,g,4.5,3.75,"Pasta, Rice, and Grains",0.75,16.666666666666664,lamb curry with basmati rice
+340,Old El Paso Rice Bowl Chilli Chicken,400.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,chilli chicken
+341,Tesco Mixed Nuts,225.0,g,3.0,2.5,"Nuts, Seeds, and Trail Mixes",0.5,16.666666666666664,mixed nuts
+342,Old El Paso Rice Bowl Chilli Chicken,400.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,chilli chicken rice bowl
+343,La Famiglia Rana Garlic & Mozzarella Gnocchi,280.0,g,3.0,2.5,"Pasta, Rice, and Grains",0.5,16.666666666666664,garlic gnocchi
+344,Peperami BBQ Minis,1010.0,g,3.0,2.5,Meat and Poultry,0.5,16.666666666666664,bbq minis
+345,APETINA ORIGINAL WHITE CHEESE IN BRINE,410.0,g,2.4,2.0,Cheese and Cheese Products,0.3999999999999999,16.666666666666664,white cheese
+346,Old El Paso Burrito Bowl Chilli Beef,400.0,g,4.5,3.75,Meat and Poultry,0.75,16.666666666666664,chilli beef
+347,Richmond 8 Meat Free Vegan Sausages,304.0,g,2.4,2.0,Meat and Poultry,0.3999999999999999,16.666666666666664,meat-free sausages
+348,Tesco Hazelnuts In Shell,350.0,g,3.0,2.5,"Nuts, Seeds, and Trail Mixes",0.5,16.666666666666664,hazelnuts
+349,Tesco 2 Mango & Lime Roast Chicken Burger Fillets,150.0,g,3.0,2.5,Meat and Poultry,0.5,16.666666666666664,roast chicken burger fillets
+350,Happy Monkey Milkshake Strawberry,3200.0,ml,1.2,1.0,Dairy Products,0.1999999999999999,16.666666666666664,strawberry milkshake
+351,Tesco Fajita Cooked Chicken Breast Mini Fillets,170.0,g,3.0,2.5,Meat and Poultry,0.5,16.666666666666664,cooked chicken breast
+352,Tesco Roasted Almonds,225.0,g,3.0,2.5,"Nuts, Seeds, and Trail Mixes",0.5,16.666666666666664,almonds
+353,Tesco Finest Slow Cooked Beef Rib with a Red Wine and Roasted Garlic Gravy,1.584,kg,30.0,25.0,Meat and Poultry,5.0,16.666666666666664,slow cooked beef with red wine gravy
+354,Tesco 2 Garlic and Herb Chicken Kievs,270.0,g,3.0,2.5,Meat and Poultry,0.5,16.666666666666664,garlic chicken kievs
+355,Tesco Pecans 170G,170.0,g,3.0,2.5,Meat and Poultry,0.5,16.666666666666664,pecans
+356,Tesco Roasted Pistachio Nuts In Shell 200G,200.0,g,3.0,2.5,"Nuts, Seeds, and Trail Mixes",0.5,16.666666666666664,pistachio nuts
+357,Gressingham Whole Duck With Giblets,1.8,kg,9.0,7.5,Meat and Poultry,1.5,16.666666666666664,whole duck
+358,Tesco Mixed Nuts In Shell,350.0,g,3.0,2.5,"Nuts, Seeds, and Trail Mixes",0.5,16.666666666666664,mixed nuts
+359,"Tesco Peanuts, Almond & Cashews Mix",600.0,g,3.0,2.5,"Nuts, Seeds, and Trail Mixes",0.5,16.666666666666664,nuts mix
+360,Pinch Spiced Sweet Potato & Creamy Coconut Samosas,108.0,g,3.0,2.5,Vegetables,0.5,16.666666666666664,sweet potato samosas
+361,Tesco Walnuts,225.0,g,3.0,2.5,"Nuts, Seeds, and Trail Mixes",0.5,16.666666666666664,walnuts
+362,Tesco BBQ Roast Chicken Slices,160.0,,3.0,2.5,Meat and Poultry,0.5,16.666666666666664,roast chicken slices
+363,Tesco Flamegrilled Roast Chicken Slices,160.0,g,3.0,2.5,Meat and Poultry,0.5,16.666666666666664,roast chicken slices
+364,La Famiglia Rana Spinach & Mozzarella Filled Gnocchi,280.0,g,3.0,2.5,"Pasta, Rice, and Grains",0.5,16.666666666666664,gnocchi with spinach and mozzarella
+365,Tesco Finest Smoked Wiltshire Cured Gammon Steaks 2 Pack,460.0,g,6.0,5.0,Meat and Poultry,1.0,16.666666666666664,smoked gammon steaks
+366,Rustlers Pickle Relish Cheeseburger,169.0,g,1.5,1.25,"Dips, Spreads, and Condiments",0.25,16.666666666666664,pickled cheeseburger relish
+367,Rustlers Peri Peri Chicken Burger,129.0,g,1.5,1.25,Meat and Poultry,0.25,16.666666666666664,chicken burger
+368,Tesco Finest Slow Cooked Whole Lamb Shoulder,1.78,kg,30.0,25.0,Meat and Poultry,5.0,16.666666666666664,lamb shoulder
+369,Tesco Chestnuts,400.0,g,3.0,2.5,Meat and Poultry,0.5,16.666666666666664,chestnuts
+370,Tesco Mixed Nuts In Shell,350.0,g,3.0,2.5,"Nuts, Seeds, and Trail Mixes",0.5,16.666666666666664,mixed nuts
+371,Trewithen Cornish Clotted Cream,200.0,g,2.4,2.0,Dairy Products,0.3999999999999999,16.666666666666664,clotted cream
+372,Tesco Boneless Coley Fillets,240.0,g,3.0,2.5,Meat and Poultry,0.5,16.666666666666664,fillets
+373,Happy Monkey Chocolate Milkshake,3200.0,ml,1.2,1.0,Dairy Products,0.1999999999999999,16.666666666666664,chocolate milkshake
+374,Tesco Finest Coastal Bite Cheddar,500.0,g,6.0,5.0,Cheese and Cheese Products,1.0,16.666666666666664,cheddar
+375,Tesco Finest Unsmoked Wiltshire Cured Gammon Steaks,460.0,g,6.0,5.0,Meat and Poultry,1.0,16.666666666666664,gammon steaks
+376,Tesco Walnuts In Shell,350.0,g,3.0,2.5,"Nuts, Seeds, and Trail Mixes",0.5,16.666666666666664,walnuts
+377,Tesco 36 Mini Yorkshire Pudding Selection,480.0,g,12.0,10.0,Meat and Poultry,2.0,16.666666666666664,mini yorkshire puddings
+378,Tesco Roasted Cashew & Raisin Mix,225.0,g,3.0,2.5,"Nuts, Seeds, and Trail Mixes",0.5,16.666666666666664,cashew and raisin mix
+379,This Isn't Pork Plant-Based Onion Sausages,270.0,g,3.75,3.15,Meat and Poultry,0.6000000000000001,16.000000000000004,onion sausages
+380,Coconut Collab Dairy-Free Natural Coconut Yogurt,750.0,g,4.75,4.0,Dairy Products,0.75,15.789473684210526,coconut yogurt
+381,Lurpak Slightly Salted Butter,200.0,g,2.25,1.9,Dairy Products,0.3500000000000001,15.55555555555556,slightly salted butter
+382,Lurpak Unsalted Butter,200.0,g,2.25,1.9,Dairy Products,0.3500000000000001,15.55555555555556,unsalted butter
+383,Tesco Raspberries,250.0,g,2.9,2.45,Fruits,0.4499999999999997,15.517241379310336,raspberries
+384,Tesco British Chicken Breast Fillets,950.0,g,6.5,5.5,Meat and Poultry,1.0,15.384615384615383,chicken breast
+385,Squeaky Bean Chargrilled Steak Strips 120G,120.0,g,3.25,2.75,Meat and Poultry,0.5,15.384615384615383,chargrilled steak
+386,Tesco Finest Dry Cured Gammon Joint with a Muscovado Glaze 1kg (Serves 6),1.0,kg,13.0,11.0,Meat and Poultry,2.0,15.384615384615383,gammon joint
+387,Tesco Finest Medjool Date Tray,205.0,g,6.25,5.3,Fruits,0.9500000000000002,15.200000000000005,medjool dates
+388,Porky Whites 6 Traditional Pork Sausages,400.0,g,3.3,2.8,Meat and Poultry,0.5,15.151515151515152,pork sausages
+389,Tesco Finest Aberdeen Angus Steak Mince 500G,1.0,unit,5.0,4.25,Meat and Poultry,0.75,15.0,steak mince
+390,Big & Free Large White Free Range Eggs,10.0,,3.35,2.85,Meat and Poultry,0.5,14.925373134328357,free range eggs
+391,Tesco Finest Sirloin Steak,227.0,g,6.1,5.2,Meat and Poultry,0.8999999999999995,14.754098360655728,steak
+392,Bol Posh Noodles Malaysian Laksa Ramen,345.0,g,3.4,2.9,"Pasta, Rice, and Grains",0.5,14.705882352941178,malaysian laksa noodles
+393,Bol Posh Noodles Thai Green,345.0,g,3.4,2.9,"Pasta, Rice, and Grains",0.5,14.705882352941178,thai green noodles
+394,Bol Posh Noodles Korean Chilli Ramen,345.0,g,3.4,2.9,"Pasta, Rice, and Grains",0.5,14.705882352941178,korean chili ramen noodles
+395,Innocent Summer Fruits Juice,1.35,l,4.1,3.5,Fruits,0.5999999999999996,14.634146341463408,summer fruit juice
+396,Charlie Bigham's Slow Cooked Beef Ragu with Rigatoni,645.0,g,9.95,8.5,"Pasta, Rice, and Grains",1.4499999999999993,14.572864321608034,beef ragu with pasta
+397,Tesco BBQ Roast Chicken Drumsticks,430.0,g,3.5,3.0,Meat and Poultry,0.5,14.285714285714285,roast chicken drumsticks
+398,Tesco Breaded Chicken Poppers,300.0,g,3.5,3.0,Meat and Poultry,0.5,14.285714285714285,chicken pops
+399,The Real Greek Gyros Style Chicken,350.0,g,7.0,6.0,Meat and Poultry,1.0,14.285714285714285,chicken gyros
+400,Tesco Salmon & Cheddar En Croute 450G,1.0,pack,5.25,4.5,Meat and Poultry,0.75,14.285714285714285,salmon and cheese en croute
+401,The Real Greek Halloumi Skewers,225.0,g,7.0,6.0,Cheese and Cheese Products,1.0,14.285714285714285,halloumi skewers
+402,Kirsty's Beef Lasagne 400G,1.0,pack,3.5,3.0,Meat and Poultry,0.5,14.285714285714285,beef lasagne
+403,Tesco Watermelon,,,3.5,3.0,Fruits,0.5,14.285714285714285,watermelon
+404,15. Tesco Finest Mushroom and Truffle Tarts,560.0,g,14.0,12.0,Meat and Poultry,2.0,14.285714285714285,mushroom tarts
+405,"Tesco Slow Cooked Turkey Thighs with Pork, Sage & Onion Stuffing & Gravy",795.0,g,14.0,12.0,Meat and Poultry,2.0,14.285714285714285,turkey thighs with pork stuffing
+406,Tesco 2 Cream & Strawberry Jam Doughnuts,2.0,pieces,1.75,1.5,Breads and Bakery,0.25,14.285714285714285,cream doughnuts
+407,The Real Greek Spiced Lamb Koftas,300.0,g,7.0,6.0,Meat and Poultry,1.0,14.285714285714285,lamb koftas
+408,Tesco Sliced Roast Cooked Chicken Breast,180.0,,3.5,3.0,Meat and Poultry,0.5,14.285714285714285,cooked chicken breast
+409,The Real Greek Gyros Style Pork,350.0,g,7.0,6.0,Meat and Poultry,1.0,14.285714285714285,pork gyros
+410,Kirstys Cottage Pie With Sweet Potato Mash,400.0,g,3.5,3.0,Meat and Poultry,0.5,14.285714285714285,cottage pie with sweet potato mash
+411,Tesco Finest Coastal Bite With Truffle,200.0,g,3.5,3.0,Meat and Poultry,0.5,14.285714285714285,truffle
+412,Kirstys Lentil Cottage Pie,400.0,g,3.5,3.0,Meat and Poultry,0.5,14.285714285714285,lentil cottage pie
+413,Little Dish Chicken Rissotto Kids Meals,200.0,g,2.85,2.45,Meat and Poultry,0.3999999999999999,14.03508771929824,chicken risotto
+414,Little Dish Classic Fish Pie Kids Meal,200.0,g,2.85,2.45,Meat and Poultry,0.3999999999999999,14.03508771929824,fish pie
+415,Little Dish Mild Chicken Korma Kids Meal,200.0,g,2.85,2.45,Meat and Poultry,0.3999999999999999,14.03508771929824,chicken korma
+416,Little Dish Spaghetti & Meatballs,200.0,g,2.85,2.45,Meat and Poultry,0.3999999999999999,14.03508771929824,spaghetti and meatballs
+417,Little Dish Chicken & Vegetable Pie,200.0,g,2.85,2.45,Meat and Poultry,0.3999999999999999,14.03508771929824,chicken and vegetable pie
+418,Trewithen Salted Block Butter,250.0,g,2.9,2.5,Dairy Products,0.3999999999999999,13.79310344827586,salted butter
+419,Country Life Original Salted Spreadable,500.0,g,3.75,3.25,"Dips, Spreads, and Condiments",0.5,13.333333333333334,salted spreadable
+420,Tesco 4 Boneless Sea Bass Fillets,360.0,g,7.5,6.5,Meat and Poultry,1.0,13.333333333333334,sea bass fillets
+421,Old El Paso Enchiladas Baked Chicken,490.0,g,7.5,6.5,Meat and Poultry,1.0,13.333333333333334,baked chicken enchiladas
+422,Tesco Finest 18 Mini Tarts Selection,,,15.0,13.0,Meat and Poultry,2.0,13.333333333333334,mini tarts
+423,Tesco Medium Ripe & Ready Avocado,1.0,,0.75,0.65,Fruits,0.0999999999999999,13.33333333333333,avocado
+424,Tesco Blueberries 250G,250.0,g,2.65,2.3,Fruits,0.3500000000000001,13.207547169811324,blueberries
+425,Tesco Finest Funghi e Tartufo,470.0,g,5.75,5.0,Meat and Poultry,0.75,13.043478260869565,funghi
+426,Simon Howie Premium Pork Sausages,300.0,g,2.3,2.0,Meat and Poultry,0.2999999999999998,13.04347826086956,pork sausages
+427,Richmond 8 Meat Free Vegan Streaky Bacon,120.0,g,2.3,2.0,Meat and Poultry,0.2999999999999998,13.04347826086956,meat-free bacon
+428,Tesco Finest Sweet Cherry Fruit & Nut Selection,225.0,g,4.0,3.5,Fruits,0.5,12.5,sweet cherry fruit
+429,Tesco Rhubarb Crumble,500.0,g,4.0,3.5,Meat and Poultry,0.5,12.5,rhubarb
+430,Tesco Finest Beef Shin with a Rich Red Wine & Truffle Infused Gravy 3.215kg (Serves 8),1.0,pack,40.0,35.0,Meat and Poultry,5.0,12.5,beef shin with red wine and truffle gravy
+431,Tesco Finest Roasted Nut Selection With Sea Salt,225.0,g,4.0,3.5,"Nuts, Seeds, and Trail Mixes",0.5,12.5,nuts with sea salt
+432,Tesco Finest Maple Nut Selection,225.0,g,4.0,3.5,Meat and Poultry,0.5,12.5,maple nuts
+433,Tesco Finest Shropshire Black Bone-in Ham Joint,1.75,kg,40.0,35.0,Meat and Poultry,5.0,12.5,bone-in ham joint
+434,Yeo Valley Organic 0% Fat Natural Yogurt,450.0,g,2.0,1.75,Dairy Products,0.25,12.5,yogurt
+435,Tesco Finest Hickory Smoked Nut Selection,225.0,g,4.0,3.5,"Nuts, Seeds, and Trail Mixes",0.5,12.5,smoked nuts
+436,Tesco French Brie,470.0,g,4.0,3.5,Dairy Products,0.5,12.5,brie
+437,Yeo Valley Organic Natural Yogurt,450.0,,2.0,1.75,Dairy Products,0.25,12.5,yogurt
+438,Tesco Finest Raw Jumbo King Prawns,165.0,g,4.0,3.5,Meat and Poultry,0.5,12.5,raw king prawns
+439,Tesco Finest Salted Caramelised Nut Selection,225.0,g,4.0,3.5,"Nuts, Seeds, and Trail Mixes",0.5,12.5,salted caramelised nuts
+440,Tesco Finest Salmon Wellington,795.0,g,16.0,14.0,Meat and Poultry,2.0,12.5,salmon wellington
+441,itsu 8 gyoza dumplings chicken & spring onion,150.0,g,4.0,3.5,Meat and Poultry,0.5,12.5,chicken and spring onion gyoza
+442,Tesco British Roast Chicken,120.0,g,2.0,1.75,Meat and Poultry,0.25,12.5,roast chicken
+443,Tesco Finest Cinnamon Roasted Nut Selection,225.0,g,4.0,3.5,"Nuts, Seeds, and Trail Mixes",0.5,12.5,roasted nuts
+444,Tesco Finest Sweet Maple Chilli & Smoked Nut Selection,225.0,g,4.0,3.5,Meat and Poultry,0.5,12.5,sweet chilli nuts
+445,Tesco Creamy Rice Pudding,500.0,g,4.0,3.5,Dairy Products,0.5,12.5,rice pudding
+446,Tesco British Smoked Ham 120g,1.0,120g,2.0,1.75,Meat and Poultry,0.25,12.5,smoked ham
+447,Tesco Finest Free Range Whole Chicken 1.9kg-2.3kg (Serves 5-6),,kg,12.5,11.0,Meat and Poultry,1.5,12.0,whole chicken
+448,Tesco Maple & Bourbon Crackling Gammon Joint 2.8kg (Serves approx 13),2.8,kg,25.0,22.0,Meat and Poultry,3.0,12.0,gammon
+449,This Isnt Roast Chicken & Stuffing,325.0,g,5.95,5.25,Meat and Poultry,0.7000000000000002,11.764705882352944,roast chicken and stuffing
+450,Dickinson & Morris Large Melton Mowbray Pork Pie,440.0,g,4.25,3.75,Meat and Poultry,0.5,11.76470588235294,pork pie
+451,"Tesco Finest Easy Carve Duck with a Pork, Balsamic & Plum Stuffing",1.64,kg,34.0,30.0,Meat and Poultry,4.0,11.76470588235294,duck with stuffing
+452,Tesco Asparagus,180.0,g,1.7,1.5,Vegetables,0.1999999999999999,11.764705882352938,asparagus
+453,Heinz Seriously Good Vegan Mayonnaise,775.0,g,3.4,3.0,"Dips, Spreads, and Condiments",0.3999999999999999,11.764705882352938,vegan mayonnaise
+454,The Collective Suckies Strawberry Yogurt,490.0,g,3.4,3.0,Dairy Products,0.3999999999999999,11.764705882352938,strawberry yogurt
+455,Tesco Finest 2 Scottish Salmon Fillets 260g,1.0,pack,6.5,5.75,Seafood,0.75,11.538461538461538,scotch salmon fillets
+456,Tesco 2 Cape Hake Fillets,240.0,g,4.4,3.9,Meat and Poultry,0.5000000000000004,11.363636363636372,fish fillets
+457,St Ewes 6 Medium Free Range Eggs,6.0,,2.2,1.95,Meat and Poultry,0.2500000000000002,11.363636363636372,free range eggs
+458,62. Tesco Finest Sharing Seafood Medley,700.0,g,22.0,19.5,Meat and Poultry,2.5,11.363636363636363,sharing seafood medley
+459,Tesco 2 Lemon & Pepper Sea Bass Fillets 200G,200.0,g,4.5,4.0,Seafood,0.5,11.11111111111111,sea bass fillets
+460,Tesco Sweet BBQ Ribs,460.0,g,4.5,4.0,Meat and Poultry,0.5,11.11111111111111,barbecue ribs
+461,The Real Greek Tzatziki,200.0,g,2.25,2.0,Dairy Products,0.25,11.11111111111111,yogurt
+462,61. Tesco Finest Scottish Salmon Plait,840.0,g,18.0,16.0,Meat and Poultry,2.0,11.11111111111111,scottish salmon
+463,Tesco Finest 8 Signature Pigs in Blankets,336.0,g,4.5,4.0,Meat and Poultry,0.5,11.11111111111111,pigs in blankets
+464,Cathedral City Plant Based Extra Mature Cheddar Cheese Flavour Vegan Block 280g,280.0,g,3.6,3.2,Cheese and Cheese Products,0.3999999999999999,11.111111111111107,plant-based cheese block
+465,Tesco Mini Chicken Fillets,650.0,gram,5.0,4.45,Meat and Poultry,0.5499999999999998,10.999999999999996,chicken fillets
+466,Freshlay Golden Yolks Free Range Eggs,10.0,pack,4.1,3.65,Meat and Poultry,0.4499999999999997,10.975609756097557,free range eggs
+467,Purely Organic Eggs Mixed Weight 10 Pack,10.0,units,4.6,4.1,Meat and Poultry,0.5,10.869565217391305,eggs
+468,Tesco Finest Cooked Jumbo King Prawns,150.0,g,4.2,3.75,Meat and Poultry,0.4500000000000002,10.714285714285715,cooked king prawns
+469,Tesco Candy Cane Celebration Cake,,,14.0,12.5,Breads and Bakery,1.5,10.714285714285714,celebration cake
+470,Tesco Wensleydale Cranberry Cheese 200 G,200.0,g,2.8,2.5,Cheese and Cheese Products,0.2999999999999998,10.714285714285708,cranberry cheese
+471,Tesco Wensleydale & Apricot Cheese,200.0,g,2.8,2.5,Cheese and Cheese Products,0.2999999999999998,10.714285714285708,cheese
+472,Charlie Bigham's Moussaka,655.0,g,9.5,8.5,Meat and Poultry,1.0,10.526315789473683,moussaka
+473,Charlie Bigham's Cottage Pie,650.0,g,9.5,8.5,Meat and Poultry,1.0,10.526315789473683,cottage pie
+474,Charlie Bigham's Macaroni Cheese,670.0,g,9.5,8.5,"Pasta, Rice, and Grains",1.0,10.526315789473683,macaroni cheese
+475,Charlie Bighams Smoked Haddock Gratin,650.0,g,9.5,8.5,Seafood,1.0,10.526315789473683,smoked haddock
+476,Charlie Bigham's Cottage Pie,650.0,g,9.5,8.5,Meat and Poultry,1.0,10.526315789473683,cottage pie
+477,Charlie Bigham's Moussaka,655.0,g,9.5,8.5,Meat and Poultry,1.0,10.526315789473683,moussaka
+478,Charlie Bigham's Shepherd's Pie,650.0,g,9.5,8.5,Meat and Poultry,1.0,10.526315789473683,shepherd's pie
+479,Charlie Bigham's Chicken & Genovese Basil Pesto with Fusilli,584.0,g,9.5,8.5,"Pasta, Rice, and Grains",1.0,10.526315789473683,chicken pesto with fusilli
+480,Charlie Bigham's Tuscan Pork Ragu with Rigatoni,616.0,g,9.5,8.5,"Pasta, Rice, and Grains",1.0,10.526315789473683,pork ragu with rigatoni
+481,The Real Greek Giant Beans,210.0,g,3.35,3.0,Meat and Poultry,0.3500000000000001,10.447761194029852,giant beans
+482,St. Ewe Opulent Large Rich Yolk Eggs,6.0,pack,2.95,2.65,Meat and Poultry,0.3000000000000002,10.169491525423735,large eggs
+483,Tesco Finest 2 Wild Caught Sockeye Salmon Fillets 230G,230.0,g,8.9,8.0,Meat and Poultry,0.9000000000000004,10.112359550561802,sockeye salmon fillets
+484,Seafood & Eat It White Crab meat,100.0,g,6.5,5.85,Seafood,0.6500000000000004,10.000000000000004,white crab meat
+485,THIS Isn't Chicken Breast,180.0,g,3.5,3.15,Meat and Poultry,0.3500000000000001,10.000000000000002,chicken breast
+486,The Real Greek Moussaka,350.0,g,5.0,4.5,Meat and Poultry,0.5,10.0,moussaka
+487,Tesco Finest Sticky Toffee and Pecan Croissant Star,650.0,g,10.0,9.0,Breads and Bakery,1.0,10.0,toffee croissant
+488,The Real Greek Meatballs with Orzo,350.0,g,5.0,4.5,"Pasta, Rice, and Grains",0.5,10.0,meatballs with orzo
+489,The Real Greek Pastitsio,350.0,g,5.0,4.5,Meat and Poultry,0.5,10.0,pastitsio
+490,St.Ewe Rich Yolk Free Range Eggs,6.0,pack,2.5,2.25,Meat and Poultry,0.25,10.0,free range eggs
+491,Tesco Finest Spanish Spicy Chorizo Ring,225.0,g,2.5,2.25,Meat and Poultry,0.25,10.0,spanish chorizo
+492,St Ewe Super Eggs,6.0,pack,2.5,2.25,Meat and Poultry,0.25,10.0,eggs
+493,The Real Greek Pastitsio,350.0,g,5.0,4.5,Meat and Poultry,0.5,10.0,pastitsio
+494,Tesco Finest Aged Blue Stilton,400.0,g,5.0,4.5,Cheese and Cheese Products,0.5,10.0,blue stilton
+495,Tesco Finest Zamli Dates 200G,1.0,pack,2.5,2.25,Fruits,0.25,10.0,dates
+496,Tesco Roast Half Chicken,600.0,g,5.0,4.5,Meat and Poultry,0.5,10.0,half chicken
+497,The Real Greek Meatballs with Orzo,350.0,g,5.0,4.5,Meat and Poultry,0.5,10.0,meatballs with orzo
+498,Seafood & Eat It Fifty Fifty Crab meat,100.0,g,5.0,4.5,Seafood,0.5,10.0,crab meat
+499,The Real Greek Moussaka,350.0,g,5.0,4.5,Meat and Poultry,0.5,10.0,moussaka
+500,Tesco Finest Medjool Dates,500.0,g,5.0,4.5,Meat and Poultry,0.5,10.0,dates
+501,Tesco Finest Slow Cooked Bone-In Gammon with a Honey Glaze,1.67,kg,20.0,18.0,Meat and Poultry,2.0,10.0,bone-in gammon
+502,12. Tesco Finest Two Wild Lobster Thermidor Tails,280.0,g,20.0,18.0,Seafood,2.0,10.0,wild lobster
+503,The Real Greek Chicken with Feta & Olives,350.0,g,5.0,4.5,Meat and Poultry,0.5,10.0,chicken with feta and olives
+504,Tesco Finest 4 Coquille St Jacques,600.0,g,15.0,13.5,Meat and Poultry,1.5,10.0,scallops
+505,Tesco Finest Scottish Salmon Terrine Wreath,510.0,g,15.0,13.5,Meat and Poultry,1.5,10.0,salmon terrine
+506,Tesco Finest Jumbo King Prawn Cocktail,430.0,g,8.0,7.2,Meat and Poultry,0.7999999999999998,9.999999999999998,prawn cocktail
+507,Tesco Finest Honey Sriracha Coleslaw,250.0,g,2.0,1.8,"Dips, Spreads, and Condiments",0.1999999999999999,9.999999999999998,coleslaw
+508,Seafood & Eat It Dressed Crab,120.0,g,5.5,4.95,Meat and Poultry,0.5499999999999998,9.999999999999996,dressed crab
+509,Foppen Smoked & Roasted Norwegian Salmon Slices,100.0,g,5.5,4.95,Meat and Poultry,0.5499999999999998,9.999999999999996,smoked salmon
+510,Tesco Organic Fair Trade Bananas 5 Pack,5.0,each,1.5,1.35,Fruits,0.1499999999999999,9.999999999999991,organic bananas
