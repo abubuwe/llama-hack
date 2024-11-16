@@ -1,0 +1,1328 @@
+{
+  "identified_healthy_ingredients": [
+    "Avocado",
+    "Quinoa",
+    "Lentils",
+    "Olive Oil",
+    "Apples",
+    "Oranges",
+    "Blueberries",
+    "Bananas",
+    "Pecans",
+    "Almonds",
+    "Walnuts",
+    "Coconut Yogurt",
+    "Greek Yogurt",
+    "Mushrooms",
+    "Onions",
+    "Garlic",
+    "Ginger",
+    "Spinach",
+    "Broccoli",
+    "Asparagus",
+    "Free Range Eggs",
+    "Salmon Fillets",
+    "Chicken Breast",
+    "Turkey Thighs",
+    "Pork Tenderloin",
+    "Lamb Shoulder",
+    "Beef Shin",
+    "Tuna Steaks",
+    "Prawns",
+    "Scallops"
+  ],
+  "meal_plan": {
+    "days": [
+      {
+        "day": 1,
+        "meals": [
+          {
+            "type": "Breakfast",
+            "recipe_name": "Avocado Toast with Scrambled Eggs"
+          },
+          {
+            "type": "Lunch",
+            "recipe_name": "Grilled Chicken and Quinoa Salad"
+          },
+          {
+            "type": "Dinner",
+            "recipe_name": "Baked Salmon with Roasted Vegetables"
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "meals": [
+          {
+            "type": "Breakfast",
+            "recipe_name": "Greek Yogurt Parfait with Granola and Berries"
+          },
+          {
+            "type": "Lunch",
+            "recipe_name": "Turkey and Avocado Wrap"
+          },
+          {
+            "type": "Dinner",
+            "recipe_name": "Lentil and Vegetable Stew"
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "meals": [
+          {
+            "type": "Breakfast",
+            "recipe_name": "Overnight Oats with Banana and Nuts"
+          },
+          {
+            "type": "Lunch",
+            "recipe_name": "Grilled Chicken and Quinoa Bowl"
+          },
+          {
+            "type": "Dinner",
+            "recipe_name": "Beef and Broccoli Stir-Fry"
+          }
+        ]
+      },
+      {
+        "day": 4,
+        "meals": [
+          {
+            "type": "Breakfast",
+            "recipe_name": "Smoothie Bowl with Banana and Spinach"
+          },
+          {
+            "type": "Lunch",
+            "recipe_name": "Turkey and Cheese Sandwich"
+          },
+          {
+            "type": "Dinner",
+            "recipe_name": "Baked Chicken with Roasted Sweet Potatoes"
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "meals": [
+          {
+            "type": "Breakfast",
+            "recipe_name": "Avocado Toast with Poached Eggs"
+          },
+          {
+            "type": "Lunch",
+            "recipe_name": "Grilled Salmon with Quinoa and Vegetables"
+          },
+          {
+            "type": "Dinner",
+            "recipe_name": "Pork Tenderloin with Roasted Asparagus"
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "meals": [
+          {
+            "type": "Breakfast",
+            "recipe_name": "Greek Yogurt with Honey and Almonds"
+          },
+          {
+            "type": "Lunch",
+            "recipe_name": "Chicken Caesar Salad"
+          },
+          {
+            "type": "Dinner",
+            "recipe_name": "Beef and Vegetable Kabobs"
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "meals": [
+          {
+            "type": "Breakfast",
+            "recipe_name": "Breakfast Burrito with Scrambled Eggs and Avocado"
+          },
+          {
+            "type": "Lunch",
+            "recipe_name": "Turkey and Quinoa Bowl"
+          },
+          {
+            "type": "Dinner",
+            "recipe_name": "Baked Chicken with Roasted Carrots"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "name": "Avocado Toast with Scrambled Eggs",
+      "prep_time": "15 minutes",
+      "cook_time": "5 minutes",
+      "ingredients": [
+        {
+          "name": "Avocado",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Eggs",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Whole Wheat Bread",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "slices"
+          }
+        },
+        {
+          "name": "Salt",
+          "amount": {
+            "quantity": 0.25,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "Pepper",
+          "amount": {
+            "quantity": 0.25,
+            "unit": "teaspoon"
+          }
+        }
+      ],
+      "steps": [
+        "Toast the whole wheat bread until lightly browned",
+        "Mash the avocado in a bowl and spread on top of the toasted bread",
+        "Scramble the eggs in a separate bowl and season with salt and pepper to taste",
+        "Place the scrambled eggs on top of the mashed avocado",
+        "Serve immediately"
+      ]
+    },
+    {
+      "name": "Grilled Chicken and Quinoa Salad",
+      "prep_time": "20 minutes",
+      "cook_time": "15 minutes",
+      "ingredients": [
+        {
+          "name": "Chicken Breast",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Quinoa",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Mixed Greens",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "cups"
+          }
+        },
+        {
+          "name": "Cherry Tomatoes",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Cucumber",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Balsamic Vinaigrette",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        }
+      ],
+      "steps": [
+        "Grill the chicken breast until cooked through",
+        "Cook the quinoa according to package instructions",
+        "Chop the mixed greens, cherry tomatoes, and cucumber",
+        "In a large bowl, combine the cooked quinoa, chopped greens, tomatoes, and cucumber",
+        "Slice the grilled chicken breast and place on top of the quinoa mixture",
+        "Drizzle with balsamic vinaigrette and serve"
+      ]
+    },
+    {
+      "name": "Baked Salmon with Roasted Vegetables",
+      "prep_time": "15 minutes",
+      "cook_time": "20 minutes",
+      "ingredients": [
+        {
+          "name": "Salmon Fillets",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Asparagus",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Brussels Sprouts",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Olive Oil",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        },
+        {
+          "name": "Salt",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "Pepper",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        }
+      ],
+      "steps": [
+        "Preheat the oven to 400\u00b0F (200\u00b0C)",
+        "Line a baking sheet with parchment paper",
+        "Place the asparagus and Brussels sprouts on the baking sheet",
+        "Drizzle with olive oil and season with salt and pepper",
+        "Roast in the oven for 15-20 minutes or until tender",
+        "Bake the salmon fillets in the oven for 12-15 minutes or until cooked through"
+      ]
+    },
+    {
+      "name": "Greek Yogurt Parfait with Granola and Berries",
+      "prep_time": "5 minutes",
+      "cook_time": "0 minutes",
+      "ingredients": [
+        {
+          "name": "Greek Yogurt",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Granola",
+          "amount": {
+            "quantity": 0.25,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Mixed Berries",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Honey",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "tablespoon"
+          }
+        }
+      ],
+      "steps": [
+        "Layer the Greek yogurt, granola, and mixed berries in a bowl",
+        "Drizzle with honey",
+        "Serve immediately"
+      ]
+    },
+    {
+      "name": "Turkey and Avocado Wrap",
+      "prep_time": "5 minutes",
+      "cook_time": "0 minutes",
+      "ingredients": [
+        {
+          "name": "Turkey Breast",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "slices"
+          }
+        },
+        {
+          "name": "Avocado",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Whole Wheat Tortilla",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Lettuce",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Tomato",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        }
+      ],
+      "steps": [
+        "Slice the turkey breast and avocado",
+        "Place the sliced turkey and avocado on the whole wheat tortilla",
+        "Add the lettuce and tomato on top",
+        "Roll up the tortilla to form a wrap",
+        "Serve immediately"
+      ]
+    },
+    {
+      "name": "Lentil and Vegetable Stew",
+      "prep_time": "20 minutes",
+      "cook_time": "30 minutes",
+      "ingredients": [
+        {
+          "name": "Lentils",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Mixed Vegetables",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "cups"
+          }
+        },
+        {
+          "name": "Vegetable Broth",
+          "amount": {
+            "quantity": 4.0,
+            "unit": "cups"
+          }
+        },
+        {
+          "name": "Olive Oil",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        },
+        {
+          "name": "Salt",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "Pepper",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        }
+      ],
+      "steps": [
+        "Saute the mixed vegetables in olive oil until tender",
+        "Add the lentils, vegetable broth, salt, and pepper to the pot",
+        "Bring to a boil, then reduce heat and simmer for 20-25 minutes or until the lentils are tender"
+      ]
+    },
+    {
+      "name": "Overnight Oats with Banana and Nuts",
+      "prep_time": "5 minutes",
+      "cook_time": "0 minutes",
+      "ingredients": [
+        {
+          "name": "Rolled Oats",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Milk",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Banana",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Chopped Nuts",
+          "amount": {
+            "quantity": 0.25,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Honey",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "tablespoon"
+          }
+        }
+      ],
+      "steps": [
+        "Combine the rolled oats, milk, and honey in a jar or container",
+        "Add the sliced banana on top",
+        "Refrigerate overnight or for at least 4 hours",
+        "Top with chopped nuts before serving"
+      ]
+    },
+    {
+      "name": "Grilled Chicken and Quinoa Bowl",
+      "prep_time": "15 minutes",
+      "cook_time": "15 minutes",
+      "ingredients": [
+        {
+          "name": "Chicken Breast",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Quinoa",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Mixed Vegetables",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "cups"
+          }
+        },
+        {
+          "name": "Olive Oil",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        },
+        {
+          "name": "Salt",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "Pepper",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        }
+      ],
+      "steps": [
+        "Grill the chicken breast until cooked through",
+        "Cook the quinoa according to package instructions",
+        "Saute the mixed vegetables in olive oil until tender",
+        "Combine the cooked quinoa, mixed vegetables, and grilled chicken breast in a bowl",
+        "Season with salt and pepper to taste"
+      ]
+    },
+    {
+      "name": "Beef and Broccoli Stir-Fry",
+      "prep_time": "10 minutes",
+      "cook_time": "15 minutes",
+      "ingredients": [
+        {
+          "name": "Beef",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Broccoli",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Olive Oil",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        },
+        {
+          "name": "Soy Sauce",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        },
+        {
+          "name": "Garlic",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cloves"
+          }
+        },
+        {
+          "name": "Ginger",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "teaspoon"
+          }
+        }
+      ],
+      "steps": [
+        "Heat the olive oil in a wok or large skillet over high heat",
+        "Add the beef and cook until browned, about 3-4 minutes",
+        "Add the broccoli, soy sauce, garlic, and ginger to the wok",
+        "Stir-fry for an additional 5 minutes or until the broccoli is tender"
+      ]
+    },
+    {
+      "name": "Smoothie Bowl with Banana and Spinach",
+      "prep_time": "5 minutes",
+      "cook_time": "0 minutes",
+      "ingredients": [
+        {
+          "name": "Banana",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Spinach",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Almond Milk",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Chia Seeds",
+          "amount": {
+            "quantity": 0.25,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Honey",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "tablespoon"
+          }
+        }
+      ],
+      "steps": [
+        "Combine the banana, spinach, almond milk, and honey in a blender",
+        "Blend until smooth",
+        "Top with chia seeds and serve"
+      ]
+    },
+    {
+      "name": "Turkey and Cheese Sandwich",
+      "prep_time": "5 minutes",
+      "cook_time": "0 minutes",
+      "ingredients": [
+        {
+          "name": "Turkey Breast",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "slices"
+          }
+        },
+        {
+          "name": "Cheddar Cheese",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "slice"
+          }
+        },
+        {
+          "name": "Whole Wheat Bread",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "slices"
+          }
+        },
+        {
+          "name": "Lettuce",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Tomato",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        }
+      ],
+      "steps": [
+        "Assemble the sandwich by placing the sliced turkey breast, cheddar cheese, lettuce, and tomato between two slices of whole wheat bread",
+        "Serve immediately"
+      ]
+    },
+    {
+      "name": "Baked Chicken with Roasted Sweet Potatoes",
+      "prep_time": "15 minutes",
+      "cook_time": "25 minutes",
+      "ingredients": [
+        {
+          "name": "Chicken Breast",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Sweet Potatoes",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Olive Oil",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        },
+        {
+          "name": "Salt",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "Pepper",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        }
+      ],
+      "steps": [
+        "Preheat the oven to 400\u00b0F (200\u00b0C)",
+        "Line a baking sheet with parchment paper",
+        "Place the sweet potatoes on the baking sheet",
+        "Drizzle with olive oil and season with salt and pepper",
+        "Roast in the oven for 20-25 minutes or until tender",
+        "Bake the chicken breast in the oven for 15-20 minutes or until cooked through"
+      ]
+    },
+    {
+      "name": "Avocado Toast with Poached Eggs",
+      "prep_time": "10 minutes",
+      "cook_time": "5 minutes",
+      "ingredients": [
+        {
+          "name": "Avocado",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Eggs",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Whole Wheat Bread",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "slices"
+          }
+        },
+        {
+          "name": "Salt",
+          "amount": {
+            "quantity": 0.25,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "Pepper",
+          "amount": {
+            "quantity": 0.25,
+            "unit": "teaspoon"
+          }
+        }
+      ],
+      "steps": [
+        "Toast the whole wheat bread until lightly browned",
+        "Mash the avocado in a bowl and spread on top of the toasted bread",
+        "Poach the eggs in boiling water for 3-5 minutes or until cooked to desired doneness",
+        "Place the poached eggs on top of the mashed avocado",
+        "Season with salt and pepper to taste"
+      ]
+    },
+    {
+      "name": "Grilled Salmon with Quinoa and Vegetables",
+      "prep_time": "15 minutes",
+      "cook_time": "15 minutes",
+      "ingredients": [
+        {
+          "name": "Salmon Fillets",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Quinoa",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Mixed Vegetables",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "cups"
+          }
+        },
+        {
+          "name": "Olive Oil",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        },
+        {
+          "name": "Salt",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "Pepper",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        }
+      ],
+      "steps": [
+        "Grill the salmon fillets until cooked through",
+        "Cook the quinoa according to package instructions",
+        "Saute the mixed vegetables in olive oil until tender",
+        "Combine the cooked quinoa, mixed vegetables, and grilled salmon fillets in a bowl",
+        "Season with salt and pepper to taste"
+      ]
+    },
+    {
+      "name": "Pork Tenderloin with Roasted Asparagus",
+      "prep_time": "15 minutes",
+      "cook_time": "20 minutes",
+      "ingredients": [
+        {
+          "name": "Pork Tenderloin",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Asparagus",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Olive Oil",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        },
+        {
+          "name": "Salt",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "Pepper",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        }
+      ],
+      "steps": [
+        "Preheat the oven to 400\u00b0F (200\u00b0C)",
+        "Line a baking sheet with parchment paper",
+        "Place the asparagus on the baking sheet",
+        "Drizzle with olive oil and season with salt and pepper",
+        "Roast in the oven for 12-15 minutes or until tender",
+        "Bake the pork tenderloin in the oven for 15-20 minutes or until cooked through"
+      ]
+    },
+    {
+      "name": "Greek Yogurt with Honey and Almonds",
+      "prep_time": "5 minutes",
+      "cook_time": "0 minutes",
+      "ingredients": [
+        {
+          "name": "Greek Yogurt",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Honey",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "tablespoon"
+          }
+        },
+        {
+          "name": "Chopped Almonds",
+          "amount": {
+            "quantity": 0.25,
+            "unit": "cup"
+          }
+        }
+      ],
+      "steps": [
+        "Combine the Greek yogurt and honey in a bowl",
+        "Top with chopped almonds",
+        "Serve immediately"
+      ]
+    },
+    {
+      "name": "Chicken Caesar Salad",
+      "prep_time": "15 minutes",
+      "cook_time": "0 minutes",
+      "ingredients": [
+        {
+          "name": "Chicken Breast",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Romaine Lettuce",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "cups"
+          }
+        },
+        {
+          "name": "Croutons",
+          "amount": {
+            "quantity": 0.25,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Parmesan Cheese",
+          "amount": {
+            "quantity": 0.25,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Caesar Dressing",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        }
+      ],
+      "steps": [
+        "Chop the romaine lettuce and place in a bowl",
+        "Add the croutons and Parmesan cheese on top",
+        "Grill or cook the chicken breast until cooked through",
+        "Slice the chicken breast and add to the bowl",
+        "Drizzle with Caesar dressing and serve"
+      ]
+    },
+    {
+      "name": "Beef and Vegetable Kabobs",
+      "prep_time": "15 minutes",
+      "cook_time": "15 minutes",
+      "ingredients": [
+        {
+          "name": "Beef",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Mixed Vegetables",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "cups"
+          }
+        },
+        {
+          "name": "Olive Oil",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        },
+        {
+          "name": "Salt",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "Pepper",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        }
+      ],
+      "steps": [
+        "Thread the beef and mixed vegetables onto skewers",
+        "Brush with olive oil and season with salt and pepper",
+        "Grill or broil the kabobs for 10-15 minutes or until the beef is cooked through"
+      ]
+    },
+    {
+      "name": "Breakfast Burrito with Scrambled Eggs and Avocado",
+      "prep_time": "10 minutes",
+      "cook_time": "5 minutes",
+      "ingredients": [
+        {
+          "name": "Eggs",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Avocado",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Whole Wheat Tortilla",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Shredded Cheese",
+          "amount": {
+            "quantity": 0.25,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Salsa",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "tablespoon"
+          }
+        }
+      ],
+      "steps": [
+        "Scramble the eggs in a bowl",
+        "Add the diced avocado, shredded cheese, and salsa to the scrambled eggs",
+        "Place the egg mixture onto the whole wheat tortilla",
+        "Roll up the tortilla to form a burrito",
+        "Serve immediately"
+      ]
+    },
+    {
+      "name": "Turkey and Quinoa Bowl",
+      "prep_time": "15 minutes",
+      "cook_time": "15 minutes",
+      "ingredients": [
+        {
+          "name": "Turkey Breast",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Quinoa",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "cup"
+          }
+        },
+        {
+          "name": "Mixed Vegetables",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "cups"
+          }
+        },
+        {
+          "name": "Olive Oil",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        },
+        {
+          "name": "Salt",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "Pepper",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        }
+      ],
+      "steps": [
+        "Cook the quinoa according to package instructions",
+        "Saute the mixed vegetables in olive oil until tender",
+        "Grill or cook the turkey breast until cooked through",
+        "Combine the cooked quinoa, mixed vegetables, and sliced turkey breast in a bowl",
+        "Season with salt and pepper to taste"
+      ]
+    },
+    {
+      "name": "Baked Chicken with Roasted Carrots",
+      "prep_time": "15 minutes",
+      "cook_time": "25 minutes",
+      "ingredients": [
+        {
+          "name": "Chicken Breast",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Carrots",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Olive Oil",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "tablespoons"
+          }
+        },
+        {
+          "name": "Salt",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "Pepper",
+          "amount": {
+            "quantity": 0.5,
+            "unit": "teaspoon"
+          }
+        }
+      ],
+      "steps": [
+        "Preheat the oven to 400\u00b0F (200\u00b0C)",
+        "Line a baking sheet with parchment paper",
+        "Place the carrots on the baking sheet",
+        "Drizzle with olive oil and season with salt and pepper",
+        "Roast in the oven for 20-25 minutes or until tender",
+        "Bake the chicken breast in the oven for 15-20 minutes or until cooked through"
+      ]
+    }
+  ],
+  "used_healthy_ingredients": [
+    {
+      "id": 1,
+      "name": "Avocado"
+    },
+    {
+      "id": 2,
+      "name": "Quinoa"
+    },
+    {
+      "id": 3,
+      "name": "Lentils"
+    },
+    {
+      "id": 4,
+      "name": "Olive Oil"
+    },
+    {
+      "id": 5,
+      "name": "Apples"
+    },
+    {
+      "id": 6,
+      "name": "Oranges"
+    },
+    {
+      "id": 7,
+      "name": "Blueberries"
+    },
+    {
+      "id": 8,
+      "name": "Bananas"
+    },
+    {
+      "id": 9,
+      "name": "Pecans"
+    },
+    {
+      "id": 10,
+      "name": "Almonds"
+    },
+    {
+      "id": 11,
+      "name": "Walnuts"
+    },
+    {
+      "id": 12,
+      "name": "Coconut Yogurt"
+    },
+    {
+      "id": 13,
+      "name": "Greek Yogurt"
+    },
+    {
+      "id": 14,
+      "name": "Mushrooms"
+    },
+    {
+      "id": 15,
+      "name": "Onions"
+    },
+    {
+      "id": 16,
+      "name": "Garlic"
+    },
+    {
+      "id": 17,
+      "name": "Ginger"
+    },
+    {
+      "id": 18,
+      "name": "Spinach"
+    },
+    {
+      "id": 19,
+      "name": "Broccoli"
+    },
+    {
+      "id": 20,
+      "name": "Asparagus"
+    },
+    {
+      "id": 21,
+      "name": "Free Range Eggs"
+    },
+    {
+      "id": 22,
+      "name": "Salmon Fillets"
+    },
+    {
+      "id": 23,
+      "name": "Chicken Breast"
+    },
+    {
+      "id": 24,
+      "name": "Turkey Thighs"
+    },
+    {
+      "id": 25,
+      "name": "Pork Tenderloin"
+    },
+    {
+      "id": 26,
+      "name": "Lamb Shoulder"
+    },
+    {
+      "id": 27,
+      "name": "Beef Shin"
+    },
+    {
+      "id": 28,
+      "name": "Tuna Steaks"
+    },
+    {
+      "id": 29,
+      "name": "Prawns"
+    },
+    {
+      "id": 30,
+      "name": "Scallops"
+    }
+  ]
+}

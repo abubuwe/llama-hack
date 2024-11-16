@@ -249,6 +249,10 @@ def analyze_healthy_ingredient_savings(meal_plan_response: HealthyMealPlanRespon
 
 # Usage
 def main():
+    # Create results directory if it doesn't exist
+    results_dir = Path("results")
+    results_dir.mkdir(exist_ok=True)
+
     products = load_products_from_csv("data/tesco_products_final.csv")
     if products:
         # Get Groq client
@@ -269,17 +273,22 @@ def main():
                         recipe.prep_time = detailed_recipe.prep_time
                         recipe.cook_time = detailed_recipe.cook_time
                         recipe.steps = detailed_recipe.steps
-            
-            # Print updated meal plan
-            print("\n=== Meal Plan Details with Recipe Instructions ===")
-            print(json.dumps(meal_plan_response.model_dump(), indent=2))
-            
-            # Analyze healthy ingredient savings
-            savings_analysis = analyze_healthy_ingredient_savings(meal_plan_response)
-            print("\nHealthy Ingredient Savings Analysis:")
-            print(savings_analysis)
-        else:
-            print("Failed to generate meal plan.")
+
+            # Save meal plan response as JSON
+            try:
+                with open(results_dir / "meal_plan.json", "w") as f:
+                    json.dump(meal_plan_response.model_dump(), f, indent=2)
+                print(f"Saved meal plan to results/meal_plan.json")
+            except Exception as e:
+                print(f"Error saving meal plan: {e}")
+
+            # Get and save savings analysis
+            savings_df = analyze_healthy_ingredient_savings(meal_plan_response)
+            try:
+                savings_df.to_csv(results_dir / "savings_analysis.csv", index=False)
+                print(f"Saved savings analysis to results/savings_analysis.csv")
+            except Exception as e:
+                print(f"Error saving savings analysis: {e}")
 
 if __name__ == "__main__":
     main()
