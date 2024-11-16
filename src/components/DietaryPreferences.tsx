@@ -21,7 +21,7 @@ export default function DietaryPreferencesComponent({ preferences, onChange }: P
 
   return (
     <div className="space-y-4">
-      <h2 className="text-xl font-semibold text-gray-800">Dietary Preferences</h2>
+      {/* <h2 className="text-xl font-semibold text-gray-800">Dietary Preferences</h2> */}
       <div className="grid grid-cols-2 gap-4">
         {preferences_list.map(({ key, label }) => (
           <button

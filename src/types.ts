@@ -21,7 +21,15 @@ export interface Ingredient {
   amount: number;
   unit: string;
   currentPrice: number;
-  regularPrice: number;
+  origin: string;
+  supermarketPrices: SupermarketPrices;
+}
+
+export interface SupermarketPrices {
+  tesco: number;
+  asda: number;
+  sainsburys: number;
+  ocado: number;
 }
 
 export interface DietaryPreferences {
@@ -29,4 +37,16 @@ export interface DietaryPreferences {
   vegan: boolean;
   glutenFree: boolean;
   dairyFree: boolean;
+}
+
+export interface Filters {
+  dietary: DietaryPreferences;
+  timeRange: {
+    min: number;
+    max: number;
+  };
+  priceRange: {
+    min: number;
+    max: number;
+  };
 }

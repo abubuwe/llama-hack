@@ -1,68 +1,100 @@
-import React from 'react';
-import { Clock, DollarSign } from 'lucide-react';
+import React, { useMemo } from 'react';
+import { Clock, DollarSign, Bookmark } from 'lucide-react';
 import { Recipe } from '../types';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import SupermarketPriceComparison from './SupermarketPriceComparison';
+import { useBookmarks } from '../contexts/BookmarkContext';
 
 interface Props {
   recipe: Recipe;
 }
 
 export default function RecipeCard({ recipe }: Props) {
+  const { isBookmarked, toggleBookmark } = useBookmarks();
+  const navigate = useNavigate();
   const savings = (recipe.regularCost - recipe.totalCost).toFixed(2);
-  const savingsPercentage = ((recipe.regularCost - recipe.totalCost) / recipe.regularCost * 100).toFixed(0);
+
+  const totalPricesBySupermarket = useMemo(() => {
+    return recipe.ingredients.reduce(
+      (acc, ingredient) => ({
+        tesco: acc.tesco + ingredient.supermarketPrices.tesco,
+        asda: acc.asda + ingredient.supermarketPrices.asda,
+        sainsburys: acc.sainsburys + ingredient.supermarketPrices.sainsburys,
+        ocado: acc.ocado + ingredient.supermarketPrices.ocado,
+      }),
+      { tesco: 0, asda: 0, sainsburys: 0, ocado: 0 }
+    );
+  }, [recipe.ingredients]);
+
+  const handleCardClick = (e: React.MouseEvent) => {
+    // Don't navigate if clicking the bookmark button or its container
+    if (!(e.target as HTMLElement).closest('.bookmark-button')) {
+      navigate(`/recipe/${recipe.id}`);
+    }
+  };
 
   return (
-    <Link to={`/recipe/${recipe.id}`} className="block hover:shadow-lg transition-shadow">
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-[1.02]">
+    <div 
+      onClick={handleCardClick}
+      className="bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-200 hover:shadow-md hover:translate-y-[-2px] cursor-pointer"
+    >
+      <div className="relative">
         <img 
           src={recipe.image} 
           alt={recipe.name}
-          className="w-full h-48 object-cover"
+          className="w-full h-36 object-cover"
         />
-        <div className="p-6 space-y-4">
-          <h3 className="text-xl font-semibold text-gray-800">{recipe.name}</h3>
-          
-          <div className="flex items-center space-x-4 text-sm text-gray-600">
-            <div className="flex items-center">
-              <Clock className="w-4 h-4 mr-1" />
-              <span>{recipe.prepTime + recipe.cookTime} mins</span>
-            </div>
-            <div className="flex items-center text-green-600 font-medium">
-              <DollarSign className="w-4 h-4 mr-1" />
-              <span>Save ${savings} ({savingsPercentage}%)</span>
-            </div>
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleBookmark(recipe.id);
+          }}
+          className="bookmark-button absolute top-2 right-2 p-1.5 rounded-full bg-white/90 hover:bg-white transition-colors z-10"
+        >
+          <Bookmark 
+            className={`w-5 h-5 ${
+              isBookmarked(recipe.id) 
+                ? 'fill-purple-600 text-purple-600' 
+                : 'text-gray-600'
+            }`} 
+          />
+        </button>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+      </div>
+      <div className="p-3 space-y-2">
+        <h3 className="text-base font-semibold text-gray-800 line-clamp-1">{recipe.name}</h3>
+        
+        <div className="flex items-center justify-between text-xs text-gray-600">
+          <div className="flex items-center">
+            <Clock className="w-3 h-3 mr-1 text-purple-500" />
+            <span>{recipe.prepTime + recipe.cookTime}m</span>
           </div>
-
-          <div className="flex flex-wrap gap-2">
-            {Object.entries(recipe.dietaryInfo).map(([key, value]) => (
-              value && (
-                <span 
-                  key={key}
-                  className="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-600"
-                >
-                  {key.replace(/([A-Z])/g, ' $1').trim()}
-                </span>
-              )
-            ))}
-          </div>
-
-          <div className="pt-4 border-t border-gray-100">
-            <h4 className="font-medium text-gray-700 mb-2">Current Price Breakdown:</h4>
-            <div className="space-y-1">
-              {recipe.ingredients.map((ingredient, index) => (
-                <div key={index} className="flex justify-between text-sm">
-                  <span className="text-gray-600">
-                    {ingredient.amount} {ingredient.unit} {ingredient.name}
-                  </span>
-                  <span className="text-gray-800 font-medium">
-                    ${ingredient.currentPrice.toFixed(2)}
-                  </span>
-                </div>
-              ))}
-            </div>
+          <div className="flex items-center text-purple-600 font-medium">
+            <DollarSign className="w-3 h-3 mr-1" />
+            <span>Save £{savings}</span>
           </div>
         </div>
+
+        <div className="flex flex-wrap gap-1">
+          {Object.entries(recipe.dietaryInfo).map(([key, value]) => (
+            value && (
+              <span 
+                key={key}
+                className="px-1.5 py-0.5 text-xs rounded-full bg-purple-100 text-purple-700"
+              >
+                {key.replace(/([A-Z])/g, ' $1').trim()}
+              </span>
+            )
+          ))}
+        </div>
+
+        <div className="pt-2 border-t border-gray-100">
+          <SupermarketPriceComparison 
+            prices={totalPricesBySupermarket}
+            compact={true}
+          />
+        </div>
       </div>
-    </Link>
+    </div>
   );
 }

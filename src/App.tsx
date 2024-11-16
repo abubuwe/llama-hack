@@ -1,61 +1,52 @@
 import React, { useState, useMemo } from 'react';
-import { ChefHat } from 'lucide-react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { recipes } from './data/mockData';
-import { DietaryPreferences } from './types';
-import DietaryPreferencesComponent from './components/DietaryPreferences';
+import { Filters } from './types';
+import FilterControls from './components/FilterControls';
 import RecipeCard from './components/RecipeCard';
 import RecipeDetails from './components/RecipeDetails';
+import Header from './components/Header';
+import ScrollToTop from './components/ScrollToTop';
+import ChatInterface from './components/ChatBot';
+import { BookmarkProvider } from './contexts/BookmarkContext';
+import BookmarkedRecipes from './pages/BookmarkedRecipes';
+import LandingPage from './pages/LandingPage';
 
 function RecipeList({ 
   filteredRecipes, 
-  preferences, 
-  setPreferences, 
+  filters, 
+  setFilters, 
   totalSavings 
 }: {
   filteredRecipes: typeof recipes;
-  preferences: DietaryPreferences;
-  setPreferences: (prefs: DietaryPreferences) => void;
+  filters: Filters;
+  setFilters: (filters: Filters) => void;
   totalSavings: number;
 }) {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-green-100">
-      <header className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <ChefHat className="w-10 h-10 text-green-600" />
-              <h1 className="text-3xl font-bold text-gray-900">Recipe Saver</h1>
-            </div>
-            <div className="text-green-600 font-semibold bg-green-100 px-4 py-2 rounded-full">
-              Total Potential Savings: ${totalSavings.toFixed(2)}
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid gap-8 md:grid-cols-[300px,1fr]">
-          <aside className="space-y-6 bg-white p-6 rounded-lg shadow-md">
-            <DietaryPreferencesComponent
-              preferences={preferences}
-              onChange={setPreferences}
+    <div className="flex-1 min-h-screen overflow-auto">
+      <main className="max-w-4xl mx-auto px-3 py-6">
+        <div className="space-y-4">
+          <div className="bg-white p-4 rounded-lg shadow-sm">
+            <FilterControls
+              filters={filters}
+              onChange={setFilters}
             />
-          </aside>
+          </div>
 
-          <div className="space-y-6">
-            <h2 className="text-2xl font-semibold text-indigo-800">
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold text-purple-800">
               Recommended Recipes ({filteredRecipes.length})
             </h2>
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2">
               {filteredRecipes.map(recipe => (
                 <RecipeCard key={recipe.id} recipe={recipe} />
               ))}
             </div>
             {filteredRecipes.length === 0 && (
-              <div className="text-center py-12 bg-yellow-100 rounded-lg">
-                <p className="text-yellow-800">
-                  No recipes match your dietary preferences. Try adjusting your filters.
+              <div className="text-center py-8 bg-amber-100 rounded-lg">
+                <p className="text-amber-800 text-sm">
+                  No recipes match your filters. Try adjusting your preferences.
                 </p>
               </div>
             )}
@@ -67,21 +58,44 @@ function RecipeList({
 }
 
 function App() {
-  const [preferences, setPreferences] = useState<DietaryPreferences>({
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false,
-    dairyFree: false,
+  const [initialMessage, setInitialMessage] = useState<string | null>(null);
+  const [filters, setFilters] = useState<Filters>({
+    dietary: {
+      vegetarian: false,
+      vegan: false,
+      glutenFree: false,
+      dairyFree: false,
+    },
+    timeRange: {
+      min: 0,
+      max: 240,
+    },
+    priceRange: {
+      min: 0,
+      max: 50,
+    },
   });
 
   const filteredRecipes = useMemo(() => {
     return recipes.filter(recipe => {
-      return Object.entries(preferences).every(([key, value]) => {
+      // Check dietary preferences
+      const dietaryMatch = Object.entries(filters.dietary).every(([key, value]) => {
         if (!value) return true;
-        return recipe.dietaryInfo[key as keyof DietaryPreferences];
+        return recipe.dietaryInfo[key as keyof typeof filters.dietary];
       });
+
+      // Check time range
+      const totalTime = recipe.prepTime + recipe.cookTime;
+      const timeMatch = totalTime >= filters.timeRange.min && 
+        (filters.timeRange.max === 0 || totalTime <= filters.timeRange.max);
+
+      // Check price range
+      const priceMatch = recipe.totalCost >= filters.priceRange.min &&
+        (filters.priceRange.max === 0 || recipe.totalCost <= filters.priceRange.max);
+
+      return dietaryMatch && timeMatch && priceMatch;
     });
-  }, [preferences]);
+  }, [filters]);
 
   const totalSavings = useMemo(() => {
     return filteredRecipes.reduce((acc, recipe) => {
@@ -89,25 +103,78 @@ function App() {
     }, 0);
   }, [filteredRecipes]);
 
+  const handleInitialMessage = (message: string) => {
+    setInitialMessage(message);
+  };
+
   return (
     <BrowserRouter>
-      <Routes>
-        <Route 
-          path="/" 
-          element={
-            <RecipeList
-              filteredRecipes={filteredRecipes}
-              preferences={preferences}
-              setPreferences={setPreferences}
-              totalSavings={totalSavings}
-            />
-          } 
-        />
-        <Route 
-          path="/recipe/:id" 
-          element={<RecipeDetails recipes={recipes} />} 
-        />
-      </Routes>
+      <BookmarkProvider>
+        <ScrollToTop />
+        <Routes>
+          <Route 
+            path="/" 
+            element={<LandingPage onSubmit={handleInitialMessage} />} 
+          />
+          <Route
+            path="/recipes"
+            element={
+              initialMessage ? (
+                <div className="h-screen flex flex-col">
+                  <Header totalSavings={totalSavings} />
+                  <div className="flex flex-1 overflow-hidden">
+                    <div className="w-[400px] border-r border-gray-200 bg-white overflow-y-auto">
+                      <ChatInterface initialMessage={initialMessage} />
+                    </div>
+                    <div className="flex-1 overflow-y-auto bg-gradient-to-b from-purple-50 to-purple-100">
+                      <RecipeList
+                        filteredRecipes={filteredRecipes}
+                        filters={filters}
+                        setFilters={setFilters}
+                        totalSavings={totalSavings}
+                      />
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Navigate to="/" replace />
+              )
+            }
+          />
+          <Route 
+            path="/recipe/:id" 
+            element={
+              <div className="h-screen flex flex-col">
+                <Header />
+                <div className="flex flex-1 overflow-hidden">
+                  <div className="w-[400px] border-r border-gray-200 bg-white overflow-y-auto">
+                    <ChatInterface initialMessage={initialMessage} />
+                  </div>
+                  <div className="flex-1 overflow-y-auto bg-gradient-to-b from-purple-50 to-purple-100">
+                    <RecipeDetails recipes={recipes} />
+                  </div>
+                </div>
+              </div>
+            }
+          />
+          <Route 
+            path="/bookmarks" 
+            element={
+              <div className="h-screen flex flex-col">
+                <Header />
+                <div className="flex flex-1 overflow-hidden">
+                  <div className="w-[400px] border-r border-gray-200 bg-white overflow-y-auto">
+                    <ChatInterface initialMessage={initialMessage} />
+                  </div>
+                  <div className="flex-1 overflow-y-auto bg-gradient-to-b from-purple-50 to-purple-100">
+                    <BookmarkedRecipes />
+                  </div>
+                </div>
+              </div>
+            }
+          />
+        </Routes>
+      </BookmarkProvider>
     </BrowserRouter>
   );
 }
