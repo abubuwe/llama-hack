@@ -6,6 +6,15 @@ interface Props {
   onSubmit: (message: string) => void;
 }
 
+const SUGGESTIONS = [
+  "Find healthy dinner recipes",
+  "What can I cook under £10?",
+  "Show me gluten-free desserts",
+  "Quick vegetarian meals",
+  "Recipes with chickpeas",
+  "Easy meal prep ideas"
+];
+
 export default function LandingPage({ onSubmit }: Props) {
   const [message, setMessage] = useState('');
   const navigate = useNavigate();
@@ -16,6 +25,10 @@ export default function LandingPage({ onSubmit }: Props) {
     
     onSubmit(message);
     navigate('/recipes');
+  };
+
+  const handleSuggestionClick = (suggestion: string) => {
+    setMessage(suggestion);
   };
 
   return (
@@ -57,16 +70,20 @@ export default function LandingPage({ onSubmit }: Props) {
             </div>
           </form>
 
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
-            <span className="px-3 py-1 bg-white rounded-full shadow-sm">
-              "Find healthy dinner recipes"
-            </span>
-            <span className="px-3 py-1 bg-white rounded-full shadow-sm">
-              "What can I cook under £10?"
-            </span>
-            <span className="px-3 py-1 bg-white rounded-full shadow-sm">
-              "Show me gluten-free desserts"
-            </span>
+          <div className="flex flex-wrap justify-center gap-2">
+            {SUGGESTIONS.map((suggestion) => (
+              <button
+                key={suggestion}
+                onClick={() => handleSuggestionClick(suggestion)}
+                className={`px-3 py-1.5 rounded-full text-sm transition-all duration-200 ${
+                  message === suggestion
+                    ? 'bg-purple-100 text-purple-700 ring-2 ring-purple-500'
+                    : 'bg-white text-gray-600 hover:bg-purple-50 hover:text-purple-600'
+                } shadow-sm hover:shadow`}
+              >
+                "{suggestion}"
+              </button>
+            ))}
           </div>
         </div>
       </main>
