@@ -108,7 +108,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.PROD ? '/llama-hack' : '/'}>
       <BookmarkProvider>
         <ScrollToTop />
         <Routes>
