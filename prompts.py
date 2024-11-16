@@ -12,7 +12,7 @@ Health Guidelines:
 * Make sure it's tasty
 
 Task: 
-- Identify the ingredients in the list that follow the above Health Guidelines
+- Stack rank the ingredients in the list that follow the above Health Guidelines with the healthiest first. Do not add any food consider unhealthy like red meat, UPF, refined carbs etc.
 - Preferably but not exclusively use ingredients identified above to healthy meals that follow Health Guidelines
 - Avoid products if the consumption is associated with all cause mortality, like red meat, UPF, refined carbs etc.
 - Return a list of products with their id from the list you used in the meal plan 
@@ -21,11 +21,11 @@ Return JSON with this structure:
 
 {
   "identified_healthy_ingredients": [
-    "Quinoa",
+    "Olive Oil"
+    "Lentils",
     "Chickpeas", 
     "Sweet Potatoes",
-    "Lentils",
-    "Olive Oil"
+    "Quinoa",
   ],
   "meal_plan": {
     "days": [
@@ -228,11 +228,11 @@ Return JSON with this structure:
   ],
   "used_healthy_ingredients": [
     {
-      "id": 1,
+      "id": 11,
       "name": "Quinoa"
     },
     {
-      "id": 2,
+      "id": 7,
       "name": "Chickpeas"
     },
     {
