@@ -249,7 +249,7 @@ def analyze_healthy_ingredient_savings(meal_plan_response: HealthyMealPlanRespon
     return savings_df
 
 # Usage
-def main():
+def main(num_days=7):
     # Create results directory if it doesn't exist
     results_dir = Path("results")
     results_dir.mkdir(exist_ok=True)
@@ -259,7 +259,7 @@ def main():
         # Get Groq client
         client = instructor.from_groq(Groq(), mode=instructor.Mode.JSON)
         
-        meal_plan_response = generate_meal_plan_groq(products, num_days=7)
+        meal_plan_response = generate_meal_plan_groq(products, num_days=num_days)
         if meal_plan_response:
             # Extract meal details
             meal_details = extract_meal_details(meal_plan_response)
@@ -290,6 +290,8 @@ def main():
                 print(f"Saved savings analysis to results/savings_analysis.csv")
             except Exception as e:
                 print(f"Error saving savings analysis: {e}")
+
+            return meal_plan_response.model_dump()
 
 if __name__ == "__main__":
     main()

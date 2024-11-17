@@ -1,29 +1,11 @@
 {
   "identified_healthy_ingredients": [
-    "Olive Oil",
-    "Lentils",
-    "Chickpeas",
-    "Sweet Potatoes",
-    "Quinoa",
     "Avocado",
-    "Banana",
-    "Mixed Berries",
-    "Almond Milk",
-    "Honey",
-    "Cinnamon",
-    "Spinach",
-    "Coconut Milk",
-    "Garlic",
-    "Ginger",
-    "Curry Powder",
-    "Vegetable Stock",
-    "Onion",
-    "Fresh Parsley",
-    "Cucumber",
-    "Cherry Tomatoes",
-    "Red Onion",
-    "Feta Cheese",
-    "Lemon Juice"
+    "Blueberries",
+    "Quinoa",
+    "Sweet Potatoes",
+    "Lentils",
+    "Chickpeas"
   ],
   "meal_plan": {
     "days": [
@@ -32,11 +14,11 @@
         "meals": [
           {
             "type": "Breakfast",
-            "recipe_name": "Quinoa Breakfast Bowl"
+            "recipe_name": "Avocado and Blueberries Toast"
           },
           {
             "type": "Lunch",
-            "recipe_name": "Mediterranean Chickpea Salad"
+            "recipe_name": "Quinoa and Chickpea Salad"
           },
           {
             "type": "Dinner",
@@ -49,15 +31,15 @@
         "meals": [
           {
             "type": "Breakfast",
-            "recipe_name": "Avocado Toast"
+            "recipe_name": "Blueberries and Avocado Smoothie"
           },
           {
             "type": "Lunch",
-            "recipe_name": "Grilled Chicken and Veggie Wrap"
+            "recipe_name": "Grilled Chicken and Chickpea Wrap"
           },
           {
             "type": "Dinner",
-            "recipe_name": "Baked Salmon with Quinoa and Broccoli"
+            "recipe_name": "Quinoa and Lentil Bowl with Roasted Vegetables"
           }
         ]
       },
@@ -66,83 +48,15 @@
         "meals": [
           {
             "type": "Breakfast",
-            "recipe_name": "Banana and Almond Milk Smoothie"
+            "recipe_name": "Avocado Toast with Poached Eggs"
           },
           {
             "type": "Lunch",
-            "recipe_name": "Lentil Soup with Whole Grain Bread"
+            "recipe_name": "Sweet Potato and Black Bean Tacos"
           },
           {
             "type": "Dinner",
-            "recipe_name": "Grilled Chicken and Veggie Stir Fry"
-          }
-        ]
-      },
-      {
-        "day": 4,
-        "meals": [
-          {
-            "type": "Breakfast",
-            "recipe_name": "Scrambled Eggs with Spinach and Whole Grain Toast"
-          },
-          {
-            "type": "Lunch",
-            "recipe_name": "Chickpea and Avocado Salad"
-          },
-          {
-            "type": "Dinner",
-            "recipe_name": "Baked Sweet Potato with Black Beans and Salsa"
-          }
-        ]
-      },
-      {
-        "day": 5,
-        "meals": [
-          {
-            "type": "Breakfast",
-            "recipe_name": "Greek Yogurt with Berries and Granola"
-          },
-          {
-            "type": "Lunch",
-            "recipe_name": "Grilled Chicken and Quinoa Bowl"
-          },
-          {
-            "type": "Dinner",
-            "recipe_name": "Slow Cooker Lentil Curry"
-          }
-        ]
-      },
-      {
-        "day": 6,
-        "meals": [
-          {
-            "type": "Breakfast",
-            "recipe_name": "Avocado and Bacon Omelette"
-          },
-          {
-            "type": "Lunch",
-            "recipe_name": "Turkey and Avocado Wrap"
-          },
-          {
-            "type": "Dinner",
-            "recipe_name": "Baked Chicken Thighs with Roasted Vegetables"
-          }
-        ]
-      },
-      {
-        "day": 7,
-        "meals": [
-          {
-            "type": "Breakfast",
-            "recipe_name": "Banana Pancakes with Almond Butter and Maple Syrup"
-          },
-          {
-            "type": "Lunch",
-            "recipe_name": "Grilled Chicken and Quinoa Salad"
-          },
-          {
-            "type": "Dinner",
-            "recipe_name": "Slow Cooker Vegetable Stew"
+            "recipe_name": "Chickpea and Spinach Curry with Quinoa"
           }
         ]
       }
@@ -150,76 +64,60 @@
   },
   "recipes": [
     {
-      "name": "Quinoa Breakfast Bowl",
-      "prep_time": "15 minutes",
-      "cook_time": "10 minutes",
+      "name": "Avocado and Blueberries Toast",
+      "prep_time": "10 minutes",
+      "cook_time": "0 minutes",
       "category": "Breakfast",
       "ingredients": [
         {
-          "name": "Quinoa",
-          "amount": {
-            "quantity": 80.0,
-            "unit": "g"
-          }
-        },
-        {
-          "name": "Almond Milk",
-          "amount": {
-            "quantity": 240.0,
-            "unit": "ml"
-          }
-        },
-        {
-          "name": "Banana",
+          "name": "Avocado",
           "amount": {
             "quantity": 1.0,
             "unit": "whole"
           }
         },
         {
-          "name": "Honey",
-          "amount": {
-            "quantity": 15.0,
-            "unit": "ml"
-          }
-        },
-        {
-          "name": "Cinnamon",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "g"
-          }
-        },
-        {
-          "name": "Mixed Berries",
+          "name": "Blueberries",
           "amount": {
             "quantity": 100.0,
             "unit": "g"
           }
+        },
+        {
+          "name": "Whole Wheat Bread",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "slices"
+          }
         }
       ],
       "steps": [
-        "Rinse the quinoa in a fine mesh strainer and drain well.",
-        "In a medium saucepan, bring the almond milk to a boil.",
-        "Add the quinoa to the saucepan and reduce the heat to low.",
-        "Cover and simmer for 10 minutes, or until the quinoa is tender and the liquid has been absorbed.",
-        "While the quinoa is cooking, slice the banana and mix with honey in a small bowl.",
-        "Add the cinnamon to the bowl and mix well.",
-        "Once the quinoa is cooked, fluff it with a fork and transfer it to a serving bowl.",
-        "Top the quinoa with the banana mixture and mixed berries.",
-        "Serve immediately and enjoy!"
+        "Begin by toasting the bread until it reaches the desired level of crispiness.",
+        "While the bread is toasting, cut the avocado in half and carefully remove the pit.",
+        "Mash the avocado halves in a bowl using a fork until you achieve the desired consistency.",
+        "Once the bread is toasted, spread the mashed avocado on top of each slice.",
+        "Wash the blueberries under cool running water and gently pat them dry with a paper towel.",
+        "Place the blueberries on top of the avocado layer.",
+        "Serve immediately and enjoy."
       ]
     },
     {
-      "name": "Mediterranean Chickpea Salad",
-      "prep_time": "20 minutes",
-      "cook_time": "0 minutes",
+      "name": "Quinoa and Chickpea Salad",
+      "prep_time": "15 minutes",
+      "cook_time": "20 minutes",
       "category": "Lunch",
       "ingredients": [
         {
+          "name": "Quinoa",
+          "amount": {
+            "quantity": 150.0,
+            "unit": "g"
+          }
+        },
+        {
           "name": "Chickpeas",
           "amount": {
-            "quantity": 400.0,
+            "quantity": 200.0,
             "unit": "g"
           }
         },
@@ -245,13 +143,6 @@
           }
         },
         {
-          "name": "Feta Cheese",
-          "amount": {
-            "quantity": 100.0,
-            "unit": "g"
-          }
-        },
-        {
           "name": "Olive Oil",
           "amount": {
             "quantity": 30.0,
@@ -264,31 +155,23 @@
             "quantity": 30.0,
             "unit": "ml"
           }
-        },
-        {
-          "name": "Fresh Parsley",
-          "amount": {
-            "quantity": 30.0,
-            "unit": "g"
-          }
         }
       ],
       "steps": [
-        "Drain and rinse the chickpeas.",
-        "Cut the cucumber in half lengthwise and slice into thin rounds.",
-        "Cut the cherry tomatoes in half.",
-        "Thinly slice the red onion.",
-        "In a large bowl, combine the chickpeas, cucumber, cherry tomatoes, and red onion.",
-        "Crumble the feta cheese into the bowl and mix well.",
-        "In a small bowl, whisk together the olive oil and lemon juice.",
-        "Pour the dressing over the salad and toss to combine.",
-        "Sprinkle the fresh parsley over the top of the salad and serve."
+        "Rinse the quinoa under cool running water and cook according to package instructions.",
+        "While the quinoa is cooking, chop the cucumber into small cubes and the red onion into thin slices.",
+        "Halve the cherry tomatoes and set aside.",
+        "Once the quinoa is cooked, allow it to cool down to room temperature.",
+        "In a large bowl, combine the cooked quinoa, chickpeas, cucumber, cherry tomatoes, and red onion.",
+        "In a separate bowl, whisk together the olive oil and lemon juice until well combined.",
+        "Pour the dressing over the quinoa mixture and toss to coat.",
+        "Serve immediately and enjoy."
       ]
     },
     {
       "name": "Lentil and Sweet Potato Curry",
       "prep_time": "20 minutes",
-      "cook_time": "30 minutes",
+      "cook_time": "40 minutes",
       "category": "Dinner",
       "ingredients": [
         {
@@ -356,20 +239,21 @@
         }
       ],
       "steps": [
-        "Rinse the lentils and drain well.",
-        "Peel and chop the sweet potatoes into 1-inch cubes.",
-        "Heat oil in a large saucepan over medium heat.",
-        "Add the onion and cook until softened, about 5 minutes.",
-        "Add the garlic and ginger and cook for 1 minute.",
-        "Add the curry powder and cook for 1 minute.",
-        "Add the lentils, sweet potatoes, coconut milk, and vegetable stock to the saucepan.",
-        "Bring to a boil, then reduce the heat to low and simmer for 20 minutes, or until the lentils and sweet potatoes are tender.",
-        "Stir in the spinach and cook until wilted.",
-        "Serve hot and enjoy!"
+        "Peel and chop the sweet potatoes into small cubes.",
+        "Rinse the lentils under cool running water and cook according to package instructions.",
+        "While the lentils are cooking, heat the oil in a large pan over medium heat.",
+        "Add the onion and cook until it is translucent, about 5 minutes.",
+        "Add the garlic and ginger and cook for another minute.",
+        "Add the curry powder and cook for 1-2 minutes, until fragrant.",
+        "Add the vegetable stock and bring to a boil.",
+        "Add the sweet potatoes and cook for 15-20 minutes, until they are tender.",
+        "Add the cooked lentils and coconut milk to the pan, and stir to combine.",
+        "Add the spinach and cook until wilted, about 2-3 minutes.",
+        "Serve hot over rice or with naan bread."
       ]
     },
     {
-      "name": "Avocado Toast",
+      "name": "Blueberries and Avocado Smoothie",
       "prep_time": "5 minutes",
       "cook_time": "0 minutes",
       "category": "Breakfast",
@@ -382,50 +266,64 @@
           }
         },
         {
-          "name": "Whole Grain Bread",
+          "name": "Blueberries",
           "amount": {
-            "quantity": 2.0,
-            "unit": "slices"
+            "quantity": 200.0,
+            "unit": "g"
           }
         },
         {
-          "name": "Salt",
+          "name": "Greek Yogurt",
           "amount": {
-            "quantity": 1.0,
-            "unit": "pinch"
+            "quantity": 200.0,
+            "unit": "g"
           }
         },
         {
-          "name": "Pepper",
+          "name": "Milk",
           "amount": {
-            "quantity": 1.0,
-            "unit": "pinch"
+            "quantity": 300.0,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Honey",
+          "amount": {
+            "quantity": 15.0,
+            "unit": "ml"
           }
         }
       ],
       "steps": [
-        "Toast the bread until lightly browned.",
-        "Mash the avocado in a bowl with a fork until mostly smooth.",
-        "Spread the mashed avocado on top of the toast.",
-        "Sprinkle salt and pepper to taste.",
-        "Serve and enjoy!"
+        "Peel and pit the avocado.",
+        "Add the avocado, blueberries, Greek yogurt, milk, and honey to a blender.",
+        "Blend the mixture until it is smooth and creamy.",
+        "Taste and adjust the sweetness or consistency as needed.",
+        "Pour the smoothie into a glass and serve immediately."
       ]
     },
     {
-      "name": "Grilled Chicken and Veggie Wrap",
-      "prep_time": "10 minutes",
+      "name": "Grilled Chicken and Chickpea Wrap",
+      "prep_time": "15 minutes",
       "cook_time": "10 minutes",
       "category": "Lunch",
       "ingredients": [
         {
-          "name": "Chicken Breast",
+          "name": "Chickpeas",
           "amount": {
-            "quantity": 1.0,
-            "unit": "whole"
+            "quantity": 200.0,
+            "unit": "g"
           }
         },
         {
-          "name": "Whole Grain Wrap",
+          "name": "Grilled Chicken",
+          "amount": {
+            "quantity": 150.0,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Whole Wheat Tortilla",
           "amount": {
             "quantity": 1.0,
             "unit": "whole"
@@ -439,53 +337,17 @@
           }
         },
         {
-          "name": "Tomato",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Lettuce",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        }
-      ],
-      "steps": [
-        "Grill the chicken breast until cooked through.",
-        "Slice the cucumber and tomato.",
-        "Place the sliced veggies and cooked chicken in the center of the wrap.",
-        "Add a handful of lettuce on top.",
-        "Fold the wrap in half and serve."
-      ]
-    },
-    {
-      "name": "Baked Salmon with Quinoa and Broccoli",
-      "prep_time": "15 minutes",
-      "cook_time": "20 minutes",
-      "category": "Dinner",
-      "ingredients": [
-        {
-          "name": "Salmon Fillet",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Quinoa",
-          "amount": {
-            "quantity": 100.0,
-            "unit": "g"
-          }
-        },
-        {
-          "name": "Broccoli",
+          "name": "Cherry Tomatoes",
           "amount": {
             "quantity": 200.0,
             "unit": "g"
+          }
+        },
+        {
+          "name": "Red Onion",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
           }
         },
         {
@@ -496,49 +358,48 @@
           }
         },
         {
-          "name": "Salt",
+          "name": "Lemon Juice",
           "amount": {
-            "quantity": 1.0,
-            "unit": "pinch"
-          }
-        },
-        {
-          "name": "Pepper",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "pinch"
+            "quantity": 30.0,
+            "unit": "ml"
           }
         }
       ],
       "steps": [
-        "Preheat the oven to 400\u00b0F (200\u00b0C).",
-        "Rinse the quinoa and drain well.",
-        "In a medium saucepan, bring the quinoa and water to a boil.",
-        "Reduce the heat to low and simmer for 15 minutes, or until the quinoa is tender and the liquid has been absorbed.",
-        "Toss the broccoli with olive oil, salt, and pepper on a baking sheet.",
-        "Roast the broccoli in the oven for 10 minutes, or until tender.",
-        "Season the salmon fillet with salt and pepper.",
-        "Bake the salmon in the oven for 10 minutes, or until cooked through.",
-        "Serve the salmon with quinoa and broccoli."
+        "Grill the chicken breast until it is cooked through.",
+        "While the chicken is cooking, chop the cucumber, cherry tomatoes, and red onion.",
+        "In a large bowl, combine the chickpeas, chopped vegetables, and cooked chicken.",
+        "In a separate bowl, whisk together the olive oil and lemon juice until well combined.",
+        "Pour the dressing over the chickpea mixture and toss to coat.",
+        "Warm the whole wheat tortilla in a dry pan or in the microwave.",
+        "Assemble the wrap by placing the chickpea mixture onto the tortilla and folding it to enclose."
       ]
     }
   ],
   "used_healthy_ingredients": [
     {
-      "id": 11,
-      "name": "Quinoa"
+      "id": 423,
+      "name": "Avocado"
     },
     {
-      "id": 7,
-      "name": "Chickpeas"
+      "id": 276,
+      "name": "Blueberries"
+    },
+    {
+      "id": 105,
+      "name": "Quinoa"
     },
     {
       "id": 3,
       "name": "Sweet Potatoes"
     },
     {
-      "id": 420,
-      "name": "Avocado"
+      "id": 7,
+      "name": "Chickpeas"
+    },
+    {
+      "id": 11,
+      "name": "Lentils"
     }
   ]
 }
