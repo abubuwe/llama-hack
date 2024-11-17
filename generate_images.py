@@ -5,6 +5,8 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from PIL import Image, ImageDraw, ImageFont
 import io
+from dotenv import load_dotenv
+import os
 
 def extract_recipe_names(meal_plan_path: str) -> List[str]:
     """Extract unique recipe names from meal plan JSON."""
@@ -65,7 +67,14 @@ def generate_recipe_images(recipe_names: List[str], api_key: str):
                 print(f"Error generating image for {recipe}: {e}")
                 
 def main():
-    API_KEY = "sk-ImDZsgcrBFyCdPPG6PDgy3CfGSgG5uWtyw65fJ1KlQN1e03J"  # Replace with your actual API key
+    # Load environment variables from .env file
+    load_dotenv()
+    
+    # Get API key from environment with error handling
+    API_KEY = os.getenv("STABILITY_API_KEY")
+    if not API_KEY:
+        raise ValueError("STABILITY_API_KEY not found in environment variables")
+    
     meal_plan_path = "results/meal_plan.json"
     
     recipe_names = extract_recipe_names(meal_plan_path)
