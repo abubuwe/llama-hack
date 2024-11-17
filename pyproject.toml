@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "tesco-scrape"
+version = "0.1.0"
+description = "Playing with scraping tesco"
+authors = ["Sajaysurya Ganesh <sajay.surya@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.*"
+ipywidgets = "^8.1.5"
+ipykernel = "^6.29.5"
+pyomo = "^6.8.0"
+matplotlib = "^3.9.2"
+seaborn = "^0.13.2"
+numpy = "^2.1.0"
+pandas = "^2.2.2"
+bs4 = "^0.0.2"
+beautifulsoup4 = "^4.12.3"
+requests = "^2.32.3"
+selenium = "^4.26.1"
+webdriver-manager = "^4.0.2"
+chromedriver-autoinstaller = "^0.6.4"
+firecrawl = "^1.5.0"
+groq = "^0.12.0"
+tqdm = "^4.67.0"
+fastapi = {extras = ["standard"], version = "^0.115.5"}
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

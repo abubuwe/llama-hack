@@ -1,0 +1,27 @@
+{
+    "name": "tesco-scrape",
+    "context": ".",
+	"dockerFile": "Dockerfile",
+	"containerUser": "user",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
+    "workspaceFolder": "/app",
+	"mounts": ["source=${localEnv:HOME}/.bash_history,target=/home/user/.bash_history,type=bind,consistency=cached"],
+	"postCreateCommand": "bash /app/.devcontainer/post_create_commands.sh",
+	"customizations": {
+		"vscode": {
+            "extensions": [
+                "janisdd.vscode-edit-csv",
+                "bobmagicii.autofoldyeah",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-renderers",
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "KevinRose.vsc-python-indent",
+                "GitHub.copilot",
+                "GitHub.vscode-pull-request-github",
+                "codezombiech.gitignore",
+                "eamodio.gitlens"
+            ]
+		}
+	}
+}
