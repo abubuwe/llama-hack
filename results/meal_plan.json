@@ -6,11 +6,24 @@
     "Sweet Potatoes",
     "Quinoa",
     "Avocado",
-    "Salmon",
-    "Spinach",
+    "Banana",
     "Mixed Berries",
-    "Almonds",
-    "Greek Yogurt"
+    "Almond Milk",
+    "Honey",
+    "Cinnamon",
+    "Spinach",
+    "Coconut Milk",
+    "Garlic",
+    "Ginger",
+    "Curry Powder",
+    "Vegetable Stock",
+    "Onion",
+    "Fresh Parsley",
+    "Cucumber",
+    "Cherry Tomatoes",
+    "Red Onion",
+    "Feta Cheese",
+    "Lemon Juice"
   ],
   "meal_plan": {
     "days": [
@@ -19,11 +32,11 @@
         "meals": [
           {
             "type": "Breakfast",
-            "recipe_name": "Avocado Toast"
+            "recipe_name": "Quinoa Breakfast Bowl"
           },
           {
             "type": "Lunch",
-            "recipe_name": "Grilled Chicken and Quinoa Bowl"
+            "recipe_name": "Mediterranean Chickpea Salad"
           },
           {
             "type": "Dinner",
@@ -36,15 +49,15 @@
         "meals": [
           {
             "type": "Breakfast",
-            "recipe_name": "Greek Yogurt Parfait"
+            "recipe_name": "Avocado Toast"
           },
           {
             "type": "Lunch",
-            "recipe_name": "Chickpea and Avocado Salad"
+            "recipe_name": "Grilled Chicken and Veggie Wrap"
           },
           {
             "type": "Dinner",
-            "recipe_name": "Baked Salmon with Roasted Vegetables"
+            "recipe_name": "Baked Salmon with Quinoa and Broccoli"
           }
         ]
       },
@@ -53,15 +66,15 @@
         "meals": [
           {
             "type": "Breakfast",
-            "recipe_name": "Quinoa Breakfast Bowl"
+            "recipe_name": "Banana and Almond Milk Smoothie"
           },
           {
             "type": "Lunch",
-            "recipe_name": "Grilled Chicken and Vegetable Wrap"
+            "recipe_name": "Lentil Soup with Whole Grain Bread"
           },
           {
             "type": "Dinner",
-            "recipe_name": "Spinach and Lentil Stew"
+            "recipe_name": "Grilled Chicken and Veggie Stir Fry"
           }
         ]
       },
@@ -70,15 +83,15 @@
         "meals": [
           {
             "type": "Breakfast",
-            "recipe_name": "Avocado and Almond Smoothie"
+            "recipe_name": "Scrambled Eggs with Spinach and Whole Grain Toast"
           },
           {
             "type": "Lunch",
-            "recipe_name": "Quinoa and Black Bean Salad"
+            "recipe_name": "Chickpea and Avocado Salad"
           },
           {
             "type": "Dinner",
-            "recipe_name": "Grilled Chicken and Sweet Potato Hash"
+            "recipe_name": "Baked Sweet Potato with Black Beans and Salsa"
           }
         ]
       },
@@ -87,15 +100,15 @@
         "meals": [
           {
             "type": "Breakfast",
-            "recipe_name": "Greek Yogurt and Mixed Berries"
+            "recipe_name": "Greek Yogurt with Berries and Granola"
           },
           {
             "type": "Lunch",
-            "recipe_name": "Chickpea and Spinach Salad"
+            "recipe_name": "Grilled Chicken and Quinoa Bowl"
           },
           {
             "type": "Dinner",
-            "recipe_name": "Baked Chicken and Roasted Vegetables"
+            "recipe_name": "Slow Cooker Lentil Curry"
           }
         ]
       },
@@ -104,15 +117,15 @@
         "meals": [
           {
             "type": "Breakfast",
-            "recipe_name": "Quinoa and Banana Pancakes"
+            "recipe_name": "Avocado and Bacon Omelette"
           },
           {
             "type": "Lunch",
-            "recipe_name": "Grilled Chicken and Avocado Wrap"
+            "recipe_name": "Turkey and Avocado Wrap"
           },
           {
             "type": "Dinner",
-            "recipe_name": "Lentil and Vegetable Stew"
+            "recipe_name": "Baked Chicken Thighs with Roasted Vegetables"
           }
         ]
       },
@@ -121,15 +134,15 @@
         "meals": [
           {
             "type": "Breakfast",
-            "recipe_name": "Avocado Toast with Poached Eggs"
+            "recipe_name": "Banana Pancakes with Almond Butter and Maple Syrup"
           },
           {
             "type": "Lunch",
-            "recipe_name": "Chickpea and Quinoa Bowl"
+            "recipe_name": "Grilled Chicken and Quinoa Salad"
           },
           {
             "type": "Dinner",
-            "recipe_name": "Grilled Salmon with Roasted Sweet Potatoes"
+            "recipe_name": "Slow Cooker Vegetable Stew"
           }
         ]
       }
@@ -137,19 +150,239 @@
   },
   "recipes": [
     {
-      "name": "Avocado Toast",
-      "prep_time": "10 minutes",
-      "cook_time": "0 minutes",
+      "name": "Quinoa Breakfast Bowl",
+      "prep_time": "15 minutes",
+      "cook_time": "10 minutes",
+      "category": "Breakfast",
       "ingredients": [
         {
-          "name": "Avocado",
+          "name": "Quinoa",
           "amount": {
-            "quantity": 2.0,
+            "quantity": 80.0,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Almond Milk",
+          "amount": {
+            "quantity": 240.0,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Banana",
+          "amount": {
+            "quantity": 1.0,
             "unit": "whole"
           }
         },
         {
-          "name": "Whole Wheat Bread",
+          "name": "Honey",
+          "amount": {
+            "quantity": 15.0,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Cinnamon",
+          "amount": {
+            "quantity": 2.0,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Mixed Berries",
+          "amount": {
+            "quantity": 100.0,
+            "unit": "g"
+          }
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa in a fine mesh strainer and drain well.",
+        "In a medium saucepan, bring the almond milk to a boil.",
+        "Add the quinoa to the saucepan and reduce the heat to low.",
+        "Cover and simmer for 10 minutes, or until the quinoa is tender and the liquid has been absorbed.",
+        "While the quinoa is cooking, slice the banana and mix with honey in a small bowl.",
+        "Add the cinnamon to the bowl and mix well.",
+        "Once the quinoa is cooked, fluff it with a fork and transfer it to a serving bowl.",
+        "Top the quinoa with the banana mixture and mixed berries.",
+        "Serve immediately and enjoy!"
+      ]
+    },
+    {
+      "name": "Mediterranean Chickpea Salad",
+      "prep_time": "20 minutes",
+      "cook_time": "0 minutes",
+      "category": "Lunch",
+      "ingredients": [
+        {
+          "name": "Chickpeas",
+          "amount": {
+            "quantity": 400.0,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Cucumber",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Cherry Tomatoes",
+          "amount": {
+            "quantity": 200.0,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Red Onion",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Feta Cheese",
+          "amount": {
+            "quantity": 100.0,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Olive Oil",
+          "amount": {
+            "quantity": 30.0,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Lemon Juice",
+          "amount": {
+            "quantity": 30.0,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Fresh Parsley",
+          "amount": {
+            "quantity": 30.0,
+            "unit": "g"
+          }
+        }
+      ],
+      "steps": [
+        "Drain and rinse the chickpeas.",
+        "Cut the cucumber in half lengthwise and slice into thin rounds.",
+        "Cut the cherry tomatoes in half.",
+        "Thinly slice the red onion.",
+        "In a large bowl, combine the chickpeas, cucumber, cherry tomatoes, and red onion.",
+        "Crumble the feta cheese into the bowl and mix well.",
+        "In a small bowl, whisk together the olive oil and lemon juice.",
+        "Pour the dressing over the salad and toss to combine.",
+        "Sprinkle the fresh parsley over the top of the salad and serve."
+      ]
+    },
+    {
+      "name": "Lentil and Sweet Potato Curry",
+      "prep_time": "20 minutes",
+      "cook_time": "30 minutes",
+      "category": "Dinner",
+      "ingredients": [
+        {
+          "name": "Lentils",
+          "amount": {
+            "quantity": 200.0,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Sweet Potatoes",
+          "amount": {
+            "quantity": 400.0,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Coconut Milk",
+          "amount": {
+            "quantity": 400.0,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Onion",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Garlic",
+          "amount": {
+            "quantity": 4.0,
+            "unit": "cloves"
+          }
+        },
+        {
+          "name": "Ginger",
+          "amount": {
+            "quantity": 30.0,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Curry Powder",
+          "amount": {
+            "quantity": 15.0,
+            "unit": "g"
+          }
+        },
+        {
+          "name": "Vegetable Stock",
+          "amount": {
+            "quantity": 500.0,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Spinach",
+          "amount": {
+            "quantity": 200.0,
+            "unit": "g"
+          }
+        }
+      ],
+      "steps": [
+        "Rinse the lentils and drain well.",
+        "Peel and chop the sweet potatoes into 1-inch cubes.",
+        "Heat oil in a large saucepan over medium heat.",
+        "Add the onion and cook until softened, about 5 minutes.",
+        "Add the garlic and ginger and cook for 1 minute.",
+        "Add the curry powder and cook for 1 minute.",
+        "Add the lentils, sweet potatoes, coconut milk, and vegetable stock to the saucepan.",
+        "Bring to a boil, then reduce the heat to low and simmer for 20 minutes, or until the lentils and sweet potatoes are tender.",
+        "Stir in the spinach and cook until wilted.",
+        "Serve hot and enjoy!"
+      ]
+    },
+    {
+      "name": "Avocado Toast",
+      "prep_time": "5 minutes",
+      "cook_time": "0 minutes",
+      "category": "Breakfast",
+      "ingredients": [
+        {
+          "name": "Avocado",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Whole Grain Bread",
           "amount": {
             "quantity": 2.0,
             "unit": "slices"
@@ -161,609 +394,132 @@
             "quantity": 1.0,
             "unit": "pinch"
           }
-        }
-      ],
-      "steps": [
-        "Begin by toasting the whole wheat bread until it's lightly browned and crispy.",
-        "While the bread is toasting, slice the avocado in half and remove the pit.",
-        "Mash the avocado in a bowl with a fork until it's mostly smooth.",
-        "Once the bread is toasted, spread the mashed avocado on top of each slice.",
-        "Sprinkle a pinch of salt on top of the avocado for added flavor.",
-        "Serve and enjoy!"
-      ]
-    },
-    {
-      "name": "Grilled Chicken and Quinoa Bowl",
-      "prep_time": "20 minutes",
-      "cook_time": "20 minutes",
-      "ingredients": [
-        {
-          "name": "Chicken Breast",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "whole"
-          }
         },
         {
-          "name": "Quinoa",
+          "name": "Pepper",
           "amount": {
             "quantity": 1.0,
-            "unit": "cup"
-          }
-        },
-        {
-          "name": "Mixed Vegetables",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
+            "unit": "pinch"
           }
         }
       ],
       "steps": [
-        "Preheat a grill or grill pan to medium-high heat.",
-        "Season the chicken breast with your favorite seasonings and grill for 5-6 minutes per side, or until cooked through.",
-        "While the chicken is cooking, cook the quinoa according to package instructions.",
-        "Toss the mixed vegetables with a little bit of oil and seasoning, and saut\u00e9 in a pan until tender.",
-        "To assemble the bowl, slice the grilled chicken and place on top of the cooked quinoa and mixed vegetables.",
-        "Serve and enjoy!"
-      ]
-    },
-    {
-      "name": "Lentil and Sweet Potato Curry",
-      "prep_time": "25 minutes",
-      "cook_time": "30 minutes",
-      "ingredients": [
-        {
-          "name": "Lentils",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        },
-        {
-          "name": "Sweet Potatoes",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Curry Powder",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "teaspoon"
-          }
-        }
-      ],
-      "steps": [
-        "Heat oil in a large pan over medium heat.",
-        "Add the curry powder and cook for 1-2 minutes, or until fragrant.",
-        "Add the lentils and sweet potatoes to the pan, and stir to combine.",
-        "Add enough water to the pan to cover the lentils and sweet potatoes, and bring to a boil.",
-        "Reduce the heat to low and simmer for 20-25 minutes, or until the lentils and sweet potatoes are tender.",
-        "Season with salt and pepper to taste, and serve over rice or with naan bread."
-      ]
-    },
-    {
-      "name": "Greek Yogurt Parfait",
-      "prep_time": "5 minutes",
-      "cook_time": "0 minutes",
-      "ingredients": [
-        {
-          "name": "Greek Yogurt",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        },
-        {
-          "name": "Granola",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "tablespoon"
-          }
-        },
-        {
-          "name": "Mixed Berries",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        }
-      ],
-      "steps": [
-        "Layer the Greek yogurt, granola, and mixed berries in a bowl.",
-        "Repeat the layers until all the ingredients are used up, ending with a layer of yogurt on top.",
-        "Serve chilled and enjoy!"
-      ]
-    },
-    {
-      "name": "Chickpea and Avocado Salad",
-      "prep_time": "15 minutes",
-      "cook_time": "0 minutes",
-      "ingredients": [
-        {
-          "name": "Chickpeas",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        },
-        {
-          "name": "Avocado",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Lemon Juice",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "tablespoon"
-          }
-        }
-      ],
-      "steps": [
-        "Mash the avocado in a bowl with a fork until it's mostly smooth.",
-        "Add the chickpeas to the bowl and stir to combine.",
-        "Squeeze the lemon juice over the top of the chickpea and avocado mixture, and stir to combine.",
-        "Season with salt and pepper to taste, and serve on top of a bed of greens or as a sandwich filling."
-      ]
-    },
-    {
-      "name": "Baked Salmon with Roasted Vegetables",
-      "prep_time": "20 minutes",
-      "cook_time": "20 minutes",
-      "ingredients": [
-        {
-          "name": "Salmon Fillets",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Mixed Vegetables",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "cups"
-          }
-        },
-        {
-          "name": "Olive Oil",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "tablespoons"
-          }
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 400\u00b0F (200\u00b0C).",
-        "Line a baking sheet with parchment paper or aluminum foil.",
-        "Place the salmon fillets on the prepared baking sheet.",
-        "Toss the mixed vegetables with a little bit of oil and seasoning, and spread out in a single layer on the baking sheet around the salmon.",
-        "Bake in the preheated oven for 12-15 minutes, or until the salmon is cooked through and the vegetables are tender.",
-        "Serve hot and enjoy!"
-      ]
-    },
-    {
-      "name": "Spinach and Lentil Stew",
-      "prep_time": "25 minutes",
-      "cook_time": "30 minutes",
-      "ingredients": [
-        {
-          "name": "Lentils",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        },
-        {
-          "name": "Spinach",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "cups"
-          }
-        },
-        {
-          "name": "Vegetable Broth",
-          "amount": {
-            "quantity": 4.0,
-            "unit": "cups"
-          }
-        }
-      ],
-      "steps": [
-        "Heat oil in a large pan over medium heat.",
-        "Add the lentils and cook for 1-2 minutes, or until fragrant.",
-        "Add the vegetable broth to the pan and bring to a boil.",
-        "Reduce the heat to low and simmer for 20-25 minutes, or until the lentils are tender.",
-        "Stir in the spinach and cook until wilted.",
-        "Season with salt and pepper to taste, and serve hot."
-      ]
-    },
-    {
-      "name": "Avocado and Almond Smoothie",
-      "prep_time": "5 minutes",
-      "cook_time": "0 minutes",
-      "ingredients": [
-        {
-          "name": "Avocado",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Almond Milk",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        },
-        {
-          "name": "Almonds",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "ounce"
-          }
-        }
-      ],
-      "steps": [
-        "Add the avocado, almond milk, and almonds to a blender.",
-        "Blend until smooth and creamy.",
-        "Add honey or maple syrup to taste, if desired.",
-        "Serve chilled and enjoy!"
-      ]
-    },
-    {
-      "name": "Quinoa and Black Bean Salad",
-      "prep_time": "15 minutes",
-      "cook_time": "0 minutes",
-      "ingredients": [
-        {
-          "name": "Quinoa",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        },
-        {
-          "name": "Black Beans",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        },
-        {
-          "name": "Mixed Vegetables",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        }
-      ],
-      "steps": [
-        "Cook the quinoa according to package instructions.",
-        "Toss the cooked quinoa with the black beans, mixed vegetables, and a squeeze of lime juice.",
-        "Season with salt and pepper to taste, and serve chilled or at room temperature."
-      ]
-    },
-    {
-      "name": "Grilled Chicken and Sweet Potato Hash",
-      "prep_time": "20 minutes",
-      "cook_time": "20 minutes",
-      "ingredients": [
-        {
-          "name": "Chicken Breast",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Sweet Potatoes",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Olive Oil",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "tablespoon"
-          }
-        }
-      ],
-      "steps": [
-        "Preheat a grill or grill pan to medium-high heat.",
-        "Season the chicken breast with your favorite seasonings and grill for 5-6 minutes per side, or until cooked through.",
-        "While the chicken is cooking, slice the sweet potatoes into thin rounds.",
-        "Toss the sweet potato slices with a little bit of oil and seasoning, and grill for 2-3 minutes per side, or until tender.",
-        "To assemble the hash, chop the cooked chicken and sweet potatoes into small pieces and stir to combine.",
-        "Serve hot and enjoy!"
-      ]
-    },
-    {
-      "name": "Chickpea and Spinach Salad",
-      "prep_time": "15 minutes",
-      "cook_time": "0 minutes",
-      "ingredients": [
-        {
-          "name": "Chickpeas",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        },
-        {
-          "name": "Spinach",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "cups"
-          }
-        },
-        {
-          "name": "Lemon Juice",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "tablespoon"
-          }
-        }
-      ],
-      "steps": [
-        "Mash the chickpeas in a bowl with a fork until they're mostly smooth.",
-        "Stir in the spinach and lemon juice until the spinach is wilted.",
-        "Season with salt and pepper to taste, and serve on top of a bed of greens or as a sandwich filling."
-      ]
-    },
-    {
-      "name": "Baked Chicken and Roasted Vegetables",
-      "prep_time": "20 minutes",
-      "cook_time": "20 minutes",
-      "ingredients": [
-        {
-          "name": "Chicken Breast",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Mixed Vegetables",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "cups"
-          }
-        },
-        {
-          "name": "Olive Oil",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "tablespoons"
-          }
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 400\u00b0F (200\u00b0C).",
-        "Line a baking sheet with parchment paper or aluminum foil.",
-        "Place the chicken breast on the prepared baking sheet.",
-        "Toss the mixed vegetables with a little bit of oil and seasoning, and spread out in a single layer on the baking sheet around the chicken.",
-        "Bake in the preheated oven for 12-15 minutes, or until the chicken is cooked through and the vegetables are tender.",
-        "Serve hot and enjoy!"
-      ]
-    },
-    {
-      "name": "Quinoa and Banana Pancakes",
-      "prep_time": "15 minutes",
-      "cook_time": "10 minutes",
-      "ingredients": [
-        {
-          "name": "Quinoa",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        },
-        {
-          "name": "Bananas",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Eggs",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "whole"
-          }
-        }
-      ],
-      "steps": [
-        "Mash the bananas in a bowl with a fork until they're mostly smooth.",
-        "Stir in the quinoa and eggs until well combined.",
-        "Heat a non-stick pan or griddle over medium heat.",
-        "Drop the batter by 1/4 cupfuls onto the pan or griddle.",
-        "Cook for 2-3 minutes, or until bubbles appear on the surface and the edges start to dry.",
-        "Flip and cook for another 1-2 minutes, or until golden brown."
-      ]
-    },
-    {
-      "name": "Grilled Chicken and Avocado Wrap",
-      "prep_time": "15 minutes",
-      "cook_time": "5 minutes",
-      "ingredients": [
-        {
-          "name": "Chicken Breast",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Avocado",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Whole Wheat Tortilla",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "whole"
-          }
-        }
-      ],
-      "steps": [
-        "Preheat a grill or grill pan to medium-high heat.",
-        "Season the chicken breast with your favorite seasonings and grill for 5-6 minutes per side, or until cooked through.",
-        "While the chicken is cooking, slice the avocado into thin pieces.",
-        "Warm the whole wheat tortilla by wrapping it in a damp paper towel and microwaving for 20-30 seconds.",
-        "Assemble the wrap by slicing the cooked chicken and placing it in the center of the tortilla, topping with avocado and your favorite toppings."
-      ]
-    },
-    {
-      "name": "Lentil and Vegetable Stew",
-      "prep_time": "25 minutes",
-      "cook_time": "30 minutes",
-      "ingredients": [
-        {
-          "name": "Lentils",
-          "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        },
-        {
-          "name": "Mixed Vegetables",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "cups"
-          }
-        },
-        {
-          "name": "Vegetable Broth",
-          "amount": {
-            "quantity": 4.0,
-            "unit": "cups"
-          }
-        }
-      ],
-      "steps": [
-        "Heat oil in a large pan over medium heat.",
-        "Add the lentils and cook for 1-2 minutes, or until fragrant.",
-        "Add the mixed vegetables and vegetable broth to the pan, and bring to a boil.",
-        "Reduce the heat to low and simmer for 20-25 minutes, or until the lentils are tender.",
-        "Season with salt and pepper to taste, and serve hot."
-      ]
-    },
-    {
-      "name": "Avocado Toast with Poached Eggs",
-      "prep_time": "10 minutes",
-      "cook_time": "5 minutes",
-      "ingredients": [
-        {
-          "name": "Avocado",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Whole Wheat Bread",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "slices"
-          }
-        },
-        {
-          "name": "Eggs",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "whole"
-          }
-        }
-      ],
-      "steps": [
-        "Toast the whole wheat bread until lightly browned and crispy.",
+        "Toast the bread until lightly browned.",
         "Mash the avocado in a bowl with a fork until mostly smooth.",
-        "Spread the mashed avocado on top of the toasted bread.",
-        "Poach the eggs by cracking them into a pot of simmering water and cooking for 3-5 minutes, or until the whites are set and the yolks are cooked to your desired doneness.",
-        "Place the poached eggs on top of the avocado toast and serve immediately."
+        "Spread the mashed avocado on top of the toast.",
+        "Sprinkle salt and pepper to taste.",
+        "Serve and enjoy!"
       ]
     },
     {
-      "name": "Chickpea and Quinoa Bowl",
-      "prep_time": "15 minutes",
-      "cook_time": "0 minutes",
+      "name": "Grilled Chicken and Veggie Wrap",
+      "prep_time": "10 minutes",
+      "cook_time": "10 minutes",
+      "category": "Lunch",
       "ingredients": [
         {
-          "name": "Chickpeas",
+          "name": "Chicken Breast",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Whole Grain Wrap",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Cucumber",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Tomato",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
+          }
+        },
+        {
+          "name": "Lettuce",
           "amount": {
             "quantity": 1.0,
             "unit": "cup"
+          }
+        }
+      ],
+      "steps": [
+        "Grill the chicken breast until cooked through.",
+        "Slice the cucumber and tomato.",
+        "Place the sliced veggies and cooked chicken in the center of the wrap.",
+        "Add a handful of lettuce on top.",
+        "Fold the wrap in half and serve."
+      ]
+    },
+    {
+      "name": "Baked Salmon with Quinoa and Broccoli",
+      "prep_time": "15 minutes",
+      "cook_time": "20 minutes",
+      "category": "Dinner",
+      "ingredients": [
+        {
+          "name": "Salmon Fillet",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "whole"
           }
         },
         {
           "name": "Quinoa",
           "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
+            "quantity": 100.0,
+            "unit": "g"
           }
         },
         {
-          "name": "Mixed Vegetables",
+          "name": "Broccoli",
           "amount": {
-            "quantity": 1.0,
-            "unit": "cup"
-          }
-        }
-      ],
-      "steps": [
-        "Cook the quinoa according to package instructions.",
-        "Toss the cooked quinoa with the chickpeas, mixed vegetables, and a squeeze of lemon juice.",
-        "Season with salt and pepper to taste, and serve chilled or at room temperature."
-      ]
-    },
-    {
-      "name": "Grilled Salmon with Roasted Sweet Potatoes",
-      "prep_time": "20 minutes",
-      "cook_time": "20 minutes",
-      "ingredients": [
-        {
-          "name": "Salmon Fillets",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "whole"
-          }
-        },
-        {
-          "name": "Sweet Potatoes",
-          "amount": {
-            "quantity": 2.0,
-            "unit": "whole"
+            "quantity": 200.0,
+            "unit": "g"
           }
         },
         {
           "name": "Olive Oil",
           "amount": {
-            "quantity": 2.0,
-            "unit": "tablespoons"
+            "quantity": 30.0,
+            "unit": "ml"
+          }
+        },
+        {
+          "name": "Salt",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "pinch"
+          }
+        },
+        {
+          "name": "Pepper",
+          "amount": {
+            "quantity": 1.0,
+            "unit": "pinch"
           }
         }
       ],
       "steps": [
         "Preheat the oven to 400\u00b0F (200\u00b0C).",
-        "Line a baking sheet with parchment paper or aluminum foil.",
-        "Place the sweet potatoes on the prepared baking sheet and toss with a little bit of oil and seasoning.",
-        "Roast in the preheated oven for 15-20 minutes, or until tender.",
-        "While the sweet potatoes are roasting, preheat a grill or grill pan to medium-high heat.",
-        "Season the salmon fillets with your favorite seasonings and grill for 4-6 minutes per side, or until cooked through.",
-        "Serve the grilled salmon on top of the roasted sweet potatoes and enjoy!"
+        "Rinse the quinoa and drain well.",
+        "In a medium saucepan, bring the quinoa and water to a boil.",
+        "Reduce the heat to low and simmer for 15 minutes, or until the quinoa is tender and the liquid has been absorbed.",
+        "Toss the broccoli with olive oil, salt, and pepper on a baking sheet.",
+        "Roast the broccoli in the oven for 10 minutes, or until tender.",
+        "Season the salmon fillet with salt and pepper.",
+        "Bake the salmon in the oven for 10 minutes, or until cooked through.",
+        "Serve the salmon with quinoa and broccoli."
       ]
     }
   ],
@@ -781,32 +537,8 @@
       "name": "Sweet Potatoes"
     },
     {
-      "id": 296,
-      "name": "Greek Yogurt"
-    },
-    {
-      "id": 259,
-      "name": "Orange"
-    },
-    {
-      "id": 276,
-      "name": "Blueberries"
-    },
-    {
-      "id": 383,
-      "name": "Raspberries"
-    },
-    {
-      "id": 384,
-      "name": "Chicken Breast"
-    },
-    {
-      "id": 483,
-      "name": "Sockeye Salmon Fillets"
-    },
-    {
-      "id": 504,
-      "name": "Scallops"
+      "id": 420,
+      "name": "Avocado"
     }
   ]
 }

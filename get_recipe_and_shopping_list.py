@@ -31,6 +31,7 @@ class Recipe(BaseModel):
     name: str
     prep_time: str
     cook_time: str
+    category: str
     ingredients: List[Ingredient]
     steps: List[str]
 

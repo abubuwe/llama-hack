@@ -244,13 +244,15 @@ Return JSON with this structure:
 """
 
 RECIPE_DETAILS_PROMPT = """
-Given a recipe name and list of ingredients, provide detailed preparation instructions. Return JSON matching this structure:
+Given a recipe name and list of ingredients, provide detailed preparation instructions and the meal type out of this list:[vegan, vegetarian, pescetarian,omnivorous]
+Return JSON matching this structure:
 
 {
   "recipe_details": [{
     "name": "Mediterranean Chickpea Salad",
     "prep_time": "20 minutes",
     "cook_time": "0 minutes",
+    "category": "Vegan"
     "ingredients": [
       {
         "name": "Chickpeas",
