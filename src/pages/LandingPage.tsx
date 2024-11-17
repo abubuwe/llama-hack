@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
-import { ChefHat, ArrowRight } from 'lucide-react';
+import { 
+  ChefHat, 
+  ArrowRight, 
+  ShoppingCart, 
+  ShoppingBag, 
+  Store, 
+  Building2 
+} from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 interface Props {
-  onSubmit: (message: string) => void;
+  onSubmit: (message: string, days: number, selectedSupermarket: string) => void;
 }
 
 const SUGGESTIONS = [
@@ -13,6 +20,33 @@ const SUGGESTIONS = [
   "Quick vegetarian meals",
   "Recipes with chickpeas",
   "Easy meal prep ideas"
+];
+
+const SUPERMARKETS = [
+  { 
+    id: 'tesco', 
+    name: 'Tesco',
+    icon: ShoppingCart,
+    color: '#ee1c2e'
+  },
+  { 
+    id: 'asda', 
+    name: 'ASDA',
+    icon: ShoppingBag,
+    color: '#78BE20'
+  },
+  { 
+    id: 'sainsburys', 
+    name: "Sainsbury's",
+    icon: Store,
+    color: '#ff8200'
+  },
+  { 
+    id: 'ocado', 
+    name: 'Ocado',
+    icon: Building2,
+    color: '#662d91'
+  }
 ];
 
 const FLOATING_ITEMS = [
@@ -33,13 +67,15 @@ const FLOATING_ITEMS = [
 
 export default function LandingPage({ onSubmit }: Props) {
   const [message, setMessage] = useState('');
+  const [days, setDays] = useState(7);
+  const [selectedSupermarket, setSelectedSupermarket] = useState('tesco');
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!message.trim()) return;
     
-    onSubmit(message);
+    onSubmit(message, days, selectedSupermarket);
     navigate('/recipes');
   };
 
@@ -84,7 +120,7 @@ export default function LandingPage({ onSubmit }: Props) {
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="max-w-xl mx-auto">
+            <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-6">
               <div className="relative">
                 <input
                   type="text"
@@ -100,6 +136,64 @@ export default function LandingPage({ onSubmit }: Props) {
                 >
                   <ArrowRight className="w-6 h-6" />
                 </button>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center justify-center">
+                <div className="flex items-center gap-2">
+                  <label htmlFor="days" className="text-sm font-medium text-gray-700">
+                    Plan for
+                  </label>
+                  <input
+                    type="number"
+                    id="days"
+                    min="1"
+                    max="30"
+                    value={days}
+                    onChange={(e) => setDays(Math.max(1, Math.min(30, parseInt(e.target.value) || 1)))}
+                    className="w-20 px-3 py-1.5 text-sm border-2 border-purple-200 rounded-lg focus:outline-none focus:border-purple-500 bg-white/80"
+                  />
+                  <span className="text-sm font-medium text-gray-700">days</span>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-2">
+                  {SUPERMARKETS.map(supermarket => {
+                    const Icon = supermarket.icon;
+                    return (
+                      <button
+                        key={supermarket.id}
+                        type="button"
+                        onClick={() => setSelectedSupermarket(supermarket.id)}
+                        className={`
+                          px-3 py-1.5 rounded-full text-sm transition-all duration-200
+                          flex items-center gap-2
+                          ${selectedSupermarket === supermarket.id
+                            ? 'bg-white ring-2'
+                            : 'bg-white/80 hover:bg-white'
+                          }
+                        `}
+                        style={{
+                          color: supermarket.color,
+                          borderColor: selectedSupermarket === supermarket.id ? supermarket.color : 'transparent'
+                        }}
+                      >
+                        <Icon 
+                          className="w-4 h-4" 
+                          style={{ 
+                            stroke: selectedSupermarket === supermarket.id 
+                              ? supermarket.color 
+                              : '#6b7280' 
+                          }} 
+                        />
+                        <span className={selectedSupermarket === supermarket.id 
+                          ? 'font-medium'
+                          : 'text-gray-500'
+                        }>
+                          {supermarket.name}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             </form>
 

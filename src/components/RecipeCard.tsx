@@ -7,9 +7,10 @@ import { useBookmarks } from '../contexts/BookmarkContext';
 
 interface Props {
   recipe: Recipe;
+  selectedSupermarket: string;
 }
 
-export default function RecipeCard({ recipe }: Props) {
+export default function RecipeCard({ recipe, selectedSupermarket }: Props) {
   const { isBookmarked, toggleBookmark } = useBookmarks();
   const navigate = useNavigate();
   const savings = (recipe.regularCost - recipe.totalCost).toFixed(2);
@@ -91,7 +92,7 @@ export default function RecipeCard({ recipe }: Props) {
         <div className="pt-2 border-t border-gray-100">
           <SupermarketPriceComparison 
             prices={totalPricesBySupermarket}
-            compact={true}
+            selectedSupermarket={selectedSupermarket}
           />
         </div>
       </div>

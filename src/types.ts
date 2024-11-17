@@ -40,7 +40,12 @@ export interface DietaryPreferences {
 }
 
 export interface Filters {
-  dietary: DietaryPreferences;
+  dietary: {
+    vegetarian: boolean;
+    vegan: boolean;
+    glutenFree: boolean;
+    dairyFree: boolean;
+  };
   timeRange: {
     min: number;
     max: number;
@@ -49,4 +54,6 @@ export interface Filters {
     min: number;
     max: number;
   };
+  days: number;
+  selectedSupermarket: string;
 }

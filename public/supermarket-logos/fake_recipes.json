@@ -1,0 +1,222 @@
+{
+  "status": "success",
+  "data": {
+    "identified_healthy_ingredients": [
+      "Salmon Fillets",
+      "Avocado",
+      "Lentils",
+      "Chickpeas",
+      "Sweet Potatoes",
+      "Quinoa",
+      "Mushrooms",
+      "Asparagus",
+      "Free Range Eggs",
+      "Greek Yogurt"
+    ],
+    "meal_plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            { "type": "Breakfast", "recipe_name": "Greek Yogurt and Avocado Toast" },
+            { "type": "Lunch", "recipe_name": "Quinoa and Chickpea Salad" },
+            { "type": "Dinner", "recipe_name": "Baked Salmon with Roasted Sweet Potatoes and Asparagus" }
+          ]
+        },
+        {
+          "day": 2,
+          "meals": [
+            { "type": "Breakfast", "recipe_name": "Lentil and Mushroom Omelette" },
+            { "type": "Lunch", "recipe_name": "Grilled Chicken and Avocado Salad" },
+            { "type": "Dinner", "recipe_name": "Quinoa and Vegetable Stir-Fry with Free Range Eggs" }
+          ]
+        },
+        {
+          "day": 3,
+          "meals": [
+            { "type": "Breakfast", "recipe_name": "Greek Yogurt and Honey Parfait" },
+            { "type": "Lunch", "recipe_name": "Baked Salmon with Quinoa and Steamed Asparagus" },
+            { "type": "Dinner", "recipe_name": "Chickpea and Vegetable Curry with Brown Rice" }
+          ]
+        }
+      ]
+    },
+    "recipes": [
+      {
+        "name": "Greek Yogurt and Avocado Toast",
+        "prep_time": "10 minutes",
+        "cook_time": "2 minutes",
+        "category": "Breakfast",
+        "ingredients": [
+          { "name": "Greek Yogurt", "amount": { "quantity": 150.0, "unit": "g" } },
+          { "name": "Avocado", "amount": { "quantity": 1.0, "unit": "whole" } },
+          { "name": "Whole Wheat Bread", "amount": { "quantity": 2.0, "unit": "slices" } }
+        ],
+        "steps": [
+          "Toast the whole wheat bread until lightly browned.",
+          "Mash the avocado and spread it over the toasted bread.",
+          "Top the avocado with Greek yogurt.",
+          "Season with salt and pepper to taste."
+        ]
+      },
+      {
+        "name": "Quinoa and Chickpea Salad",
+        "prep_time": "15 minutes",
+        "cook_time": "15 minutes",
+        "category": "Lunch",
+        "ingredients": [
+          { "name": "Quinoa", "amount": { "quantity": 150.0, "unit": "g" } },
+          { "name": "Chickpeas", "amount": { "quantity": 150.0, "unit": "g" } },
+          { "name": "Mixed Vegetables", "amount": { "quantity": 100.0, "unit": "g" } }
+        ],
+        "steps": [
+          "Cook the quinoa according to package instructions.",
+          "In a large bowl, mix together the cooked quinoa and chickpeas.",
+          "Add the mixed vegetables to the bowl and toss to combine.",
+          "Season with salt and pepper to taste."
+        ]
+      },
+      {
+        "name": "Baked Salmon with Roasted Sweet Potatoes and Asparagus",
+        "prep_time": "15 minutes",
+        "cook_time": "20 minutes",
+        "category": "Dinner",
+        "ingredients": [
+          { "name": "Salmon Fillets", "amount": { "quantity": 150.0, "unit": "g" } },
+          { "name": "Sweet Potatoes", "amount": { "quantity": 2.0, "unit": "whole" } },
+          { "name": "Asparagus", "amount": { "quantity": 100.0, "unit": "g" } }
+        ],
+        "steps": [
+          "Preheat the oven to 400Â°F (200Â°C).",
+          "Line a baking sheet with parchment paper.",
+          "Place the salmon fillets on the baking sheet and bake for 12-15 minutes.",
+          "Toss the sweet potatoes with olive oil and season with salt and pepper.",
+          "Spread the sweet potatoes on a separate baking sheet and roast for 20-25 minutes.",
+          "Toss the asparagus with olive oil and season with salt and pepper.",
+          "Spread the asparagus on a separate baking sheet and roast for 12-15 minutes."
+        ]
+      },
+      {
+        "name": "Lentil and Mushroom Omelette",
+        "prep_time": "10 minutes",
+        "cook_time": "10 minutes",
+        "category": "Breakfast",
+        "ingredients": [
+          { "name": "Lentils", "amount": { "quantity": 100.0, "unit": "g" } },
+          { "name": "Mushrooms", "amount": { "quantity": 100.0, "unit": "g" } },
+          { "name": "Free Range Eggs", "amount": { "quantity": 2.0, "unit": "whole" } }
+        ],
+        "steps": [
+          "Whisk the eggs in a bowl and season with salt and pepper.",
+          "Heat a non-stick pan over medium heat.",
+          "Add the mushrooms and cook until they release their moisture and start to brown.",
+          "Add the lentils to the pan and cook for an additional 2-3 minutes.",
+          "Pour the eggs over the mushroom and lentil mixture.",
+          "Cook until the eggs are almost set, then fold the omelette in half."
+        ]
+      },
+      {
+        "name": "Grilled Chicken and Avocado Salad",
+        "prep_time": "15 minutes",
+        "cook_time": "10 minutes",
+        "category": "Lunch",
+        "ingredients": [
+          { "name": "Chicken Breast", "amount": { "quantity": 150.0, "unit": "g" } },
+          { "name": "Avocado", "amount": { "quantity": 1.0, "unit": "whole" } },
+          { "name": "Mixed Vegetables", "amount": { "quantity": 100.0, "unit": "g" } }
+        ],
+        "steps": [
+          "Grill the chicken breast until cooked through.",
+          "Mash the avocado and mix with the mixed vegetables.",
+          "Slice the grilled chicken and add it to the avocado mixture.",
+          "Season with salt and pepper to taste."
+        ]
+      },
+      {
+        "name": "Quinoa and Vegetable Stir-Fry with Free Range Eggs",
+        "prep_time": "15 minutes",
+        "cook_time": "15 minutes",
+        "category": "Dinner",
+        "ingredients": [
+          { "name": "Quinoa", "amount": { "quantity": 150.0, "unit": "g" } },
+          { "name": "Mixed Vegetables", "amount": { "quantity": 100.0, "unit": "g" } },
+          { "name": "Free Range Eggs", "amount": { "quantity": 2.0, "unit": "whole" } }
+        ],
+        "steps": [
+          "Cook the quinoa according to package instructions.",
+          "Heat a non-stick pan over medium heat.",
+          "Add the mixed vegetables and cook until they start to soften.",
+          "Push the vegetables to one side of the pan.",
+          "Crack the eggs into the other side of the pan and scramble them.",
+          "Mix the eggs with the vegetables and cooked quinoa."
+        ]
+      },
+      {
+        "name": "Greek Yogurt and Honey Parfait",
+        "prep_time": "5 minutes",
+        "cook_time": "0 minutes",
+        "category": "Breakfast",
+        "ingredients": [
+          { "name": "Greek Yogurt", "amount": { "quantity": 150.0, "unit": "g" } },
+          { "name": "Honey", "amount": { "quantity": 10.0, "unit": "g" } },
+          { "name": "Granola", "amount": { "quantity": 20.0, "unit": "g" } }
+        ],
+        "steps": [
+          "Layer the Greek yogurt, honey, and granola in a bowl.",
+          "Repeat the layers until all ingredients are used up.",
+          "Serve immediately."
+        ]
+      },
+      {
+        "name": "Baked Salmon with Quinoa and Steamed Asparagus",
+        "prep_time": "15 minutes",
+        "cook_time": "20 minutes",
+        "category": "Lunch",
+        "ingredients": [
+          { "name": "Salmon Fillets", "amount": { "quantity": 150.0, "unit": "g" } },
+          { "name": "Quinoa", "amount": { "quantity": 150.0, "unit": "g" } },
+          { "name": "Asparagus", "amount": { "quantity": 100.0, "unit": "g" } }
+        ],
+        "steps": [
+          "Preheat the oven to 400Â°F (200Â°C).",
+          "Line a baking sheet with parchment paper.",
+          "Place the salmon fillets on the baking sheet and bake for 12-15 minutes.",
+          "Cook the quinoa according to package instructions.",
+          "Steam the asparagus until tender.",
+          "Serve the salmon with quinoa and asparagus."
+        ]
+      },
+      {
+        "name": "Chickpea and Vegetable Curry with Brown Rice",
+        "prep_time": "20 minutes",
+        "cook_time": "20 minutes",
+        "category": "Dinner",
+        "ingredients": [
+          { "name": "Chickpeas", "amount": { "quantity": 150.0, "unit": "g" } },
+          { "name": "Mixed Vegetables", "amount": { "quantity": 100.0, "unit": "g" } },
+          { "name": "Brown Rice", "amount": { "quantity": 150.0, "unit": "g" } }
+        ],
+        "steps": [
+          "Cook the brown rice according to package instructions.",
+          "Heat a non-stick pan over medium heat.",
+          "Add the mixed vegetables and cook until they start to soften.",
+          "Add the chickpeas to the pan and cook for an additional 2-3 minutes.",
+          "Add the curry sauce to the pan and stir to combine.",
+          "Serve the curry over the cooked brown rice."
+        ]
+      }
+    ],
+    "used_healthy_ingredients": [
+      { "id": 500, "name": "Salmon Fillets" },
+      { "id": 422, "name": "Avocado" },
+      { "id": 412, "name": "Lentils" },
+      { "id": 7, "name": "Chickpeas" },
+      { "id": 3, "name": "Sweet Potatoes" },
+      { "id": 11, "name": "Quinoa" },
+      { "id": 318, "name": "Mushrooms" },
+      { "id": 452, "name": "Asparagus" },
+      { "id": 294, "name": "Free Range Eggs" },
+      { "id": 296, "name": "Greek Yogurt" }
+    ]
+  }
+}

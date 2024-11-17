@@ -2,8 +2,13 @@ import React from 'react';
 import { useBookmarks } from '../contexts/BookmarkContext';
 import { recipes } from '../data/mockData';
 import RecipeCard from '../components/RecipeCard';
+import { Filters } from '../types';
 
-export default function BookmarkedRecipes() {
+interface Props {
+  filters: Filters;
+}
+
+export default function BookmarkedRecipes({ filters }: Props) {
   const { bookmarkedRecipes } = useBookmarks();
   const savedRecipes = recipes.filter(recipe => bookmarkedRecipes.includes(recipe.id));
 
@@ -17,7 +22,11 @@ export default function BookmarkedRecipes() {
           {savedRecipes.length > 0 ? (
             <div className="grid gap-4 sm:grid-cols-2">
               {savedRecipes.map(recipe => (
-                <RecipeCard key={recipe.id} recipe={recipe} />
+                <RecipeCard 
+                  key={recipe.id} 
+                  recipe={recipe} 
+                  selectedSupermarket={filters.selectedSupermarket}
+                />
               ))}
             </div>
           ) : (
