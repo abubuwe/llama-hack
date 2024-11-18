@@ -180,46 +180,6 @@ export const recipes: Recipe[] = [
     regularCost: 6.50
   },
   {
-    id: '8',
-    name: 'Banana Pancakes with Almond Butter and Maple Syrup',
-    image: '/images/banana_pancakes_with_almond_butter_and_maple_syrup.webp',
-    ingredients: [
-      {
-        name: 'Bananas',
-        amount: 2,
-        unit: 'pieces',
-        currentPrice: 0.99,
-        origin: 'Ecuador',
-        supermarketPrices: { tesco: 0.99, asda: 0.89, sainsburys: 1.10, ocado: 1.25 }
-      },
-      {
-        name: 'Almond Butter',
-        amount: 2,
-        unit: 'tbsp',
-        currentPrice: 1.99,
-        origin: 'USA',
-        supermarketPrices: { tesco: 1.99, asda: 1.85, sainsburys: 2.10, ocado: 2.25 }
-      }
-    ],
-    instructions: [
-      'Mash the bananas in a bowl until smooth.',
-      'Mix the mashed bananas with your favorite pancake batter.',
-      'Heat a non-stick skillet over medium heat and pour in the batter to form pancakes.',
-      'Cook until bubbles form on the surface, then flip and cook until golden brown.',
-      'Serve the pancakes topped with almond butter and a drizzle of maple syrup.'
-    ],
-    prepTime: 10,
-    cookTime: 10,
-    dietaryInfo: {
-      vegetarian: true,
-      vegan: false,
-      glutenFree: false,
-      dairyFree: true
-    },
-    totalCost: 4.95,
-    regularCost: 5.50
-  },
-  {
     id: '1',
     name: 'Baked Chicken Thighs with Roasted Vegetables',
     image: '/images/baked_chicken_thighs_with_roasted_vegetables.webp',
