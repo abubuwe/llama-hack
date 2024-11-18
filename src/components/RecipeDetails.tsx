@@ -174,11 +174,6 @@ function RecipeDetails({ recipes, filters }: RecipeDetailsProps) {
                             <span className="text-sm font-medium text-purple-600">
                               £{ingredient.supermarketPrices[filters.selectedSupermarket as keyof SupermarketPrices].toFixed(2)}
                             </span>
-                            <ChevronDown 
-                              className={`w-4 h-4 text-gray-400 transition-transform ${
-                                selectedIngredient === ingredient.name ? 'transform rotate-180' : ''
-                              }`}
-                            />
                           </div>
                         </div>
                         
@@ -194,14 +189,6 @@ function RecipeDetails({ recipes, filters }: RecipeDetailsProps) {
                         </button>
                       </div>
                       
-                      {selectedIngredient === ingredient.name && (
-                        <div className="mt-4">
-                          <h4 className="text-sm font-medium text-gray-700 mb-2">
-                            Price Comparison
-                          </h4>
-                          <SupermarketComparison prices={ingredient.supermarketPrices} />
-                        </div>
-                      )}
                     </div>
                   ))}
                 </div>
