@@ -85,7 +85,7 @@ function RecipeDetails({ recipes }: RecipeDetailsProps) {
     <div className="flex-1 min-h-screen bg-gradient-to-b from-purple-50 to-purple-100 overflow-auto">
       <div className="max-w-xl mx-auto px-4 py-6">
         <Link
-          to="/"
+          to="/recipes"
           className="inline-flex items-center text-purple-600 hover:text-purple-800 mb-6"
         >
           <ChevronLeft className="w-4 h-4 mr-1" />
@@ -101,28 +101,17 @@ function RecipeDetails({ recipes }: RecipeDetailsProps) {
           <div className="p-6">
             <h1 className="text-3xl font-bold text-gray-900 mb-4">{recipe.name}</h1>
             
-            <div className="flex items-center space-x-4 mb-6">
-              <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">
-                Savings: £{(recipe.regularCost - recipe.totalCost).toFixed(2)}
-              </span>
-              {Object.entries(recipe.dietaryInfo).map(([key, value]) => (
-                value && (
-                  <span key={key} className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">
-                    {key}
-                  </span>
-                )
-              ))}
-            </div>
-
-            <div className="mb-8 bg-gray-50 p-6 rounded-lg">
-              <h2 className="text-xl font-semibold mb-4">Total Recipe Cost Comparison</h2>
-              <SupermarketComparison prices={totalPricesBySupermarket} />
-              <p className="text-sm text-gray-600 mt-4">
-                * Prices shown are the total cost for all ingredients at each supermarket
-              </p>
-            </div>
-
             <div className="space-y-6">
+              <div className="mt-6 pt-6 border-t">
+                <h2 className="text-xl font-semibold mb-2">Cost Breakdown</h2>
+                <div className="space-y-2">
+                  <p className="text-gray-700">Regular Cost: £{recipe.regularCost.toFixed(2)}</p>
+                  <p className="text-gray-700">Your Cost: £{recipe.totalCost.toFixed(2)}</p>
+                  <p className="text-green-600 font-semibold">
+                    Total Savings: £{(recipe.regularCost - recipe.totalCost).toFixed(2)}
+                  </p>
+                </div>
+              </div>
               <div>
                 <h2 className="text-xl font-semibold mb-4">Ingredients & Individual Prices</h2>
                 <div className="space-y-4">
@@ -141,11 +130,6 @@ function RecipeDetails({ recipes }: RecipeDetailsProps) {
                             {ingredient.origin}
                           </span>
                         </div>
-                        <ArrowDown 
-                          className={`w-5 h-5 text-gray-500 transform transition-transform ${
-                            selectedIngredient === ingredient.name ? 'rotate-180' : ''
-                          }`}
-                        />
                       </div>
                       
                       {selectedIngredient === ingredient.name && (
@@ -162,11 +146,6 @@ function RecipeDetails({ recipes }: RecipeDetailsProps) {
               </div>
 
               <div>
-                <h2 className="text-xl font-semibold mb-4">Ingredient Origins</h2>
-                <IngredientOriginMap ingredients={recipe.ingredients} />
-              </div>
-
-              <div>
                 <h2 className="text-xl font-semibold mb-2">Instructions</h2>
                 <ol className="list-decimal list-inside space-y-2">
                   {recipe.instructions.map((instruction, index) => (
@@ -175,16 +154,11 @@ function RecipeDetails({ recipes }: RecipeDetailsProps) {
                 </ol>
               </div>
 
-              <div className="mt-6 pt-6 border-t">
-                <h2 className="text-xl font-semibold mb-2">Cost Breakdown</h2>
-                <div className="space-y-2">
-                  <p className="text-gray-700">Regular Cost: £{recipe.regularCost.toFixed(2)}</p>
-                  <p className="text-gray-700">Your Cost: £{recipe.totalCost.toFixed(2)}</p>
-                  <p className="text-green-600 font-semibold">
-                    Total Savings: £{(recipe.regularCost - recipe.totalCost).toFixed(2)}
-                  </p>
-                </div>
+              <div>
+                <h2 className="text-xl font-semibold mb-4">Likely Ingredient Origins</h2>
+                <IngredientOriginMap ingredients={recipe.ingredients} />
               </div>
+
             </div>
           </div>
         </div>

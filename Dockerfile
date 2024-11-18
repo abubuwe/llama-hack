@@ -31,7 +31,9 @@ RUN apt-get update -q \
         lsb-release \
         xdg-utils \
         chromium-driver \
-        chromium
+        chromium \
+        nodejs \
+        npm
 
 # Install poetry
 RUN mkdir -p $POETRY_HOME

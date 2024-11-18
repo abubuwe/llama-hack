@@ -11,6 +11,7 @@ import BookmarkedRecipes from './pages/BookmarkedRecipes';
 import LandingPage from './pages/LandingPage';
 import { fetchRecipes } from './services/recipeService';
 import LoadingSpinner from './components/LoadingSpinner';
+import SidebarPrompts from './components/SidebarPrompts';
 
 interface InitialConfig {
   message: string;
@@ -84,7 +85,7 @@ function App() {
       min: 0,
       max: 50,
     },
-    days: 7,
+    days: 4,
     selectedSupermarket: 'tesco',
   });
 
@@ -191,10 +192,7 @@ function App() {
                   />
                   <div className="flex flex-1 overflow-hidden">
                     <div className="w-[400px] border-r border-gray-200 bg-white overflow-y-auto p-4">
-                      <FilterControls
-                        filters={filters}
-                        onChange={setFilters}
-                      />
+                      <SidebarPrompts onSubmit={handleInitialMessage} />
                     </div>
                     <div className="flex-1 overflow-y-auto bg-gradient-to-b from-purple-50 to-purple-100">
                       <RecipeList
@@ -217,10 +215,7 @@ function App() {
                 <Header />
                 <div className="flex flex-1 overflow-hidden">
                   <div className="w-[400px] border-r border-gray-200 bg-white overflow-y-auto p-4">
-                    <FilterControls
-                      filters={filters}
-                      onChange={setFilters}
-                    />
+                    <SidebarPrompts onSubmit={handleInitialMessage} />
                   </div>
                   <div className="flex-1 overflow-y-auto bg-gradient-to-b from-purple-50 to-purple-100">
                     <RecipeDetails recipes={recipes} />
@@ -236,10 +231,7 @@ function App() {
                 <Header />
                 <div className="flex flex-1 overflow-hidden">
                   <div className="w-[400px] border-r border-gray-200 bg-white overflow-y-auto p-4">
-                    <FilterControls
-                      filters={filters}
-                      onChange={setFilters}
-                    />
+                    <SidebarPrompts onSubmit={handleInitialMessage} />
                   </div>
                   <div className="flex-1 overflow-y-auto bg-gradient-to-b from-purple-50 to-purple-100">
                     <BookmarkedRecipes filters={filters} />

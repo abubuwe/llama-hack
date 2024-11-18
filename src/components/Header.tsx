@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { ChefHat, Bookmark } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import IngredientsPopup from './IngredientsPopup';
 
 interface Props {
   totalCost?: number;
   totalSavings?: number;
   recipeCount?: number;
+  ingredients?: Array<{ name: string; amount: number; unit: string; }>;
 }
 
-export default function Header({ totalCost, totalSavings, recipeCount }: Props) {
+export default function Header({ totalCost, totalSavings, recipeCount, ingredients }: Props) {
+  const [isPopupVisible, setPopupVisible] = useState(false);
+
+  const togglePopup = () => {
+    setPopupVisible(!isPopupVisible);
+  };
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-3 py-4">
@@ -40,8 +50,10 @@ export default function Header({ totalCost, totalSavings, recipeCount }: Props) 
               </div>
             </div>
           )}
+          <FontAwesomeIcon icon={faShoppingCart} className="text-2xl cursor-pointer" onClick={togglePopup} />
         </div>
       </div>
+      {isPopupVisible && <IngredientsPopup ingredients={ingredients} onClose={togglePopup} />}
     </header>
   );
 } 

@@ -17,8 +17,6 @@
                 "ms-python.vscode-pylance",
                 "ms-python.python",
                 "KevinRose.vsc-python-indent",
-                "GitHub.copilot",
-                "GitHub.vscode-pull-request-github",
                 "codezombiech.gitignore",
                 "eamodio.gitlens"
             ]

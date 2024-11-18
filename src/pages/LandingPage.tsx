@@ -14,12 +14,11 @@ interface Props {
 }
 
 const SUGGESTIONS = [
-  "Find healthy dinner recipes",
-  "What can I cook under £10?",
-  "Show me gluten-free desserts",
-  "Quick vegetarian meals",
-  "Recipes with chickpeas",
-  "Easy meal prep ideas"
+  "Get me a meal plan with healthy recipes",
+  "I want quick and easy recipes",
+  "Weekday meals for a family of 4, with 2 kids",
+  "Recipes for a gluten-free diet",
+  "Comfort food ideas for winter evenings",
 ];
 
 const SUPERMARKETS = [
@@ -41,12 +40,6 @@ const SUPERMARKETS = [
     icon: Store,
     color: '#ff8200'
   },
-  { 
-    id: 'ocado', 
-    name: 'Ocado',
-    icon: Building2,
-    color: '#662d91'
-  }
 ];
 
 const FLOATING_ITEMS = [
@@ -67,7 +60,7 @@ const FLOATING_ITEMS = [
 
 export default function LandingPage({ onSubmit }: Props) {
   const [message, setMessage] = useState('');
-  const [days, setDays] = useState(7);
+  const [days, setDays] = useState(4);
   const [selectedSupermarket, setSelectedSupermarket] = useState('tesco');
   const navigate = useNavigate();
 

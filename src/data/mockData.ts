@@ -2,218 +2,227 @@ import { Recipe } from '../types';
 
 export const recipes: Recipe[] = [
   {
-    id: '1',
-    name: 'Mediterranean Quinoa Bowl',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800',
+    id: '5',
+    name: 'Baked Salmon with Quinoa and Broccoli',
+    image: '/images/baked_salmon_with_quinoa_and_broccoli.webp',
     ingredients: [
-      { 
-        name: 'Quinoa', 
-        amount: 1, 
-        unit: 'cup', 
+      {
+        name: 'Salmon Fillets',
+        amount: 2,
+        unit: 'pieces',
+        currentPrice: 6.99,
+        origin: 'UK',
+        supermarketPrices: { tesco: 6.99, asda: 6.75, sainsburys: 7.15, ocado: 7.25 }
+      },
+      {
+        name: 'Quinoa',
+        amount: 1,
+        unit: 'cup',
         currentPrice: 2.99,
         origin: 'Peru',
         supermarketPrices: { tesco: 2.99, asda: 2.75, sainsburys: 3.25, ocado: 3.50 }
       },
-      { 
-        name: 'Cherry Tomatoes', 
-        amount: 1, 
-        unit: 'cup', 
-        currentPrice: 1.99,
-        origin: 'Spain',
-        supermarketPrices: { tesco: 1.99, asda: 1.75, sainsburys: 2.00, ocado: 2.25 }
+      {
+        name: 'Broccoli',
+        amount: 1,
+        unit: 'head',
+        currentPrice: 1.50,
+        origin: 'UK',
+        supermarketPrices: { tesco: 1.50, asda: 1.45, sainsburys: 1.60, ocado: 1.70 }
       },
-      { 
-        name: 'Cucumber', 
-        amount: 1, 
-        unit: 'medium', 
-        currentPrice: 0.79,
-        origin: 'Netherlands',
-        supermarketPrices: { tesco: 0.79, asda: 0.70, sainsburys: 0.85, ocado: 0.90 }
+      {
+        name: 'Lemon',
+        amount: 1,
+        unit: 'piece',
+        currentPrice: 0.50,
+        origin: 'Spain',
+        supermarketPrices: { tesco: 0.50, asda: 0.45, sainsburys: 0.55, ocado: 0.60 }
       }
     ],
     instructions: [
-      'Cook quinoa according to package instructions',
-      'Chop vegetables',
-      'Combine all ingredients in a bowl',
-      'Drizzle with dressing'
+      'Preheat your oven to 200°C (400°F).',
+      'Season salmon fillets with salt, pepper, and a squeeze of lemon juice.',
+      'Place the salmon on a baking sheet lined with parchment paper.',
+      'Bake for 15 minutes, or until the salmon is cooked through and flakes easily.',
+      'While the salmon is baking, rinse quinoa under cold water and cook according to package instructions.',
+      'Steam broccoli until tender, about 5-7 minutes.',
+      'Serve the baked salmon with quinoa and steamed broccoli on the side.'
     ],
     prepTime: 10,
-    cookTime: 20,
+    cookTime: 15,
     dietaryInfo: {
-      vegetarian: true,
-      vegan: true,
+      vegetarian: false,
+      vegan: false,
       glutenFree: true,
       dairyFree: true
     },
-    totalCost: 5.77,
-    regularCost: 7.99
+    totalCost: 7.52,
+    regularCost: 8.99
   },
   {
     id: '2',
-    name: 'Spicy Thai Curry',
-    image: 'https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&q=80&w=800',
+    name: 'Avocado Toast',
+    image: '/images/avocado_toast.webp',
     ingredients: [
       {
-        name: 'Coconut Milk',
+        name: 'Avocado',
         amount: 1,
-        unit: 'can',
+        unit: 'piece',
         currentPrice: 1.99,
-        origin: 'Thailand',
-        supermarketPrices: { tesco: 1.99, asda: 1.80, sainsburys: 2.10, ocado: 2.20 }
+        origin: 'Mexico',
+        supermarketPrices: { tesco: 1.99, asda: 1.75, sainsburys: 2.15, ocado: 2.25 }
       },
       {
-        name: 'Thai Curry Paste',
+        name: 'Whole Grain Bread',
         amount: 2,
-        unit: 'tbsp',
-        currentPrice: 2.49,
-        origin: 'Thailand',
-        supermarketPrices: { tesco: 2.49, asda: 2.25, sainsburys: 2.60, ocado: 2.75 }
-      }
-    ],
-    instructions: [
-      'Heat coconut milk in a pan',
-      'Add curry paste and simmer',
-      'Add vegetables and protein of choice',
-      'Serve with rice'
-    ],
-    prepTime: 15,
-    cookTime: 25,
-    dietaryInfo: {
-      vegetarian: true,
-      vegan: true,
-      glutenFree: true,
-      dairyFree: true
-    },
-    totalCost: 4.48,
-    regularCost: 6.99
-  },
-  {
-    id: '3',
-    name: 'Classic Margherita Pizza',
-    image: 'https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&q=80&w=800',
-    ingredients: [
-      {
-        name: 'Pizza Dough',
-        amount: 1,
-        unit: 'ball',
-        currentPrice: 2.49,
-        origin: 'Italy',
-        supermarketPrices: { tesco: 2.49, asda: 2.25, sainsburys: 2.60, ocado: 2.75 }
-      },
-      {
-        name: 'Fresh Mozzarella',
-        amount: 200,
-        unit: 'g',
-        currentPrice: 2.99,
-        origin: 'Italy',
-        supermarketPrices: { tesco: 2.99, asda: 2.75, sainsburys: 3.15, ocado: 3.25 }
-      },
-      {
-        name: 'Fresh Basil',
-        amount: 1,
-        unit: 'bunch',
+        unit: 'slices',
         currentPrice: 0.99,
-        origin: 'Italy',
+        origin: 'UK',
         supermarketPrices: { tesco: 0.99, asda: 0.89, sainsburys: 1.10, ocado: 1.25 }
       }
     ],
     instructions: [
-      'Preheat oven to highest setting',
-      'Roll out dough',
-      'Add toppings',
-      'Bake until crust is golden'
+      'Toast the bread slices in a toaster or on a skillet until golden brown.',
+      'Cut the avocado in half, remove the pit, and scoop the flesh into a bowl.',
+      'Mash the avocado with a fork until smooth, adding a pinch of salt and pepper to taste.',
+      'Spread the mashed avocado evenly over the toasted bread slices.',
+      'Optionally, top with a sprinkle of red pepper flakes or a drizzle of olive oil for extra flavor.'
     ],
-    prepTime: 20,
-    cookTime: 10,
+    prepTime: 5,
+    cookTime: 5,
+    dietaryInfo: {
+      vegetarian: true,
+      vegan: true,
+      glutenFree: false,
+      dairyFree: true
+    },
+    totalCost: 4.05,
+    regularCost: 4.50
+  },
+  {
+    id: '3',
+    name: 'Baked Sweet Potato with Black Beans and Salsa',
+    image: '/images/baked_sweet_potato_with_black_beans_and_salsa.webp',
+    ingredients: [
+      {
+        name: 'Sweet Potatoes',
+        amount: 2,
+        unit: 'pieces',
+        currentPrice: 1.99,
+        origin: 'USA',
+        supermarketPrices: { tesco: 1.99, asda: 1.75, sainsburys: 2.15, ocado: 2.25 }
+      },
+      {
+        name: 'Black Beans',
+        amount: 1,
+        unit: 'can',
+        currentPrice: 0.99,
+        origin: 'Brazil',
+        supermarketPrices: { tesco: 0.99, asda: 0.89, sainsburys: 1.10, ocado: 1.25 }
+      }
+    ],
+    instructions: [
+      'Preheat your oven to 200°C (400°F).',
+      'Wash sweet potatoes and pierce them several times with a fork.',
+      'Place sweet potatoes on a baking sheet and bake for 45 minutes, or until tender.',
+      'While the sweet potatoes are baking, rinse and drain black beans.',
+      'Once the sweet potatoes are done, slice them open and fluff the insides with a fork.',
+      'Top with black beans and your favorite salsa. Serve hot.'
+    ],
+    prepTime: 10,
+    cookTime: 45,
+    dietaryInfo: {
+      vegetarian: true,
+      vegan: true,
+      glutenFree: true,
+      dairyFree: true
+    },
+    totalCost: 4.05,
+    regularCost: 4.50
+  },
+  {
+    id: '10',
+    name: 'Greek Yogurt Parfait',
+    image: '/images/greek_yogurt_parfait.webp',
+    ingredients: [
+      {
+        name: 'Greek Yogurt',
+        amount: 1,
+        unit: 'cup',
+        currentPrice: 1.49,
+        origin: 'Greece',
+        supermarketPrices: { tesco: 1.49, asda: 1.35, sainsburys: 1.65, ocado: 1.75 }
+      },
+      {
+        name: 'Mixed Berries',
+        amount: 1,
+        unit: 'cup',
+        currentPrice: 2.99,
+        origin: 'UK',
+        supermarketPrices: { tesco: 2.99, asda: 2.75, sainsburys: 3.15, ocado: 3.25 }
+      }
+    ],
+    instructions: [
+      'In a glass, layer Greek yogurt and mixed berries.',
+      'Top with a handful of granola for crunch.',
+      'Repeat the layers until the glass is full.',
+      'Serve chilled, optionally drizzled with honey.'
+    ],
+    prepTime: 5,
+    cookTime: 0,
     dietaryInfo: {
       vegetarian: true,
       vegan: false,
       glutenFree: false,
       dairyFree: false
     },
-    totalCost: 6.47,
-    regularCost: 8.99
+    totalCost: 5.85,
+    regularCost: 6.50
   },
   {
-    id: '4',
-    name: 'Japanese Ramen Bowl',
-    image: 'https://images.unsplash.com/photo-1557872943-16a5ac26437e?auto=format&fit=crop&q=80&w=800',
+    id: '8',
+    name: 'Banana Pancakes with Almond Butter and Maple Syrup',
+    image: '/images/banana_pancakes_with_almond_butter_and_maple_syrup.webp',
     ingredients: [
       {
-        name: 'Ramen Noodles',
-        amount: 200,
-        unit: 'g',
-        currentPrice: 2.99,
-        origin: 'Japan',
-        supermarketPrices: { tesco: 2.99, asda: 2.75, sainsburys: 3.15, ocado: 3.25 }
+        name: 'Bananas',
+        amount: 2,
+        unit: 'pieces',
+        currentPrice: 0.99,
+        origin: 'Ecuador',
+        supermarketPrices: { tesco: 0.99, asda: 0.89, sainsburys: 1.10, ocado: 1.25 }
       },
       {
-        name: 'Miso Paste',
+        name: 'Almond Butter',
         amount: 2,
         unit: 'tbsp',
         currentPrice: 1.99,
-        origin: 'Japan',
+        origin: 'USA',
         supermarketPrices: { tesco: 1.99, asda: 1.85, sainsburys: 2.10, ocado: 2.25 }
       }
     ],
     instructions: [
-      'Boil noodles',
-      'Prepare miso broth',
-      'Combine and add toppings'
+      'Mash the bananas in a bowl until smooth.',
+      'Mix the mashed bananas with your favorite pancake batter.',
+      'Heat a non-stick skillet over medium heat and pour in the batter to form pancakes.',
+      'Cook until bubbles form on the surface, then flip and cook until golden brown.',
+      'Serve the pancakes topped with almond butter and a drizzle of maple syrup.'
     ],
     prepTime: 10,
-    cookTime: 15,
-    dietaryInfo: {
-      vegetarian: true,
-      vegan: true,
-      glutenFree: false,
-      dairyFree: true
-    },
-    totalCost: 4.98,
-    regularCost: 7.50
-  },
-  {
-    id: '5',
-    name: 'Mexican Street Tacos',
-    image: 'https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&q=80&w=800',
-    ingredients: [
-      {
-        name: 'Corn Tortillas',
-        amount: 8,
-        unit: 'pieces',
-        currentPrice: 1.99,
-        origin: 'Mexico',
-        supermarketPrices: { tesco: 1.99, asda: 1.75, sainsburys: 2.15, ocado: 2.25 }
-      },
-      {
-        name: 'Avocados',
-        amount: 2,
-        unit: 'pieces',
-        currentPrice: 2.49,
-        origin: 'Mexico',
-        supermarketPrices: { tesco: 2.49, asda: 2.25, sainsburys: 2.65, ocado: 2.75 }
-      }
-    ],
-    instructions: [
-      'Warm tortillas',
-      'Prepare toppings',
-      'Assemble tacos'
-    ],
-    prepTime: 15,
     cookTime: 10,
     dietaryInfo: {
       vegetarian: true,
-      vegan: true,
-      glutenFree: true,
+      vegan: false,
+      glutenFree: false,
       dairyFree: true
     },
-    totalCost: 4.48,
-    regularCost: 6.99
+    totalCost: 4.95,
+    regularCost: 5.50
   },
   {
-    id: '6',
-    name: 'Indian Butter Chicken',
-    image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&q=80&w=800',
+    id: '1',
+    name: 'Baked Chicken Thighs with Roasted Vegetables',
+    image: '/images/baked_chicken_thighs_with_roasted_vegetables.webp',
     ingredients: [
       {
         name: 'Chicken Thighs',
@@ -224,20 +233,24 @@ export const recipes: Recipe[] = [
         supermarketPrices: { tesco: 4.99, asda: 4.75, sainsburys: 5.15, ocado: 5.25 }
       },
       {
-        name: 'Butter',
-        amount: 100,
+        name: 'Mixed Vegetables',
+        amount: 300,
         unit: 'g',
-        currentPrice: 1.99,
+        currentPrice: 2.49,
         origin: 'UK',
-        supermarketPrices: { tesco: 1.99, asda: 1.85, sainsburys: 2.10, ocado: 2.25 }
+        supermarketPrices: { tesco: 2.49, asda: 2.25, sainsburys: 2.65, ocado: 2.75 }
       }
     ],
     instructions: [
-      'Marinate chicken',
-      'Cook sauce',
-      'Combine and simmer'
+      'Preheat your oven to 200°C (400°F).',
+      'In a large bowl, toss chicken thighs with olive oil, salt, pepper, and your choice of herbs (such as rosemary or thyme).',
+      'Spread the chicken thighs on a baking sheet lined with parchment paper.',
+      'In the same bowl, toss mixed vegetables with olive oil, salt, and pepper.',
+      'Arrange the vegetables around the chicken on the baking sheet.',
+      'Roast in the oven for 30 minutes, or until the chicken is cooked through and the vegetables are tender.',
+      'Serve hot, garnished with fresh herbs if desired.'
     ],
-    prepTime: 20,
+    prepTime: 10,
     cookTime: 30,
     dietaryInfo: {
       vegetarian: false,
@@ -245,238 +258,251 @@ export const recipes: Recipe[] = [
       glutenFree: true,
       dairyFree: false
     },
-    totalCost: 6.98,
+    totalCost: 8.99,
     regularCost: 9.99
   },
   {
-    id: '7',
-    name: 'Greek Salad',
-    image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&q=80&w=800',
+    id: '6',
+    name: 'Avocado and Bacon Omelette',
+    image: '/images/avocado_and_bacon_omelette.webp',
     ingredients: [
-      {
-        name: 'Feta Cheese',
-        amount: 200,
-        unit: 'g',
-        currentPrice: 2.99,
-        origin: 'Greece',
-        supermarketPrices: { tesco: 2.99, asda: 2.75, sainsburys: 3.15, ocado: 3.25 }
-      },
-      {
-        name: 'Kalamata Olives',
-        amount: 100,
-        unit: 'g',
+      { 
+        name: 'Avocado', 
+        amount: 1, 
+        unit: 'piece', 
         currentPrice: 1.99,
-        origin: 'Greece',
-        supermarketPrices: { tesco: 1.99, asda: 1.85, sainsburys: 2.10, ocado: 2.25 }
+        origin: 'Mexico',
+        supermarketPrices: { tesco: 1.99, asda: 1.75, sainsburys: 2.15, ocado: 2.25 }
+      },
+      { 
+        name: 'Bacon', 
+        amount: 100, 
+        unit: 'g', 
+        currentPrice: 2.49,
+        origin: 'UK',
+        supermarketPrices: { tesco: 2.49, asda: 2.25, sainsburys: 2.65, ocado: 2.75 }
       }
     ],
     instructions: [
-      'Chop vegetables',
-      'Combine ingredients',
-      'Add dressing'
+      'Cook bacon in a skillet over medium heat until crispy, about 5-7 minutes. Remove and drain on paper towels.',
+      'In a bowl, whisk eggs with a pinch of salt and pepper until well combined.',
+      'Heat a non-stick pan over medium heat and pour in the eggs. Let them cook undisturbed for a minute.',
+      'Add diced avocado and cooked bacon on one half of the omelette.',
+      'Once the edges start to set, gently fold the omelette in half and cook for another 2-3 minutes until fully set.',
+      'Slide the omelette onto a plate and serve immediately.'
     ],
-    prepTime: 15,
-    cookTime: 0,
+    prepTime: 10,
+    cookTime: 10,
     dietaryInfo: {
-      vegetarian: true,
+      vegetarian: false,
       vegan: false,
       glutenFree: true,
       dairyFree: false
     },
-    totalCost: 4.98,
-    regularCost: 7.50
+    totalCost: 6.29,
+    regularCost: 6.99
   },
   {
-    id: '8',
-    name: 'Vietnamese Pho',
-    image: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&q=80&w=800',
+    id: '4',
+    name: 'Baked Cod with Roasted Asparagus and Brown Rice',
+    image: '/images/baked_cod_with_roasted_asparagus_and_brown_rice.webp',
     ingredients: [
       {
-        name: 'Rice Noodles',
+        name: 'Cod Fillets',
+        amount: 2,
+        unit: 'pieces',
+        currentPrice: 5.99,
+        origin: 'UK',
+        supermarketPrices: { tesco: 5.99, asda: 5.75, sainsburys: 6.15, ocado: 6.25 }
+      },
+      {
+        name: 'Asparagus',
         amount: 200,
         unit: 'g',
         currentPrice: 2.49,
-        origin: 'Vietnam',
-        supermarketPrices: { tesco: 2.49, asda: 2.25, sainsburys: 2.65, ocado: 2.75 }
-      },
-      {
-        name: 'Bean Sprouts',
-        amount: 100,
-        unit: 'g',
-        currentPrice: 0.99,
         origin: 'UK',
-        supermarketPrices: { tesco: 0.99, asda: 0.89, sainsburys: 1.10, ocado: 1.25 }
+        supermarketPrices: { tesco: 2.49, asda: 2.25, sainsburys: 2.65, ocado: 2.75 }
       }
     ],
     instructions: [
-      'Prepare broth',
-      'Cook noodles',
-      'Assemble bowl'
+      'Preheat your oven to 180°C (350°F).',
+      'Season the cod fillets with salt, pepper, and lemon juice.',
+      'Place the cod on a baking sheet lined with parchment paper.',
+      'Toss asparagus with olive oil, salt, and pepper, and arrange around the cod.',
+      'Bake for 20 minutes, or until the cod is opaque and flakes easily with a fork.',
+      'Meanwhile, cook brown rice according to package instructions.',
+      'Serve the baked cod and asparagus over a bed of brown rice.'
     ],
-    prepTime: 20,
-    cookTime: 180,
+    prepTime: 10,
+    cookTime: 20,
+    dietaryInfo: {
+      vegetarian: false,
+      vegan: false,
+      glutenFree: true,
+      dairyFree: true
+    },
+    totalCost: 9.89,
+    regularCost: 10.99
+  },
+  {
+    id: '7',
+    name: 'Banana and Almond Milk Smoothie',
+    image: '/images/banana_and_almond_milk_smoothie.webp',
+    ingredients: [
+      {
+        name: 'Bananas',
+        amount: 2,
+        unit: 'pieces',
+        currentPrice: 0.99,
+        origin: 'Ecuador',
+        supermarketPrices: { tesco: 0.99, asda: 0.89, sainsburys: 1.10, ocado: 1.25 }
+      },
+      {
+        name: 'Almond Milk',
+        amount: 1,
+        unit: 'cup',
+        currentPrice: 1.49,
+        origin: 'USA',
+        supermarketPrices: { tesco: 1.49, asda: 1.35, sainsburys: 1.65, ocado: 1.75 }
+      }
+    ],
+    instructions: [
+      'Peel the bananas and cut them into chunks.',
+      'Place the banana chunks and almond milk in a blender.',
+      'Blend on high speed until smooth and creamy.',
+      'Pour into glasses and serve chilled. Optionally, add a sprinkle of cinnamon on top.'
+    ],
+    prepTime: 5,
+    cookTime: 0,
     dietaryInfo: {
       vegetarian: true,
       vegan: true,
       glutenFree: true,
       dairyFree: true
     },
-    totalCost: 3.48,
-    regularCost: 5.99
+    totalCost: 3.59,
+    regularCost: 3.99
   },
   {
     id: '9',
-    name: 'Moroccan Tagine',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&q=80&w=800',
+    name: 'Chickpea and Avocado Salad',
+    image: '/images/chickpea_and_avocado_salad.webp',
     ingredients: [
       {
         name: 'Chickpeas',
-        amount: 400,
-        unit: 'g',
+        amount: 1,
+        unit: 'can',
         currentPrice: 0.99,
         origin: 'Morocco',
         supermarketPrices: { tesco: 0.99, asda: 0.89, sainsburys: 1.10, ocado: 1.25 }
       },
       {
-        name: 'Couscous',
-        amount: 200,
-        unit: 'g',
-        currentPrice: 1.49,
-        origin: 'Morocco',
-        supermarketPrices: { tesco: 1.49, asda: 1.35, sainsburys: 1.65, ocado: 1.75 }
-      }
-    ],
-    instructions: [
-      'Prepare tagine base',
-      'Add vegetables',
-      'Slow cook',
-      'Serve with couscous'
-    ],
-    prepTime: 20,
-    cookTime: 60,
-    dietaryInfo: {
-      vegetarian: true,
-      vegan: true,
-      glutenFree: false,
-      dairyFree: true
-    },
-    totalCost: 2.48,
-    regularCost: 4.99
-  },
-  {
-    id: '10',
-    name: 'Spanish Paella',
-    image: 'https://images.unsplash.com/photo-1515443961218-a51367888e4b?auto=format&fit=crop&q=80&w=800',
-    ingredients: [
-      {
-        name: 'Arborio Rice',
-        amount: 300,
-        unit: 'g',
-        currentPrice: 2.99,
-        origin: 'Spain',
-        supermarketPrices: { tesco: 2.99, asda: 2.75, sainsburys: 3.15, ocado: 3.25 }
-      },
-      {
-        name: 'Saffron',
+        name: 'Avocado',
         amount: 1,
-        unit: 'pinch',
-        currentPrice: 3.99,
-        origin: 'Spain',
-        supermarketPrices: { tesco: 3.99, asda: 3.75, sainsburys: 4.15, ocado: 4.25 }
+        unit: 'piece',
+        currentPrice: 1.99,
+        origin: 'Mexico',
+        supermarketPrices: { tesco: 1.99, asda: 1.75, sainsburys: 2.15, ocado: 2.25 }
       }
     ],
     instructions: [
-      'Toast rice',
-      'Add saffron and stock',
-      'Layer with vegetables',
-      'Cook until rice is done'
+      'Drain and rinse the chickpeas under cold water.',
+      'Cut the avocado in half, remove the pit, and dice the flesh.',
+      'In a large bowl, combine chickpeas, diced avocado, and your choice of salad greens.',
+      'Toss with a simple dressing of olive oil, lemon juice, salt, and pepper.',
+      'Serve immediately, garnished with fresh herbs if desired.'
     ],
-    prepTime: 25,
-    cookTime: 35,
+    prepTime: 10,
+    cookTime: 0,
     dietaryInfo: {
       vegetarian: true,
       vegan: true,
       glutenFree: true,
       dairyFree: true
     },
-    totalCost: 6.98,
-    regularCost: 9.99
+    totalCost: 4.05,
+    regularCost: 4.50
   },
   {
     id: '11',
-    name: 'French Ratatouille',
-    image: 'https://images.unsplash.com/photo-1572453800999-e8d2d1589b7c?auto=format&fit=crop&q=80&w=800',
+    name: 'Grilled Chicken and Quinoa Bowl',
+    image: '/images/grilled_chicken_and_quinoa_bowl.webp',
     ingredients: [
       {
-        name: 'Aubergine',
-        amount: 2,
-        unit: 'pieces',
-        currentPrice: 1.99,
-        origin: 'France',
-        supermarketPrices: { tesco: 1.99, asda: 1.75, sainsburys: 2.15, ocado: 2.25 }
+        name: 'Chicken Breast',
+        amount: 200,
+        unit: 'g',
+        currentPrice: 3.99,
+        origin: 'UK',
+        supermarketPrices: { tesco: 3.99, asda: 3.75, sainsburys: 4.15, ocado: 4.25 }
       },
       {
-        name: 'Courgettes',
-        amount: 3,
-        unit: 'pieces',
-        currentPrice: 1.49,
-        origin: 'France',
-        supermarketPrices: { tesco: 1.49, asda: 1.35, sainsburys: 1.65, ocado: 1.75 }
+        name: 'Quinoa',
+        amount: 1,
+        unit: 'cup',
+        currentPrice: 2.99,
+        origin: 'Peru',
+        supermarketPrices: { tesco: 2.99, asda: 2.75, sainsburys: 3.25, ocado: 3.50 }
       }
     ],
     instructions: [
-      'Slice vegetables',
-      'Layer in dish',
-      'Bake until tender'
+      'Season chicken breast with salt, pepper, and your choice of spices.',
+      'Grill the chicken on a preheated grill or grill pan until cooked through, about 6-8 minutes per side.',
+      'Let the chicken rest for a few minutes, then slice it.',
+      'Cook quinoa according to package instructions.',
+      'In a bowl, combine cooked quinoa, sliced chicken, and your choice of vegetables.',
+      'Serve with a drizzle of olive oil or your favorite dressing.'
     ],
-    prepTime: 30,
-    cookTime: 45,
+    prepTime: 10,
+    cookTime: 20,
     dietaryInfo: {
-      vegetarian: true,
-      vegan: true,
+      vegetarian: false,
+      vegan: false,
       glutenFree: true,
       dairyFree: true
     },
-    totalCost: 3.48,
-    regularCost: 5.99
+    totalCost: 8.55,
+    regularCost: 9.50
   },
   {
     id: '12',
-    name: 'Brazilian Feijoada',
-    image: 'https://images.unsplash.com/photo-1550367363-ea12860cc124?auto=format&fit=crop&q=80&w=800',
+    name: 'Grilled Chicken and Quinoa Salad',
+    image: '/images/grilled_chicken_and_quinoa_salad.webp',
     ingredients: [
       {
-        name: 'Black Beans',
-        amount: 500,
+        name: 'Chicken Breast',
+        amount: 200,
         unit: 'g',
-        currentPrice: 1.99,
-        origin: 'Brazil',
-        supermarketPrices: { tesco: 1.99, asda: 1.75, sainsburys: 2.15, ocado: 2.25 }
+        currentPrice: 3.99,
+        origin: 'UK',
+        supermarketPrices: { tesco: 3.99, asda: 3.75, sainsburys: 4.15, ocado: 4.25 }
       },
       {
-        name: 'Rice',
-        amount: 400,
-        unit: 'g',
-        currentPrice: 1.49,
-        origin: 'Brazil',
-        supermarketPrices: { tesco: 1.49, asda: 1.35, sainsburys: 1.65, ocado: 1.75 }
+        name: 'Quinoa',
+        amount: 1,
+        unit: 'cup',
+        currentPrice: 2.99,
+        origin: 'Peru',
+        supermarketPrices: { tesco: 2.99, asda: 2.75, sainsburys: 3.25, ocado: 3.50 }
       }
     ],
     instructions: [
-      'Soak beans overnight',
-      'Cook beans with seasonings',
-      'Prepare rice',
-      'Serve together'
+      'Season chicken breast with salt, pepper, and your choice of spices.',
+      'Grill the chicken on a preheated grill or grill pan until cooked through, about 6-8 minutes per side.',
+      'Let the chicken rest for a few minutes, then slice it.',
+      'Cook quinoa according to package instructions.',
+      'Toss the cooked quinoa with salad greens, sliced chicken, and a simple vinaigrette.',
+      'Serve immediately, garnished with nuts or seeds if desired.'
     ],
-    prepTime: 20,
-    cookTime: 180,
+    prepTime: 10,
+    cookTime: 20,
     dietaryInfo: {
-      vegetarian: true,
-      vegan: true,
+      vegetarian: false,
+      vegan: false,
       glutenFree: true,
       dairyFree: true
     },
-    totalCost: 3.48,
-    regularCost: 5.99
+    totalCost: 8.55,
+    regularCost: 9.50
   }
 ];
