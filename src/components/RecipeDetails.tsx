@@ -1,9 +1,9 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ChevronLeft, MapPin, ChevronDown, ShoppingBasket } from 'lucide-react';
 import { Recipe, SupermarketPrices, Ingredient, Filters } from '../types';
 import IngredientOriginMap from './IngredientOriginMap';
-import { useBasket } from '../contexts/BasketContext';
+import { useBasket, BasketContext } from '../contexts/BasketContext';
 
 interface RecipeDetailsProps {
   recipes: Recipe[];
@@ -54,6 +54,7 @@ function RecipeDetails({ recipes, filters }: RecipeDetailsProps) {
   const { id } = useParams();
   const recipe = recipes.find(r => r.id === id);
   const { addToBasket } = useBasket();
+  const basketContext = useContext(BasketContext);
 
   const totalPricesBySupermarket = useMemo(() => {
     if (!recipe) return null;
@@ -79,6 +80,20 @@ function RecipeDetails({ recipes, filters }: RecipeDetailsProps) {
       supermarket: filters.selectedSupermarket
     };
     addToBasket(basketItem);
+  };
+
+  const handleAddAllIngredients = () => {
+    if (!recipe || !basketContext) return;
+    
+    recipe.ingredients.forEach(ing => {
+      const basketItem = {
+        ...ing,
+        price: ing.supermarketPrices[filters.selectedSupermarket as keyof SupermarketPrices],
+        quantity: ing.amount,
+        supermarket: filters.selectedSupermarket
+      };
+      basketContext.addToBasket(basketItem);
+    });
   };
 
   if (!recipe || !totalPricesBySupermarket) {
@@ -115,6 +130,14 @@ function RecipeDetails({ recipes, filters }: RecipeDetailsProps) {
             <h1 className="text-3xl font-bold text-gray-900 mb-4">{recipe.name}</h1>
             
             <div className="space-y-6">
+              <button
+                onClick={handleAddAllIngredients}
+                className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+              >
+                <ShoppingBasket className="w-5 h-5" />
+                Add All Ingredients to Basket
+              </button>
+
               <div className="mt-6 pt-6 border-t">
                 <h2 className="text-xl font-semibold mb-2">Cost Breakdown</h2>
                 <div className="space-y-2">

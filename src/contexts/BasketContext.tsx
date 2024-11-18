@@ -8,7 +8,7 @@ interface BasketContextType {
   clearBasket: () => void;
 }
 
-const BasketContext = createContext<BasketContextType | undefined>(undefined);
+export const BasketContext = createContext<BasketContextType | undefined>(undefined);
 
 export function BasketProvider({ children }: { children: React.ReactNode }) {
   const [basketItems, setBasketItems] = useState<Ingredient[]>([]);
