@@ -20,9 +20,11 @@ export interface Ingredient {
   name: string;
   amount: number;
   unit: string;
-  currentPrice: number;
   origin: string;
   supermarketPrices: SupermarketPrices;
+  price?: number;
+  quantity?: number;
+  supermarket?: string;
 }
 
 export interface SupermarketPrices {

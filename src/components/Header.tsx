@@ -4,6 +4,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { ChefHat, Bookmark } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import IngredientsPopup from './IngredientsPopup';
+import Basket from './Basket';
 
 interface Props {
   totalCost?: number;
@@ -50,7 +51,9 @@ export default function Header({ totalCost, totalSavings, recipeCount, ingredien
               </div>
             </div>
           )}
-          <FontAwesomeIcon icon={faShoppingCart} className="text-2xl cursor-pointer" onClick={togglePopup} />
+          <div className="flex items-center gap-4">
+            <Basket />
+          </div>
         </div>
       </div>
       {isPopupVisible && <IngredientsPopup ingredients={ingredients} onClose={togglePopup} />}

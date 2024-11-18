@@ -1,11 +1,13 @@
 import React, { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ChevronLeft, MapPin, ArrowDown } from 'lucide-react';
-import { Recipe, SupermarketPrices } from '../types';
+import { ChevronLeft, MapPin, ArrowDown, ShoppingBasket } from 'lucide-react';
+import { Recipe, SupermarketPrices, Ingredient, Filters } from '../types';
 import IngredientOriginMap from './IngredientOriginMap';
+import { useBasket } from '../contexts/BasketContext';
 
 interface RecipeDetailsProps {
   recipes: Recipe[];
+  filters: Filters;
 }
 
 function SupermarketComparison({ prices }: { prices: SupermarketPrices }) {
@@ -47,10 +49,11 @@ function SupermarketComparison({ prices }: { prices: SupermarketPrices }) {
   );
 }
 
-function RecipeDetails({ recipes }: RecipeDetailsProps) {
+function RecipeDetails({ recipes, filters }: RecipeDetailsProps) {
   const [selectedIngredient, setSelectedIngredient] = useState<string | null>(null);
   const { id } = useParams();
   const recipe = recipes.find(r => r.id === id);
+  const { addToBasket } = useBasket();
 
   const totalPricesBySupermarket = useMemo(() => {
     if (!recipe) return null;
@@ -67,6 +70,16 @@ function RecipeDetails({ recipes }: RecipeDetailsProps) {
 
     return totals;
   }, [recipe]);
+
+  const handleAddToBasket = (ingredient: Ingredient) => {
+    const basketItem = {
+      ...ingredient,
+      price: ingredient.supermarketPrices[filters.selectedSupermarket as keyof SupermarketPrices],
+      quantity: ingredient.amount,
+      supermarket: filters.selectedSupermarket
+    };
+    addToBasket(basketItem);
+  };
 
   if (!recipe || !totalPricesBySupermarket) {
     return (
@@ -140,6 +153,13 @@ function RecipeDetails({ recipes }: RecipeDetailsProps) {
                           <SupermarketComparison prices={ingredient.supermarketPrices} />
                         </div>
                       )}
+                      <button
+                        onClick={() => handleAddToBasket(ingredient)}
+                        className="flex items-center gap-2 px-3 py-1 text-sm bg-purple-100 text-purple-700 rounded-md hover:bg-purple-200"
+                      >
+                        <ShoppingBasket className="w-4 h-4" />
+                        Add to basket
+                      </button>
                     </div>
                   ))}
                 </div>

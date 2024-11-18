@@ -12,6 +12,7 @@ import LandingPage from './pages/LandingPage';
 import { fetchRecipes } from './services/recipeService';
 import LoadingSpinner from './components/LoadingSpinner';
 import SidebarPrompts from './components/SidebarPrompts';
+import { BasketProvider } from './contexts/BasketContext';
 
 interface InitialConfig {
   message: string;
@@ -174,73 +175,78 @@ function App() {
   return (
     <BrowserRouter basename={import.meta.env.PROD ? '/llama-hack' : '/'}>
       <BookmarkProvider>
-        <ScrollToTop />
-        <Routes>
-          <Route 
-            path="/" 
-            element={<LandingPage onSubmit={handleInitialMessage} />} 
-          />
-          <Route
-            path="/recipes"
-            element={
-              initialConfig ? (
+        <BasketProvider>
+          <ScrollToTop />
+          <Routes>
+            <Route 
+              path="/" 
+              element={<LandingPage onSubmit={handleInitialMessage} />} 
+            />
+            <Route
+              path="/recipes"
+              element={
+                initialConfig ? (
+                  <div className="h-screen flex flex-col">
+                    <Header 
+                      totalCost={totalCost}
+                      totalSavings={totalSavings}
+                      recipeCount={filteredRecipes.length}
+                    />
+                    <div className="flex flex-1 overflow-hidden">
+                      <div className="w-[400px] border-r border-gray-200 bg-white overflow-y-auto p-4">
+                        <SidebarPrompts onSubmit={handleInitialMessage} />
+                      </div>
+                      <div className="flex-1 overflow-y-auto bg-gradient-to-b from-purple-50 to-purple-100">
+                        <RecipeList
+                          filteredRecipes={filteredRecipes}
+                          filters={filters}
+                          isLoading={isLoading}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <Navigate to="/" replace />
+                )
+              }
+            />
+            <Route 
+              path="/recipe/:id" 
+              element={
                 <div className="h-screen flex flex-col">
-                  <Header 
-                    totalCost={totalCost}
-                    totalSavings={totalSavings}
-                    recipeCount={filteredRecipes.length}
-                  />
+                  <Header />
                   <div className="flex flex-1 overflow-hidden">
                     <div className="w-[400px] border-r border-gray-200 bg-white overflow-y-auto p-4">
                       <SidebarPrompts onSubmit={handleInitialMessage} />
                     </div>
                     <div className="flex-1 overflow-y-auto bg-gradient-to-b from-purple-50 to-purple-100">
-                      <RecipeList
-                        filteredRecipes={filteredRecipes}
+                      <RecipeDetails 
+                        recipes={recipes} 
                         filters={filters}
-                        isLoading={isLoading}
                       />
                     </div>
                   </div>
                 </div>
-              ) : (
-                <Navigate to="/" replace />
-              )
-            }
-          />
-          <Route 
-            path="/recipe/:id" 
-            element={
-              <div className="h-screen flex flex-col">
-                <Header />
-                <div className="flex flex-1 overflow-hidden">
-                  <div className="w-[400px] border-r border-gray-200 bg-white overflow-y-auto p-4">
-                    <SidebarPrompts onSubmit={handleInitialMessage} />
-                  </div>
-                  <div className="flex-1 overflow-y-auto bg-gradient-to-b from-purple-50 to-purple-100">
-                    <RecipeDetails recipes={recipes} />
+              }
+            />
+            <Route 
+              path="/bookmarks" 
+              element={
+                <div className="h-screen flex flex-col">
+                  <Header />
+                  <div className="flex flex-1 overflow-hidden">
+                    <div className="w-[400px] border-r border-gray-200 bg-white overflow-y-auto p-4">
+                      <SidebarPrompts onSubmit={handleInitialMessage} />
+                    </div>
+                    <div className="flex-1 overflow-y-auto bg-gradient-to-b from-purple-50 to-purple-100">
+                      <BookmarkedRecipes filters={filters} />
+                    </div>
                   </div>
                 </div>
-              </div>
-            }
-          />
-          <Route 
-            path="/bookmarks" 
-            element={
-              <div className="h-screen flex flex-col">
-                <Header />
-                <div className="flex flex-1 overflow-hidden">
-                  <div className="w-[400px] border-r border-gray-200 bg-white overflow-y-auto p-4">
-                    <SidebarPrompts onSubmit={handleInitialMessage} />
-                  </div>
-                  <div className="flex-1 overflow-y-auto bg-gradient-to-b from-purple-50 to-purple-100">
-                    <BookmarkedRecipes filters={filters} />
-                  </div>
-                </div>
-              </div>
-            }
-          />
-        </Routes>
+              }
+            />
+          </Routes>
+        </BasketProvider>
       </BookmarkProvider>
     </BrowserRouter>
   );
