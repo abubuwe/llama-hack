@@ -47,6 +47,11 @@ export default function Basket() {
                     <p className="text-xs text-gray-500">
                       {item.quantity || 0} x £{(item.price || 0).toFixed(2)} ({item.supermarket})
                     </p>
+                    {item.undiscountedPrice && (
+                      <p className="text-xs text-gray-400 line-through">
+                        Undiscounted: £{(item.undiscountedPrice).toFixed(2)}
+                      </p>
+                    )}
                   </div>
                   <button
                     onClick={() => removeFromBasket(item)}

@@ -23,6 +23,7 @@ export interface Ingredient {
   origin: string;
   supermarketPrices: SupermarketPrices;
   price?: number;
+  undiscountedPrice?: number;
   quantity?: number;
   supermarket?: string;
 }

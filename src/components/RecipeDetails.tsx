@@ -59,25 +59,21 @@ function RecipeDetails({ recipes, filters }: RecipeDetailsProps) {
   const totalPricesBySupermarket = useMemo(() => {
     if (!recipe) return null;
 
-    const totals = recipe.ingredients.reduce(
-      (acc, ingredient) => ({
-        tesco: acc.tesco + ingredient.supermarketPrices.tesco,
-        asda: acc.asda + ingredient.supermarketPrices.asda,
-        sainsburys: acc.sainsburys + ingredient.supermarketPrices.sainsburys,
-        ocado: acc.ocado + ingredient.supermarketPrices.ocado,
-      }),
-      { tesco: 0, asda: 0, sainsburys: 0, ocado: 0 }
+    const total = recipe.ingredients.reduce(
+      (acc, ingredient) => acc + ingredient.price,
+      0
     );
 
-    return totals;
+    return total;
   }, [recipe]);
 
   const handleAddToBasket = (ingredient: Ingredient) => {
     const basketItem = {
       ...ingredient,
-      price: ingredient.supermarketPrices[filters.selectedSupermarket as keyof SupermarketPrices],
+      price: ingredient.price,
       quantity: ingredient.amount,
-      supermarket: filters.selectedSupermarket
+      supermarket: filters.selectedSupermarket,
+      ...(ingredient.undiscountedPrice && { undiscountedPrice: ingredient.undiscountedPrice })
     };
     addToBasket(basketItem);
   };
@@ -88,9 +84,10 @@ function RecipeDetails({ recipes, filters }: RecipeDetailsProps) {
     recipe.ingredients.forEach(ing => {
       const basketItem = {
         ...ing,
-        price: ing.supermarketPrices[filters.selectedSupermarket as keyof SupermarketPrices],
+        price: ing.price,
         quantity: ing.amount,
-        supermarket: filters.selectedSupermarket
+        supermarket: filters.selectedSupermarket,
+        ...(ing.undiscountedPrice && { undiscountedPrice: ing.undiscountedPrice })
       };
       basketContext.addToBasket(basketItem);
     });
@@ -172,7 +169,7 @@ function RecipeDetails({ recipes, filters }: RecipeDetailsProps) {
                           
                           <div className="flex items-center gap-2 mr-4">
                             <span className="text-sm font-medium text-purple-600">
-                              £{ingredient.supermarketPrices[filters.selectedSupermarket as keyof SupermarketPrices].toFixed(2)}
+                              £{ingredient.price.toFixed(2)}
                             </span>
                           </div>
                         </div>

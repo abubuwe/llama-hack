@@ -8,17 +8,18 @@ export const recipes: Recipe[] = [
     ingredients: [
       {
         name: 'Salmon Fillets',
-        amount: 2,
+        amount: 1,
         unit: 'pieces',
-        currentPrice: 6.99,
+        price: 4.99,
+        undiscountedPrice: 5.99,
         origin: 'UK',
-        supermarketPrices: { tesco: 6.99, asda: 6.75, sainsburys: 7.15, ocado: 7.25 }
+        supermarketPrices: { tesco: 5.99, asda: 6.75, sainsburys: 7.15, ocado: 7.25 }
       },
       {
         name: 'Quinoa',
         amount: 1,
         unit: 'cup',
-        currentPrice: 2.99,
+        price: 0.99,
         origin: 'Peru',
         supermarketPrices: { tesco: 2.99, asda: 2.75, sainsburys: 3.25, ocado: 3.50 }
       },
@@ -26,7 +27,8 @@ export const recipes: Recipe[] = [
         name: 'Broccoli',
         amount: 1,
         unit: 'head',
-        currentPrice: 1.50,
+        price: 1.04,
+        undiscountedPrice: 1.50,
         origin: 'UK',
         supermarketPrices: { tesco: 1.50, asda: 1.45, sainsburys: 1.60, ocado: 1.70 }
       },
@@ -34,7 +36,7 @@ export const recipes: Recipe[] = [
         name: 'Lemon',
         amount: 1,
         unit: 'piece',
-        currentPrice: 0.50,
+        price: 0.50,
         origin: 'Spain',
         supermarketPrices: { tesco: 0.50, asda: 0.45, sainsburys: 0.55, ocado: 0.60 }
       }
@@ -57,7 +59,7 @@ export const recipes: Recipe[] = [
       dairyFree: true
     },
     totalCost: 7.52,
-    regularCost: 8.99
+    regularCost: 8.98
   },
   {
     id: '2',
@@ -68,7 +70,7 @@ export const recipes: Recipe[] = [
         name: 'Avocado',
         amount: 1,
         unit: 'piece',
-        currentPrice: 1.99,
+        price: 1.99,
         origin: 'Mexico',
         supermarketPrices: { tesco: 1.99, asda: 1.75, sainsburys: 2.15, ocado: 2.25 }
       },
@@ -76,7 +78,7 @@ export const recipes: Recipe[] = [
         name: 'Whole Grain Bread',
         amount: 2,
         unit: 'slices',
-        currentPrice: 0.99,
+        price: 0.99,
         origin: 'UK',
         supermarketPrices: { tesco: 0.99, asda: 0.89, sainsburys: 1.10, ocado: 1.25 }
       }
@@ -108,7 +110,7 @@ export const recipes: Recipe[] = [
         name: 'Sweet Potatoes',
         amount: 2,
         unit: 'pieces',
-        currentPrice: 1.99,
+        price: 1.99,
         origin: 'USA',
         supermarketPrices: { tesco: 1.99, asda: 1.75, sainsburys: 2.15, ocado: 2.25 }
       },
@@ -116,7 +118,7 @@ export const recipes: Recipe[] = [
         name: 'Black Beans',
         amount: 1,
         unit: 'can',
-        currentPrice: 0.99,
+        price: 0.99,
         origin: 'Brazil',
         supermarketPrices: { tesco: 0.99, asda: 0.89, sainsburys: 1.10, ocado: 1.25 }
       }
@@ -149,7 +151,7 @@ export const recipes: Recipe[] = [
         name: 'Greek Yogurt',
         amount: 1,
         unit: 'cup',
-        currentPrice: 1.49,
+        price: 1.49,
         origin: 'Greece',
         supermarketPrices: { tesco: 1.49, asda: 1.35, sainsburys: 1.65, ocado: 1.75 }
       },
@@ -157,7 +159,7 @@ export const recipes: Recipe[] = [
         name: 'Mixed Berries',
         amount: 1,
         unit: 'cup',
-        currentPrice: 2.99,
+        price: 2.99,
         origin: 'UK',
         supermarketPrices: { tesco: 2.99, asda: 2.75, sainsburys: 3.15, ocado: 3.25 }
       }
@@ -188,7 +190,7 @@ export const recipes: Recipe[] = [
         name: 'Chicken Thighs',
         amount: 500,
         unit: 'g',
-        currentPrice: 4.99,
+        price: 4.99,
         origin: 'UK',
         supermarketPrices: { tesco: 4.99, asda: 4.75, sainsburys: 5.15, ocado: 5.25 }
       },
@@ -196,7 +198,7 @@ export const recipes: Recipe[] = [
         name: 'Mixed Vegetables',
         amount: 300,
         unit: 'g',
-        currentPrice: 2.49,
+        price: 2.49,
         origin: 'UK',
         supermarketPrices: { tesco: 2.49, asda: 2.25, sainsburys: 2.65, ocado: 2.75 }
       }
@@ -230,7 +232,7 @@ export const recipes: Recipe[] = [
         name: 'Avocado', 
         amount: 1, 
         unit: 'piece', 
-        currentPrice: 1.99,
+        price: 1.99,
         origin: 'Mexico',
         supermarketPrices: { tesco: 1.99, asda: 1.75, sainsburys: 2.15, ocado: 2.25 }
       },
@@ -238,7 +240,7 @@ export const recipes: Recipe[] = [
         name: 'Bacon', 
         amount: 100, 
         unit: 'g', 
-        currentPrice: 2.49,
+        price: 2.49,
         origin: 'UK',
         supermarketPrices: { tesco: 2.49, asda: 2.25, sainsburys: 2.65, ocado: 2.75 }
       }
@@ -271,7 +273,7 @@ export const recipes: Recipe[] = [
         name: 'Cod Fillets',
         amount: 2,
         unit: 'pieces',
-        currentPrice: 5.99,
+        price: 5.99,
         origin: 'UK',
         supermarketPrices: { tesco: 5.99, asda: 5.75, sainsburys: 6.15, ocado: 6.25 }
       },
@@ -279,7 +281,7 @@ export const recipes: Recipe[] = [
         name: 'Asparagus',
         amount: 200,
         unit: 'g',
-        currentPrice: 2.49,
+        price: 2.49,
         origin: 'UK',
         supermarketPrices: { tesco: 2.49, asda: 2.25, sainsburys: 2.65, ocado: 2.75 }
       }
@@ -313,7 +315,7 @@ export const recipes: Recipe[] = [
         name: 'Bananas',
         amount: 2,
         unit: 'pieces',
-        currentPrice: 0.99,
+        price: 0.99,
         origin: 'Ecuador',
         supermarketPrices: { tesco: 0.99, asda: 0.89, sainsburys: 1.10, ocado: 1.25 }
       },
@@ -321,7 +323,7 @@ export const recipes: Recipe[] = [
         name: 'Almond Milk',
         amount: 1,
         unit: 'cup',
-        currentPrice: 1.49,
+        price: 1.49,
         origin: 'USA',
         supermarketPrices: { tesco: 1.49, asda: 1.35, sainsburys: 1.65, ocado: 1.75 }
       }
@@ -352,7 +354,7 @@ export const recipes: Recipe[] = [
         name: 'Chickpeas',
         amount: 1,
         unit: 'can',
-        currentPrice: 0.99,
+        price: 0.99,
         origin: 'Morocco',
         supermarketPrices: { tesco: 0.99, asda: 0.89, sainsburys: 1.10, ocado: 1.25 }
       },
@@ -360,7 +362,7 @@ export const recipes: Recipe[] = [
         name: 'Avocado',
         amount: 1,
         unit: 'piece',
-        currentPrice: 1.99,
+        price: 1.99,
         origin: 'Mexico',
         supermarketPrices: { tesco: 1.99, asda: 1.75, sainsburys: 2.15, ocado: 2.25 }
       }
@@ -392,7 +394,7 @@ export const recipes: Recipe[] = [
         name: 'Chicken Breast',
         amount: 200,
         unit: 'g',
-        currentPrice: 3.99,
+        price: 3.99,
         origin: 'UK',
         supermarketPrices: { tesco: 3.99, asda: 3.75, sainsburys: 4.15, ocado: 4.25 }
       },
@@ -400,7 +402,7 @@ export const recipes: Recipe[] = [
         name: 'Quinoa',
         amount: 1,
         unit: 'cup',
-        currentPrice: 2.99,
+        price: 2.99,
         origin: 'Peru',
         supermarketPrices: { tesco: 2.99, asda: 2.75, sainsburys: 3.25, ocado: 3.50 }
       }
@@ -433,7 +435,7 @@ export const recipes: Recipe[] = [
         name: 'Chicken Breast',
         amount: 200,
         unit: 'g',
-        currentPrice: 3.99,
+        price: 3.99,
         origin: 'UK',
         supermarketPrices: { tesco: 3.99, asda: 3.75, sainsburys: 4.15, ocado: 4.25 }
       },
@@ -441,7 +443,7 @@ export const recipes: Recipe[] = [
         name: 'Quinoa',
         amount: 1,
         unit: 'cup',
-        currentPrice: 2.99,
+        price: 2.99,
         origin: 'Peru',
         supermarketPrices: { tesco: 2.99, asda: 2.75, sainsburys: 3.25, ocado: 3.50 }
       }
