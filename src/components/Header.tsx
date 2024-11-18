@@ -46,9 +46,9 @@ export default function Header({ totalCost, totalSavings, recipeCount, ingredien
               <div className="text-purple-700 text-sm font-semibold bg-purple-100 px-3 py-1.5 rounded-full">
                 Potential Savings: £{totalSavings.toFixed(2)}
               </div>
-              <div className="text-sm text-gray-600">
+              {/* <div className="text-sm text-gray-600">
                 {recipeCount} {recipeCount === 1 ? 'recipe' : 'recipes'}
-              </div>
+              </div> */}
             </div>
           )}
           <div className="flex items-center gap-4">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronRight, ShoppingCart, ShoppingBag, Store } from 'lucide-react';
 
 interface Props {
   onSubmit: (message: string, days: number, selectedSupermarket: string) => void;
@@ -14,9 +14,24 @@ const SUGGESTIONS = [
 ];
 
 const SUPERMARKETS = [
-  { id: 'tesco', name: 'Tesco' },
-  { id: 'asda', name: 'ASDA' },
-  { id: 'sainsburys', name: "Sainsbury's" },
+  { 
+    id: 'tesco', 
+    name: 'Tesco',
+    icon: ShoppingCart,
+    color: '#ee1c2e'
+  },
+  { 
+    id: 'asda', 
+    name: 'ASDA',
+    icon: ShoppingBag,
+    color: '#78BE20'
+  },
+  { 
+    id: 'sainsburys', 
+    name: "Sainsbury's",
+    icon: Store,
+    color: '#ff8200'
+  },
 ];
 
 export default function SidebarPrompts({ onSubmit }: Props) {
@@ -72,20 +87,43 @@ export default function SidebarPrompts({ onSubmit }: Props) {
             <div className="space-y-2">
               <label className="text-sm text-gray-600">Supermarket:</label>
               <div className="flex flex-wrap gap-2">
-                {SUPERMARKETS.map(market => (
-                  <button
-                    key={market.id}
-                    type="button"
-                    onClick={() => setSelectedSupermarket(market.id)}
-                    className={`px-2 py-1 text-xs rounded-full transition-colors ${
-                      selectedSupermarket === market.id
-                        ? 'bg-purple-100 text-purple-700'
-                        : 'bg-gray-100 text-gray-600 hover:bg-purple-50'
-                    }`}
-                  >
-                    {market.name}
-                  </button>
-                ))}
+                {SUPERMARKETS.map(supermarket => {
+                  const Icon = supermarket.icon;
+                  return (
+                    <button
+                      key={supermarket.id}
+                      type="button"
+                      onClick={() => setSelectedSupermarket(supermarket.id)}
+                      className={`
+                        px-3 py-1.5 rounded-full text-sm transition-all duration-200
+                        flex items-center gap-2
+                        ${selectedSupermarket === supermarket.id
+                          ? 'bg-white ring-2'
+                          : 'bg-white/80 hover:bg-white'
+                        }
+                      `}
+                      style={{
+                        color: supermarket.color,
+                        borderColor: selectedSupermarket === supermarket.id ? supermarket.color : 'transparent'
+                      }}
+                    >
+                      <Icon 
+                        className="w-4 h-4" 
+                        style={{ 
+                          stroke: selectedSupermarket === supermarket.id 
+                            ? supermarket.color 
+                            : '#6b7280' 
+                        }} 
+                      />
+                      <span className={selectedSupermarket === supermarket.id 
+                        ? 'font-medium'
+                        : 'text-gray-500'
+                      }>
+                        {supermarket.name}
+                      </span>
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>
