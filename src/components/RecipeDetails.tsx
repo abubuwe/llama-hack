@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ChevronLeft, MapPin, ArrowDown, ShoppingBasket } from 'lucide-react';
+import { ChevronLeft, MapPin, ChevronDown, ShoppingBasket } from 'lucide-react';
 import { Recipe, SupermarketPrices, Ingredient, Filters } from '../types';
 import IngredientOriginMap from './IngredientOriginMap';
 import { useBasket } from '../contexts/BasketContext';
@@ -130,19 +130,45 @@ function RecipeDetails({ recipes, filters }: RecipeDetailsProps) {
                 <div className="space-y-4">
                   {recipe.ingredients.map((ingredient, index) => (
                     <div key={index} className="bg-gray-50 rounded-lg p-4">
-                      <div 
-                        className="flex items-center justify-between cursor-pointer"
-                        onClick={() => setSelectedIngredient(
-                          selectedIngredient === ingredient.name ? null : ingredient.name
-                        )}
-                      >
-                        <div className="flex items-center space-x-2">
-                          <span>{ingredient.amount} {ingredient.unit} {ingredient.name}</span>
-                          <span className="text-sm text-gray-500 flex items-center">
-                            <MapPin className="w-4 h-4 mr-1" />
-                            {ingredient.origin}
-                          </span>
+                      <div className="flex items-center justify-between">
+                        <div 
+                          className="flex-1 cursor-pointer flex items-center"
+                          onClick={() => setSelectedIngredient(
+                            selectedIngredient === ingredient.name ? null : ingredient.name
+                          )}
+                        >
+                          <div className="flex-1">
+                            <div className="flex items-center space-x-2">
+                              <span>{ingredient.amount} {ingredient.unit} {ingredient.name}</span>
+                              <span className="text-sm text-gray-500 flex items-center">
+                                <MapPin className="w-4 h-4 mr-1" />
+                                {ingredient.origin}
+                              </span>
+                            </div>
+                          </div>
+                          
+                          <div className="flex items-center gap-2 mr-4">
+                            <span className="text-sm font-medium text-purple-600">
+                              £{ingredient.supermarketPrices[filters.selectedSupermarket as keyof SupermarketPrices].toFixed(2)}
+                            </span>
+                            <ChevronDown 
+                              className={`w-4 h-4 text-gray-400 transition-transform ${
+                                selectedIngredient === ingredient.name ? 'transform rotate-180' : ''
+                              }`}
+                            />
+                          </div>
                         </div>
+                        
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleAddToBasket(ingredient);
+                          }}
+                          className="flex items-center gap-2 px-3 py-1 text-sm bg-purple-100 text-purple-700 rounded-md hover:bg-purple-200 ml-4"
+                        >
+                          <ShoppingBasket className="w-4 h-4" />
+                          Add
+                        </button>
                       </div>
                       
                       {selectedIngredient === ingredient.name && (
@@ -153,13 +179,6 @@ function RecipeDetails({ recipes, filters }: RecipeDetailsProps) {
                           <SupermarketComparison prices={ingredient.supermarketPrices} />
                         </div>
                       )}
-                      <button
-                        onClick={() => handleAddToBasket(ingredient)}
-                        className="flex items-center gap-2 px-3 py-1 text-sm bg-purple-100 text-purple-700 rounded-md hover:bg-purple-200"
-                      >
-                        <ShoppingBasket className="w-4 h-4" />
-                        Add to basket
-                      </button>
                     </div>
                   ))}
                 </div>
