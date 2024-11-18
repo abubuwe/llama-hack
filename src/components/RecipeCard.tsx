@@ -21,7 +21,7 @@ export default function RecipeCard({ recipe, selectedSupermarket }: Props) {
       {/* Changed to aspect-[4/3] for a rectangular shape */}
       <div className="aspect-[5.55/3] w-full relative">
         <img
-          src={recipe.image}
+          src={`${import.meta.env.PROD ? '/llama-hack/' : ''}${recipe.image}`}
           alt={recipe.name}
           className="w-full h-full object-cover"
         />

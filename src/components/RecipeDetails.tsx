@@ -94,7 +94,7 @@ function RecipeDetails({ recipes }: RecipeDetailsProps) {
         
         <div className="bg-white rounded-lg shadow-sm overflow-hidden">
           <img
-            src={recipe.image}
+            src={`${import.meta.env.PROD ? '/llama-hack/' : ''}${recipe.image}`}
             alt={recipe.name}
             className="w-full h-64 object-cover"
           />
